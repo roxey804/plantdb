@@ -8,10 +8,10 @@
   "description": "Courgettes are incredibly productive and satisfying to grow. A single plant can produce dozens of fruits throughout the summer. They love the warmth and will thrive in a large pot on a sunny balcony.",
   "images": {
     "plant": "images/courgette/plant.jpg",
-    "seed": "images/courgette/seed.jpg",
     "flower": "images/courgette/flower.jpg",
-    "fruit": "images/courgette/fruit.jpg",
-    "seedling": "images/courgette/seedling.jpg"
+    "seedling": "images/courgette/seedling.jpg",
+    "seed": "images/courgette/seed.jpg",
+    "fruit": "images/courgette/fruit.jpg"
   },
   "characteristics": {
     "matureHeight": "45–90cm",

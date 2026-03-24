@@ -10,9 +10,9 @@ window.PLANT_DATA = [
     "description": "The classic Italian herb with bright green, aromatic leaves. Basil loves warmth and sun, making a south-facing balcony ideal. Pinch off the growing tips regularly to keep it bushy and productive.",
     "images": {
       "plant": "images/basil/plant.jpg",
-      "seed": "images/basil/seed.jpg",
       "flower": "images/basil/flower.jpg",
-      "seedling": "images/basil/seedling.jpg"
+      "seedling": "images/basil/seedling.jpg",
+      "seed": "images/basil/seed.jpg"
     },
     "characteristics": {
       "matureHeight": "20–45cm",
@@ -134,6 +134,139 @@ window.PLANT_DATA = [
     "funFact": "In Italy, placing a pot of basil on your balcony was traditionally a signal that you were ready for a suitor to come courting!"
   },
   {
+    "id": "carnation-pinks",
+    "commonName": "Carnation (Pinks)",
+    "latinName": "Dianthus caryophyllus",
+    "family": "Caryophyllaceae",
+    "category": "flower",
+    "variety": "Doris",
+    "description": "Fragrant, fringed-petal flowers that bring a classic, cottage-garden feel to any balcony. Their spicy, clove-like scent is delightful, and many varieties are surprisingly hardy. The petals are edible and make a beautiful garnish.",
+    "images": {
+      "plant": "images/carnation-pinks/plant.jpg",
+      "flower": "images/carnation-pinks/flower.jpg",
+      "seedling": "images/carnation-pinks/seedling.jpg",
+      "seed": "images/carnation-pinks/seed.jpg"
+    },
+    "characteristics": {
+      "matureHeight": "30–60cm",
+      "matureSpread": "30–45cm",
+      "hardiness": "Hardy perennial (London)",
+      "lifespan": "Short-lived perennial",
+      "sunRequirement": "Full sun (6+ hours)",
+      "waterNeeds": "Moderate — well-drained soil is crucial",
+      "soilType": "Well-drained, slightly alkaline to neutral potting compost",
+      "containerSize": "2L+ pot"
+    },
+    "schedule": {
+      "sowIndoorsWeeks": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "sowOutdoorsWeeks": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "hardenOffWeeks": [
+        17,
+        18
+      ],
+      "plantOutWeeks": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "harvestWeeks": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "floweringWeeks": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "bringInsideWeek": null,
+      "successionSowWeeks": [],
+      "frostSensitive": false
+    },
+    "care": {
+      "sowIndoors": "Sow seeds thinly on the surface of moist seed compost, lightly cover with vermiculite. Keep at 15-20°C. Germination in 14-21 days.",
+      "sowOutdoors": "Sow seeds thinly in situ once the soil has warmed up in late spring. Thin to 20cm apart.",
+      "hardenOff": "Gradually expose indoor-raised plants to outdoor conditions over 7-10 days before planting out.",
+      "plantOut": "Plant in a sunny, well-drained spot. Don't bury the stems too deep. Pinks hate waterlogged roots.",
+      "watering": "Water regularly until established, then only when the soil surface is dry. Avoid overhead watering.",
+      "feeding": "Feed with a high-potash liquid feed every 2 weeks during the flowering season to encourage more blooms.",
+      "harvest": "Pick flowers as they open for indoor display or for edible petals. Remove the bitter white base of the petals before eating.",
+      "overwintering": "Cut back after flowering. Most garden pinks are hardy and will survive a London winter if well-drained."
+    },
+    "propagation": {
+      "fromSeed": true,
+      "seedDescription": "Small, flat, black or dark brown seeds.",
+      "germinationDays": "14–21 days at 15–20°C",
+      "fromCuttings": true,
+      "cuttingsMethod": "Take 5-10cm non-flowering shoots in summer, root in moist, gritty compost.",
+      "fromDivision": true,
+      "divisionMethod": "Divide large, established clumps in spring or autumn."
+    },
+    "deadheading": {
+      "required": true,
+      "notes": "Regularly remove spent flowers down to the base of the stem to encourage continuous blooming."
+    },
+    "edible": {
+      "isEdible": true,
+      "notes": "The petals have a mild, spicy, clove-like flavor. Only eat the petals; the white base is bitter."
+    },
+    "seedSaving": {
+      "canSaveSeeds": true,
+      "method": "Allow some flower heads to dry on the plant. Once the seed heads turn brown and brittle, collect the small black seeds.",
+      "seedPodDescription": "Small, capsule-like pods that open at the top when ripe."
+    },
+    "companionPlants": [
+      "lavender",
+      "salvia",
+      "scabiosa"
+    ],
+    "commonProblems": [
+      "Slugs on young growth",
+      "Aphids",
+      "Rust in damp conditions",
+      "Stem rot if overwatered"
+    ],
+    "funFact": "The name 'Dianthus' comes from the Greek words 'dios' (god) and 'anthos' (flower), meaning 'Flower of the Gods'!"
+  },
+  {
     "id": "chives",
     "commonName": "Chives",
     "latinName": "Allium schoenoprasum",
@@ -143,9 +276,9 @@ window.PLANT_DATA = [
     "description": "A hardy perennial herb that comes back year after year with zero fuss. The mild onion-flavoured leaves are brilliant snipped over eggs, salads, and potatoes. Pretty purple pom-pom flowers in summer are edible too.",
     "images": {
       "plant": "images/chives/plant.jpg",
-      "seed": "images/chives/seed.jpg",
       "flower": "images/chives/flower.jpg",
-      "seedling": "images/chives/seedling.jpg"
+      "seedling": "images/chives/seedling.jpg",
+      "seed": "images/chives/seed.jpg"
     },
     "characteristics": {
       "matureHeight": "20–30cm",
@@ -281,9 +414,9 @@ window.PLANT_DATA = [
     "description": "A dual-purpose herb grown for its fresh citrusy leaves (cilantro) and aromatic seeds (coriander). It grows fast but is prone to bolting in hot weather. Sow little and often for a constant supply.",
     "images": {
       "plant": "images/coriander/plant.jpg",
-      "seed": "images/coriander/seed.jpg",
       "flower": "images/coriander/flower.jpg",
-      "seedling": "images/coriander/seedling.jpg"
+      "seedling": "images/coriander/seedling.jpg",
+      "seed": "images/coriander/seed.jpg"
     },
     "characteristics": {
       "matureHeight": "30–60cm",
@@ -440,10 +573,10 @@ window.PLANT_DATA = [
     "description": "Courgettes are incredibly productive and satisfying to grow. A single plant can produce dozens of fruits throughout the summer. They love the warmth and will thrive in a large pot on a sunny balcony.",
     "images": {
       "plant": "images/courgette/plant.jpg",
-      "seed": "images/courgette/seed.jpg",
       "flower": "images/courgette/flower.jpg",
-      "fruit": "images/courgette/fruit.jpg",
-      "seedling": "images/courgette/seedling.jpg"
+      "seedling": "images/courgette/seedling.jpg",
+      "seed": "images/courgette/seed.jpg",
+      "fruit": "images/courgette/fruit.jpg"
     },
     "characteristics": {
       "matureHeight": "45–90cm",
@@ -561,9 +694,9 @@ window.PLANT_DATA = [
     "description": "A beautiful, fragrant, evergreen perennial that thrives in pots and loves the well-drained conditions that containers provide. The purple flower spikes appear in summer and are absolute magnets for bees. Low maintenance once established.",
     "images": {
       "plant": "images/lavender/plant.jpg",
-      "seed": "images/lavender/seed.jpg",
       "flower": "images/lavender/flower.jpg",
-      "seedling": null
+      "seedling": null,
+      "seed": "images/lavender/seed.jpg"
     },
     "characteristics": {
       "matureHeight": "30–60cm",
@@ -691,10 +824,10 @@ window.PLANT_DATA = [
     "description": "The easiest edible to grow on a balcony. Salad leaves grow fast, tolerate partial shade, and can be harvested in as little as 3–4 weeks. Sow small amounts every 2 weeks for a continuous supply all summer.",
     "images": {
       "plant": "images/lettuce/plant.jpg",
-      "seed": "images/lettuce/seed.jpg",
       "flower": null,
-      "fruit": null,
-      "seedling": "images/lettuce/seedling.jpg"
+      "seedling": "images/lettuce/seedling.jpg",
+      "seed": "images/lettuce/seed.jpg",
+      "fruit": null
     },
     "characteristics": {
       "matureHeight": "15–30cm",
@@ -838,9 +971,9 @@ window.PLANT_DATA = [
     "description": "French marigolds are one of the easiest and most rewarding flowers for balcony containers. They bloom non-stop from early summer until the first frost, producing cheerful orange, yellow, and mahogany flowers. Their strong scent naturally deters many common garden pests, making them brilliant companion plants for your tomatoes and herbs.",
     "images": {
       "plant": "images/marigold/plant.jpg",
-      "seed": "images/marigold/seed.jpg",
       "flower": "images/marigold/flower.jpg",
-      "seedling": "images/marigold/seedling.jpg"
+      "seedling": "images/marigold/seedling.jpg",
+      "seed": "images/marigold/seed.jpg"
     },
     "characteristics": {
       "matureHeight": "20-30cm",
@@ -924,6 +1057,10 @@ window.PLANT_DATA = [
       "required": true,
       "notes": "Deadhead spent flowers at least twice a week during peak season (July-August) by snipping the whole flower head just above the nearest set of leaves. This prevents seed formation and redirects energy into new blooms, keeping plants flowering continuously until frost. Stop deadheading in mid-September if you want to save seed."
     },
+    "edible": {
+      "isEdible": false,
+      "notes": "Some marigolds (like Tagetes tenuifolia) are edible, but French marigolds (Tagetes patula) are primarily grown for ornament and pest control."
+    },
     "seedSaving": {
       "canSaveSeeds": true,
       "method": "Stop deadheading from mid-September and let the last flowers go to seed. Wait until seed heads turn brown, dry, and papery on the plant (October). Snip them off into a paper bag, pull apart to extract the long dark seeds, dry on a paper towel for 2-3 days, then store in labelled envelopes in a cool dry place. Seeds stay viable for 2-3 years. Note: F1 hybrid varieties won't come true from seed — save from open-pollinated varieties like 'Naughty Marietta' for reliable results.",
@@ -955,9 +1092,9 @@ window.PLANT_DATA = [
     "description": "Almost impossible to kill! Mint is incredibly vigorous and perfect for beginners. Keep it in its own pot — it spreads aggressively and will take over anything it's planted with. Great for tea, cocktails, and cooking.",
     "images": {
       "plant": "images/mint/plant.jpg",
-      "seed": "images/mint/seed.jpg",
       "flower": "images/mint/flower.jpg",
-      "seedling": null
+      "seedling": null,
+      "seed": "images/mint/seed.jpg"
     },
     "characteristics": {
       "matureHeight": "30–60cm",
@@ -1079,9 +1216,9 @@ window.PLANT_DATA = [
     "description": "Cheerful, trumpet-shaped flowers in fiery oranges, reds, and yellows that bloom all summer long. Nasturtiums are ridiculously easy to grow — just push the large seeds into compost and watch them go. Bonus: the flowers, leaves, and seed pods are all edible with a peppery, watercress-like flavour.",
     "images": {
       "plant": "images/nasturtium/plant.jpg",
-      "seed": "images/nasturtium/seed.jpg",
       "flower": "images/nasturtium/flower.jpg",
-      "seedling": "images/nasturtium/seedling.jpg"
+      "seedling": "images/nasturtium/seedling.jpg",
+      "seed": "images/nasturtium/seed.jpg"
     },
     "characteristics": {
       "matureHeight": "20–30cm (bush) or trailing 1m+",
@@ -1180,6 +1317,10 @@ window.PLANT_DATA = [
       "required": false,
       "notes": "Optional but beneficial. Removing spent flowers encourages more blooms. If you want to save seeds, leave some flowers to set seed at the end of summer."
     },
+    "edible": {
+      "isEdible": true,
+      "notes": "Flowers, leaves, and seed pods are all edible with a peppery, watercress-like flavour."
+    },
     "seedSaving": {
       "canSaveSeeds": true,
       "method": "Let some flowers go to seed. The round green seeds will turn brown and fall off when ripe. Collect from the ground or pick when they separate easily from the stem. Dry and store.",
@@ -1202,14 +1343,14 @@ window.PLANT_DATA = [
     "commonName": "Radish",
     "latinName": "Raphanus sativus",
     "family": "Brassicaceae",
-    "category": "flower",
+    "category": "vegetable",
     "variety": "French Breakfast",
     "description": "The fastest vegetable you can grow — ready to eat in just 4 weeks! Radishes are perfect for beginners and impatient gardeners. They need very little space and grow happily in shallow pots or window boxes.",
     "images": {
       "plant": "images/radish/plant.jpg",
-      "seed": "images/radish/seed.jpg",
       "flower": null,
-      "seedling": null
+      "seedling": null,
+      "seed": "images/radish/seed.jpg"
     },
     "characteristics": {
       "matureHeight": "10–15cm",
@@ -1346,9 +1487,9 @@ window.PLANT_DATA = [
     "description": "A fast-growing, peppery salad leaf that is incredibly easy to grow in pots. Regular picking keeps the leaves young and tender. Ideally grown in cooler weather (spring/autumn) as heat makes it bolt and turn spicy.",
     "images": {
       "plant": "images/rocket/plant.jpg",
-      "seed": "images/rocket/seed.jpg",
       "flower": "images/rocket/flower.jpg",
-      "seedling": "images/rocket/seedling.jpg"
+      "seedling": "images/rocket/seedling.jpg",
+      "seed": "images/rocket/seed.jpg"
     },
     "characteristics": {
       "matureHeight": "20–50cm",
@@ -1513,9 +1654,9 @@ window.PLANT_DATA = [
     "description": "Vibrant, vertical flowers that bring height and drama to borders and containers. Known for their 'dragon-mouth' shape.",
     "images": {
       "plant": "images/snapdragon/plant.jpg",
-      "seed": "images/snapdragon/seed.jpg",
       "flower": "images/snapdragon/flower.jpg",
-      "seedling": "images/snapdragon/seedling.jpg"
+      "seedling": "images/snapdragon/seedling.jpg",
+      "seed": "images/snapdragon/seed.jpg"
     },
     "characteristics": {
       "matureHeight": "20–90cm (depending on variety)",
@@ -1614,6 +1755,10 @@ window.PLANT_DATA = [
       "required": true,
       "notes": "Crucial for continuous flowering. Pinch off spent flower spikes at the base."
     },
+    "edible": {
+      "isEdible": false,
+      "notes": "Technically edible but often very bitter; not commonly used as a food plant."
+    },
     "seedSaving": {
       "canSaveSeeds": true,
       "method": "Allow some flower spikes to go to seed at the end of the season. Collect the dry, papery seed pods once they start to split open.",
@@ -1641,10 +1786,10 @@ window.PLANT_DATA = [
     "description": "A prolific cascading cherry tomato that is perfect for hanging baskets and tall containers. It produces masses of sweet, red cherry tomatoes throughout the summer. No staking or side-shoot removal needed—just let it tumble!",
     "images": {
       "plant": "images/tumbling-tom-red/plant.jpg",
-      "seed": "images/tumbling-tom-red/seed.jpg",
       "flower": "images/tumbling-tom-red/flower.jpg",
-      "fruit": "images/tumbling-tom-red/fruit.jpg",
-      "seedling": "images/tumbling-tom-red/seedling.jpg"
+      "seedling": "images/tumbling-tom-red/seedling.jpg",
+      "seed": "images/tumbling-tom-red/seed.jpg",
+      "fruit": "images/tumbling-tom-red/fruit.jpg"
     },
     "characteristics": {
       "matureHeight": "Trailing (30cm height, trails to 50cm+)",
@@ -1756,10 +1901,10 @@ window.PLANT_DATA = [
     "description": "The golden cousin of the classic red tumbler. This variety produces masses of bright yellow cherry tomatoes with a slightly zestier, citrusy flavour. Looks spectacular mixed with red varieties in a hanging basket.",
     "images": {
       "plant": "images/tumbling-tom-yellow/plant.jpg",
-      "seed": "images/tumbling-tom-yellow/seed.jpg",
       "flower": "images/tumbling-tom-yellow/flower.jpg",
-      "fruit": "images/tumbling-tom-yellow/fruit.jpg",
-      "seedling": "images/tumbling-tom-yellow/seedling.jpg"
+      "seedling": "images/tumbling-tom-yellow/seedling.jpg",
+      "seed": "images/tumbling-tom-yellow/seed.jpg",
+      "fruit": "images/tumbling-tom-yellow/fruit.jpg"
     },
     "characteristics": {
       "matureHeight": "Trailing (30cm height, trails to 50cm+)",

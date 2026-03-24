@@ -8,9 +8,9 @@
   "description": "Vibrant, vertical flowers that bring height and drama to borders and containers. Known for their 'dragon-mouth' shape.",
   "images": {
     "plant": "images/snapdragon/plant.jpg",
-    "seed": "images/snapdragon/seed.jpg",
     "flower": "images/snapdragon/flower.jpg",
-    "seedling": "images/snapdragon/seedling.jpg"
+    "seedling": "images/snapdragon/seedling.jpg",
+    "seed": "images/snapdragon/seed.jpg"
   },
   "characteristics": {
     "matureHeight": "20–90cm (depending on variety)",
@@ -23,14 +23,67 @@
     "containerSize": "1L+ pot (or larger for taller varieties)"
   },
   "schedule": {
-    "sowIndoorsWeeks": [6, 7, 8, 9, 10, 11, 12, 13, 14],
-    "sowOutdoorsWeeks": [18, 19, 20, 21, 22, 23, 24],
-    "hardenOffWeeks": [15, 16, 17, 18],
-    "plantOutWeeks": [16, 17, 18, 19, 20],
+    "sowIndoorsWeeks": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "sowOutdoorsWeeks": [
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "hardenOffWeeks": [
+      15,
+      16,
+      17,
+      18
+    ],
+    "plantOutWeeks": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
     "harvestWeeks": [],
-    "floweringWeeks": [24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42],
+    "floweringWeeks": [
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42
+    ],
     "bringInsideWeek": null,
-    "successionSowWeeks": [10, 14, 18],
+    "successionSowWeeks": [
+      10,
+      14,
+      18
+    ],
     "frostSensitive": true
   },
   "care": {
@@ -56,12 +109,24 @@
     "required": true,
     "notes": "Crucial for continuous flowering. Pinch off spent flower spikes at the base."
   },
+  "edible": {
+    "isEdible": false,
+    "notes": "Technically edible but often very bitter; not commonly used as a food plant."
+  },
   "seedSaving": {
     "canSaveSeeds": true,
     "method": "Allow some flower spikes to go to seed at the end of the season. Collect the dry, papery seed pods once they start to split open.",
     "seedPodDescription": "Small, capsule-like pods that develop along the flower stalk."
   },
-  "companionPlants": ["cosmos", "marigold", "zinnia"],
-  "commonProblems": ["Rust (Puccinia antirrhini)", "Aphids", "Slugs and snails (especially young plants)"],
+  "companionPlants": [
+    "cosmos",
+    "marigold",
+    "zinnia"
+  ],
+  "commonProblems": [
+    "Rust (Puccinia antirrhini)",
+    "Aphids",
+    "Slugs and snails (especially young plants)"
+  ],
   "funFact": "The common name 'snapdragon' comes from the flower's resemblance to a dragon's snout, which snaps open and shut when squeezed."
 }

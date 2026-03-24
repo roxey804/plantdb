@@ -8,10 +8,10 @@
   "description": "The golden cousin of the classic red tumbler. This variety produces masses of bright yellow cherry tomatoes with a slightly zestier, citrusy flavour. Looks spectacular mixed with red varieties in a hanging basket.",
   "images": {
     "plant": "images/tumbling-tom-yellow/plant.jpg",
-    "seed": "images/tumbling-tom-yellow/seed.jpg",
     "flower": "images/tumbling-tom-yellow/flower.jpg",
-    "fruit": "images/tumbling-tom-yellow/fruit.jpg",
-    "seedling": "images/tumbling-tom-yellow/seedling.jpg"
+    "seedling": "images/tumbling-tom-yellow/seedling.jpg",
+    "seed": "images/tumbling-tom-yellow/seed.jpg",
+    "fruit": "images/tumbling-tom-yellow/fruit.jpg"
   },
   "characteristics": {
     "matureHeight": "Trailing (30cm height, trails to 50cm+)",

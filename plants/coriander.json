@@ -8,9 +8,9 @@
   "description": "A dual-purpose herb grown for its fresh citrusy leaves (cilantro) and aromatic seeds (coriander). It grows fast but is prone to bolting in hot weather. Sow little and often for a constant supply.",
   "images": {
     "plant": "images/coriander/plant.jpg",
-    "seed": "images/coriander/seed.jpg",
     "flower": "images/coriander/flower.jpg",
-    "seedling": "images/coriander/seedling.jpg"
+    "seedling": "images/coriander/seedling.jpg",
+    "seed": "images/coriander/seed.jpg"
   },
   "characteristics": {
     "matureHeight": "30–60cm",

@@ -8,10 +8,10 @@
   "description": "A prolific cascading cherry tomato that is perfect for hanging baskets and tall containers. It produces masses of sweet, red cherry tomatoes throughout the summer. No staking or side-shoot removal needed—just let it tumble!",
   "images": {
     "plant": "images/tumbling-tom-red/plant.jpg",
-    "seed": "images/tumbling-tom-red/seed.jpg",
     "flower": "images/tumbling-tom-red/flower.jpg",
-    "fruit": "images/tumbling-tom-red/fruit.jpg",
-    "seedling": "images/tumbling-tom-red/seedling.jpg"
+    "seedling": "images/tumbling-tom-red/seedling.jpg",
+    "seed": "images/tumbling-tom-red/seed.jpg",
+    "fruit": "images/tumbling-tom-red/fruit.jpg"
   },
   "characteristics": {
     "matureHeight": "Trailing (30cm height, trails to 50cm+)",

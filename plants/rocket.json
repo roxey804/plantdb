@@ -8,9 +8,9 @@
   "description": "A fast-growing, peppery salad leaf that is incredibly easy to grow in pots. Regular picking keeps the leaves young and tender. Ideally grown in cooler weather (spring/autumn) as heat makes it bolt and turn spicy.",
   "images": {
     "plant": "images/rocket/plant.jpg",
-    "seed": "images/rocket/seed.jpg",
     "flower": "images/rocket/flower.jpg",
-    "seedling": "images/rocket/seedling.jpg"
+    "seedling": "images/rocket/seedling.jpg",
+    "seed": "images/rocket/seed.jpg"
   },
   "characteristics": {
     "matureHeight": "20–50cm",

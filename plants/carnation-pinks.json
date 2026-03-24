@@ -1,0 +1,133 @@
+{
+  "id": "carnation-pinks",
+  "commonName": "Carnations (Pinks)",
+  "latinName": "Dianthus caryophyllus",
+  "family": "Caryophyllaceae",
+  "category": "flower",
+  "variety": "Doris",
+  "description": "Fragrant, fringed-petal flowers that bring a classic, cottage-garden feel to any balcony. Their spicy, clove-like scent is delightful, and many varieties are surprisingly hardy. The petals are edible and make a beautiful garnish.",
+  "images": {
+    "plant": "images/carnation-pinks/plant.jpg",
+    "seed": "images/carnation-pinks/seed.jpg",
+    "flower": "images/carnation-pinks/flower.jpg",
+    "seedling": "images/carnation-pinks/seedling.jpg"
+  },
+  "characteristics": {
+    "matureHeight": "30–60cm",
+    "matureSpread": "30–45cm",
+    "hardiness": "Hardy perennial (London)",
+    "lifespan": "Short-lived perennial",
+    "sunRequirement": "Full sun (6+ hours)",
+    "waterNeeds": "Moderate — well-drained soil is crucial",
+    "soilType": "Well-drained, slightly alkaline to neutral potting compost",
+    "containerSize": "2L+ pot"
+  },
+  "schedule": {
+    "sowIndoorsWeeks": [
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "sowOutdoorsWeeks": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "hardenOffWeeks": [
+      17,
+      18
+    ],
+    "plantOutWeeks": [
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "harvestWeeks": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38
+    ],
+    "floweringWeeks": [
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38
+    ],
+    "bringInsideWeek": null,
+    "successionSowWeeks": [],
+    "frostSensitive": false
+  },
+  "care": {
+    "sowIndoors": "Sow seeds thinly on the surface of moist seed compost, lightly cover with vermiculite. Keep at 15-20°C. Germination in 14-21 days.",
+    "sowOutdoors": "Sow seeds thinly in situ once the soil has warmed up in late spring. Thin to 20cm apart.",
+    "hardenOff": "Gradually expose indoor-raised plants to outdoor conditions over 7-10 days before planting out.",
+    "plantOut": "Plant in a sunny, well-drained spot. Don't bury the stems too deep. Pinks hate waterlogged roots.",
+    "watering": "Water regularly until established, then only when the soil surface is dry. Avoid overhead watering.",
+    "feeding": "Feed with a high-potash liquid feed every 2 weeks during the flowering season to encourage more blooms.",
+    "harvest": "Pick flowers as they open for indoor display or for edible petals. Remove the bitter white base of the petals before eating.",
+    "overwintering": "Cut back after flowering. Most garden pinks are hardy and will survive a London winter if well-drained."
+  },
+  "propagation": {
+    "fromSeed": true,
+    "seedDescription": "Small, flat, black or dark brown seeds.",
+    "germinationDays": "14–21 days at 15–20°C",
+    "fromCuttings": true,
+    "cuttingsMethod": "Take 5-10cm non-flowering shoots in summer, root in moist, gritty compost.",
+    "fromDivision": true,
+    "divisionMethod": "Divide large, established clumps in spring or autumn."
+  },
+  "deadheading": {
+    "required": true,
+    "notes": "Regularly remove spent flowers down to the base of the stem to encourage continuous blooming."
+  },
+  "edible": {
+    "isEdible": true,
+    "notes": "The petals have a mild, spicy, clove-like flavor. Only eat the petals; the white base is bitter."
+  },
+  "seedSaving": {
+    "canSaveSeeds": true,
+    "method": "Allow some flower heads to dry on the plant. Once the seed heads turn brown and brittle, collect the small black seeds.",
+    "seedPodDescription": "Small, capsule-like pods that open at the top when ripe."
+  },
+  "companionPlants": [
+    "lavender",
+    "salvia",
+    "scabiosa"
+  ],
+  "commonProblems": [
+    "Slugs on young growth",
+    "Aphids",
+    "Rust in damp conditions",
+    "Stem rot if overwatered"
+  ],
+  "funFact": "The name 'Dianthus' comes from the Greek words 'dios' (god) and 'anthos' (flower), meaning 'Flower of the Gods'!"
+}

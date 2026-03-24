@@ -3,14 +3,14 @@
   "commonName": "Radish",
   "latinName": "Raphanus sativus",
   "family": "Brassicaceae",
-  "category": "flower",
+  "category": "vegetable",
   "variety": "French Breakfast",
   "description": "The fastest vegetable you can grow — ready to eat in just 4 weeks! Radishes are perfect for beginners and impatient gardeners. They need very little space and grow happily in shallow pots or window boxes.",
   "images": {
     "plant": "images/radish/plant.jpg",
-    "seed": "images/radish/seed.jpg",
     "flower": null,
-    "seedling": null
+    "seedling": null,
+    "seed": "images/radish/seed.jpg"
   },
   "characteristics": {
     "matureHeight": "10–15cm",

@@ -8,9 +8,9 @@
   "description": "A beautiful, fragrant, evergreen perennial that thrives in pots and loves the well-drained conditions that containers provide. The purple flower spikes appear in summer and are absolute magnets for bees. Low maintenance once established.",
   "images": {
     "plant": "images/lavender/plant.jpg",
-    "seed": "images/lavender/seed.jpg",
     "flower": "images/lavender/flower.jpg",
-    "seedling": null
+    "seedling": null,
+    "seed": "images/lavender/seed.jpg"
   },
   "characteristics": {
     "matureHeight": "30–60cm",

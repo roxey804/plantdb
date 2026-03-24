@@ -8,10 +8,10 @@
   "description": "The easiest edible to grow on a balcony. Salad leaves grow fast, tolerate partial shade, and can be harvested in as little as 3–4 weeks. Sow small amounts every 2 weeks for a continuous supply all summer.",
   "images": {
     "plant": "images/lettuce/plant.jpg",
-    "seed": "images/lettuce/seed.jpg",
     "flower": null,
-    "fruit": null,
-    "seedling": "images/lettuce/seedling.jpg"
+    "seedling": "images/lettuce/seedling.jpg",
+    "seed": "images/lettuce/seed.jpg",
+    "fruit": null
   },
   "characteristics": {
     "matureHeight": "15–30cm",

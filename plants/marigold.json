@@ -8,9 +8,9 @@
   "description": "French marigolds are one of the easiest and most rewarding flowers for balcony containers. They bloom non-stop from early summer until the first frost, producing cheerful orange, yellow, and mahogany flowers. Their strong scent naturally deters many common garden pests, making them brilliant companion plants for your tomatoes and herbs.",
   "images": {
     "plant": "images/marigold/plant.jpg",
-    "seed": "images/marigold/seed.jpg",
     "flower": "images/marigold/flower.jpg",
-    "seedling": "images/marigold/seedling.jpg"
+    "seedling": "images/marigold/seedling.jpg",
+    "seed": "images/marigold/seed.jpg"
   },
   "characteristics": {
     "matureHeight": "20-30cm",
@@ -93,6 +93,10 @@
   "deadheading": {
     "required": true,
     "notes": "Deadhead spent flowers at least twice a week during peak season (July-August) by snipping the whole flower head just above the nearest set of leaves. This prevents seed formation and redirects energy into new blooms, keeping plants flowering continuously until frost. Stop deadheading in mid-September if you want to save seed."
+  },
+  "edible": {
+    "isEdible": false,
+    "notes": "Some marigolds (like Tagetes tenuifolia) are edible, but French marigolds (Tagetes patula) are primarily grown for ornament and pest control."
   },
   "seedSaving": {
     "canSaveSeeds": true,

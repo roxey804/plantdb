@@ -8,9 +8,9 @@
   "description": "Cheerful, trumpet-shaped flowers in fiery oranges, reds, and yellows that bloom all summer long. Nasturtiums are ridiculously easy to grow — just push the large seeds into compost and watch them go. Bonus: the flowers, leaves, and seed pods are all edible with a peppery, watercress-like flavour.",
   "images": {
     "plant": "images/nasturtium/plant.jpg",
-    "seed": "images/nasturtium/seed.jpg",
     "flower": "images/nasturtium/flower.jpg",
-    "seedling": "images/nasturtium/seedling.jpg"
+    "seedling": "images/nasturtium/seedling.jpg",
+    "seed": "images/nasturtium/seed.jpg"
   },
   "characteristics": {
     "matureHeight": "20–30cm (bush) or trailing 1m+",
@@ -108,6 +108,10 @@
   "deadheading": {
     "required": false,
     "notes": "Optional but beneficial. Removing spent flowers encourages more blooms. If you want to save seeds, leave some flowers to set seed at the end of summer."
+  },
+  "edible": {
+    "isEdible": true,
+    "notes": "Flowers, leaves, and seed pods are all edible with a peppery, watercress-like flavour."
   },
   "seedSaving": {
     "canSaveSeeds": true,
