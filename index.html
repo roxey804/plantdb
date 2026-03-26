@@ -269,6 +269,7 @@ let state = {
   viewWeek: 1,
   selectedPlants: new Set(),
   completedTasks: {},
+  tracking: {},
   categoryFilter: 'all',
   welcomeShown: false,
 };
@@ -280,6 +281,7 @@ function loadState() {
     if (s.completedTasks) state.completedTasks = s.completedTasks;
     if (s.welcomeShown) state.welcomeShown = s.welcomeShown;
     if (s.wishlist) state.wishlist = s.wishlist;
+    if (s.tracking) state.tracking = s.tracking;
   } catch (e) {}
 }
 
@@ -289,6 +291,7 @@ function saveState() {
     completedTasks: state.completedTasks,
     welcomeShown: state.welcomeShown,
     wishlist: state.wishlist,
+    tracking: state.tracking,
   }));
 }
 
@@ -432,6 +435,11 @@ function renderWeek() {
 
 function toggleTask(k) { state.completedTasks[k] = !state.completedTasks[k]; saveState(); renderWeek(); }
 function navigateWeek(d) { state.viewWeek = Math.max(1, Math.min(52, state.viewWeek + d)); renderWeek(); }
+function updateTracking(id, field, value) {
+  if (!state.tracking[id]) state.tracking[id] = {};
+  state.tracking[id][field] = value;
+  saveState();
+}
 
 // ============================================================
 // TIMELINE VIEW
@@ -737,6 +745,28 @@ function showProfile(id) {
       <h2 class="font-bold text-forest mb-3">📋 At a Glance</h2>
       <div class="grid grid-cols-2 md:grid-cols-3 gap-3 text-sm">
         ${glance.map(([lbl, val]) => `<div class="bg-gray-50 rounded-lg p-2.5"><span class="text-gray-400 text-xs block">${lbl}</span><span class="font-medium">${val}</span></div>`).join('')}
+      </div>
+    </div>`;
+  }
+
+  // Growth Tracking (Fruit & Veg only)
+  if (p.category === 'fruit' || p.category === 'vegetable') {
+    const tracking = state.tracking[id] || {};
+    const firstFlowerDate = tracking.firstFlowerDate || p.schedule?.firstFlowerDate || '';
+    h += `<div class="bg-white rounded-xl p-5 shadow-sm mb-4 border-2 border-terra/20">
+      <h2 class="font-bold text-forest mb-3 flex items-center gap-2">📈 Growth Tracking</h2>
+      <div class="text-sm">
+        <label class="block text-gray-700 font-medium mb-1">First Flower Date (DDMMYY)</label>
+        <div class="flex gap-2">
+          <input type="text" 
+                 id="input-first-flower-${id}" 
+                 placeholder="e.g. 150626" 
+                 value="${firstFlowerDate}"
+                 maxlength="6"
+                 class="px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-terra focus:border-terra outline-none w-32 font-mono"
+                 oninput="updateTracking('${id}', 'firstFlowerDate', this.value)">
+          <span class="text-xs text-gray-400 self-center">📅 Recorded for your diary</span>
+        </div>
       </div>
     </div>`;
   }

@@ -12,13 +12,18 @@ This skill guides the process of adding a new plant to the UK Plant diary. It in
     *   English name, Latin name, family.
     *   Category (one of: `houseplant`, `flower`, `herb`, `fruit`, `vegetable`).
     *   Variety (e.g., 'Genovese' for Basil; leave as empty string if not found).
+    <!-- 
     *   UK-specific schedule (weeks for sowing indoors/outdoors, hardening off, planting out, harvesting).
+    -->
     *   Care instructions (sowing, watering, feeding, etc.).
     *   Characteristics (height, spread, sun/water needs, container size).
     *   Propagation, deadheading, and seed saving details.
     *   Companion plants and common problems.
     *   A fun fact.
     *   *Note*: Calibrate all dates for London/South England (Last frost: Week 15, First frost: Week 44).
+    <!-- 
+    *   **Growth Tracking**: For `fruit` and `vegetable` categories, the app now supports tracking the **First Flower Date** (DDMMYY). If adding a plant that is already growing, you can initialize this field.
+    -->
 
 <!-- 
 2.  **Image Sourcing (DISABLED)**:
@@ -41,6 +46,7 @@ This skill guides the process of adding a new plant to the UK Plant diary. It in
 
 -   `scripts/update_plant_data.cjs`: A script to sync JSON files into `plants/data.js`.
 
+<!--
 ## UK Growing Calendar Calibration (London)
 
 -   **Early Spring (Wks 8-12)**: Sow many seeds indoors.
@@ -48,3 +54,4 @@ This skill guides the process of adding a new plant to the UK Plant diary. It in
 -   **Late Spring (Wks 16-20)**: Harden off and start planting out half-hardy plants.
 -   **Summer (Wks 21-35)**: Peak growing and harvesting.
 -   **First Frost (Wk 44)**: Early November.
+-->

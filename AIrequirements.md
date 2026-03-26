@@ -58,6 +58,7 @@ Each plant is stored as an individual JSON file in `plants/` and rendered both i
     "harvestWeeks": [28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38],
     "bringInsideWeek": 40,
     "floweringWeeks": [22, 23, 24, 25, 26, 27, 28, 29, 30],
+    "firstFlowerDate": "150626",
     "frostSensitive": true
   },
 
