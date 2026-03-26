@@ -1893,6 +1893,227 @@ window.PLANT_DATA = [
     "funFact": "The common name 'snapdragon' comes from the flower's resemblance to a dragon's snout, which snaps open and shut when squeezed."
   },
   {
+    "id": "strawberry",
+    "commonName": "Strawberry",
+    "latinName": "Fragaria × ananassa",
+    "family": "Rosaceae",
+    "category": "fruit",
+    "variety": "Cambridge Favourite",
+    "description": "A garden classic, strawberries are one of the most rewarding fruits for beginners. 'Cambridge Favourite' is a mid-season variety known for its reliability, heavy crops, and excellent flavor. Perfect for pots, hanging baskets, or balcony troughs.",
+    "images": {
+      "plant": "images/strawberry/plant.jpg",
+      "flower": "images/strawberry/flower.jpg",
+      "seedling": "images/strawberry/seedling.jpg",
+      "seed": "images/strawberry/seed.jpg",
+      "fruit": "images/strawberry/fruit.jpg"
+    },
+    "characteristics": {
+      "matureHeight": "20–30cm",
+      "matureSpread": "30–45cm",
+      "hardiness": "Fully hardy (perennial)",
+      "lifespan": "Perennial (productive for 3-4 years)",
+      "sunRequirement": "Full sun (6+ hours)",
+      "waterNeeds": "High — keep well-watered when fruiting",
+      "soilType": "Fertile, well-drained potting compost",
+      "containerSize": "5L+ per plant (or a long trough)"
+    },
+    "schedule": {
+      "sowIndoorsWeeks": [
+        8,
+        9,
+        10
+      ],
+      "sowOutdoorsWeeks": [],
+      "hardenOffWeeks": [
+        15,
+        16,
+        17
+      ],
+      "plantOutWeeks": [
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "harvestWeeks": [
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "floweringWeeks": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "bringInsideWeek": null,
+      "successionSowWeeks": [],
+      "frostSensitive": false
+    },
+    "care": {
+      "sowIndoors": "Sow tiny seeds on the surface of fine compost in early spring. Keep at 18–21°C. Germination can be slow (2–4 weeks).",
+      "sowOutdoors": null,
+      "hardenOff": "Gradually acclimatise young plants to outdoor conditions over 7–10 days in April.",
+      "plantOut": "Plant in final containers, ensuring the crown is at soil level. Too deep and it rots; too shallow and it dries out.",
+      "watering": "Water regularly at the base, especially as fruits develop. Avoid wetting the leaves to prevent rot.",
+      "feeding": "Feed every 2 weeks with a high-potash liquid fertiliser (like tomato feed) once flowers appear.",
+      "harvest": "Pick when fully red all over. Hull them just before eating to keep them fresh.",
+      "overwintering": "Cut back old foliage in late summer. Clear away straw or mulch to prevent pests. The plant will return next spring."
+    },
+    "propagation": {
+      "fromSeed": true,
+      "seedDescription": "Tiny, light brown achenes found on the surface of the fruit.",
+      "germinationDays": "14–28 days at 18–21°C",
+      "fromCuttings": false,
+      "cuttingsMethod": null,
+      "fromDivision": true,
+      "divisionMethod": "In late summer, strawberries produce 'runners' (long stems with baby plants). Pin these into small pots of compost; once rooted, snip from the parent."
+    },
+    "deadheading": {
+      "required": true,
+      "notes": "Remove runners during the fruiting season to focus the plant's energy on berries. Cut off dead leaves after the harvest."
+    },
+    "seedSaving": {
+      "canSaveSeeds": true,
+      "method": "Mash a very ripe strawberry and smear it on a paper towel. Let it dry, then scrape off the seeds.",
+      "seedPodDescription": "Seeds are the tiny dots (achenes) on the outside of the red fruit."
+    },
+    "companionPlants": [
+      "garlic",
+      "chives",
+      "borage",
+      "lettuce"
+    ],
+    "commonProblems": [
+      "Birds (use netting)",
+      "Slugs",
+      "Grey mould (Botrytis)",
+      "Powdery mildew"
+    ],
+    "funFact": "Strawberries are the only fruit that wear their seeds on the outside—an average strawberry has about 200 seeds!"
+  },
+  {
+    "id": "sunflower",
+    "commonName": "Sunflower",
+    "latinName": "Helianthus annuus",
+    "family": "Asteraceae",
+    "category": "flower",
+    "variety": "Russian Giant",
+    "description": "The quintessential summer flower, Russian Giant sunflowers are famous for their incredible height and massive, golden-yellow heads. They are excellent for pollinators and provide a wonderful spectacle in any garden or large container. Children love growing them to see how high they can go!",
+    "images": {
+      "plant": "images/sunflower/plant.jpg",
+      "flower": "images/sunflower/flower.jpg",
+      "seedling": "images/sunflower/seedling.jpg",
+      "seed": "images/sunflower/seed.jpg"
+    },
+    "characteristics": {
+      "matureHeight": "2–3m+",
+      "matureSpread": "60–90cm",
+      "hardiness": "Half-hardy",
+      "lifespan": "Annual",
+      "sunRequirement": "Full sun (6-8+ hours)",
+      "waterNeeds": "High — 'water hogs' during peak growth",
+      "soilType": "Rich, fertile, well-drained soil (heavy feeders)",
+      "containerSize": "15L+ pot for giant varieties (or large troughs for dwarfs)"
+    },
+    "schedule": {
+      "sowIndoorsWeeks": [
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "sowOutdoorsWeeks": [
+        18,
+        19,
+        20,
+        21
+      ],
+      "hardenOffWeeks": [
+        18,
+        19,
+        20
+      ],
+      "plantOutWeeks": [
+        20,
+        21,
+        22
+      ],
+      "harvestWeeks": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "floweringWeeks": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "bringInsideWeek": null,
+      "successionSowWeeks": [
+        15,
+        19
+      ],
+      "frostSensitive": true
+    },
+    "care": {
+      "sowIndoors": "Sow seeds 1.5cm deep in individual pots in April. Keep on a sunny windowsill at 18–21°C. They grow fast, so may need potting up before planting out.",
+      "sowOutdoors": "Sow directly in late May once frost has passed. Clear the area of weeds and protect from slugs immediately.",
+      "hardenOff": "Gradually acclimatise to outdoor conditions over 7–10 days in May.",
+      "plantOut": "Space giant varieties at least 45cm apart. Provide a sturdy stake (bamboo cane) at planting time to support the future height.",
+      "watering": "Water daily in hot weather. Deep watering encourages a strong taproot.",
+      "feeding": "Feed weekly with a balanced liquid fertiliser until flowering, then switch to a high-potash (tomato) feed.",
+      "harvest": "Cut flowers for vases when the petals start to unfurl. To save seeds, leave the head on the plant until it turns brown and the back feels papery.",
+      "overwintering": "Annual — leave dead heads for the birds in autumn, then compost the stalks."
+    },
+    "propagation": {
+      "fromSeed": true,
+      "seedDescription": "Large, teardrop-shaped seeds with a striped or solid grey/black shell.",
+      "germinationDays": "7–14 days at 18–21°C",
+      "fromCuttings": false,
+      "cuttingsMethod": null,
+      "fromDivision": false,
+      "divisionMethod": null
+    },
+    "deadheading": {
+      "required": false,
+      "notes": "Deadheading the main bloom won't usually produce more flowers on giant single-stem varieties, but it can encourage side shoots on multi-branching types."
+    },
+    "seedSaving": {
+      "canSaveSeeds": true,
+      "method": "Cover the ripening head with mesh to protect from birds. Once the back turns brown and the seeds are plump, cut the head and hang it in a dry place to finish drying.",
+      "seedPodDescription": "Large central disc packed with hundreds of individual seeds."
+    },
+    "companionPlants": [
+      "lettuce",
+      "climbing-beans",
+      "squash",
+      "sweetcorn",
+      "basil"
+    ],
+    "commonProblems": [
+      "Slugs and snails (very dangerous to seedlings)",
+      "Mildew",
+      "Birds (eating seeds)",
+      "Wind damage (needs staking)"
+    ],
+    "funFact": "Sunflowers are 'phytoremediators'—they were planted at Chernobyl to help extract radioactive toxins from the soil!"
+  },
+  {
     "id": "tumbling-tom-red",
     "commonName": "Tumbling Tom Red",
     "latinName": "Solanum lycopersicum",

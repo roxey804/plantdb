@@ -1,0 +1,116 @@
+{
+  "id": "sunflower",
+  "commonName": "Sunflower",
+  "latinName": "Helianthus annuus",
+  "family": "Asteraceae",
+  "category": "flower",
+  "variety": "Russian Giant",
+  "description": "The quintessential summer flower, Russian Giant sunflowers are famous for their incredible height and massive, golden-yellow heads. They are excellent for pollinators and provide a wonderful spectacle in any garden or large container. Children love growing them to see how high they can go!",
+  "images": {
+    "plant": "images/sunflower/plant.jpg",
+    "flower": "images/sunflower/flower.jpg",
+    "seedling": "images/sunflower/seedling.jpg",
+    "seed": "images/sunflower/seed.jpg"
+  },
+  "characteristics": {
+    "matureHeight": "2–3m+",
+    "matureSpread": "60–90cm",
+    "hardiness": "Half-hardy",
+    "lifespan": "Annual",
+    "sunRequirement": "Full sun (6-8+ hours)",
+    "waterNeeds": "High — 'water hogs' during peak growth",
+    "soilType": "Rich, fertile, well-drained soil (heavy feeders)",
+    "containerSize": "15L+ pot for giant varieties (or large troughs for dwarfs)"
+  },
+  "schedule": {
+    "sowIndoorsWeeks": [
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "sowOutdoorsWeeks": [
+      18,
+      19,
+      20,
+      21
+    ],
+    "hardenOffWeeks": [
+      18,
+      19,
+      20
+    ],
+    "plantOutWeeks": [
+      20,
+      21,
+      22
+    ],
+    "harvestWeeks": [
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38
+    ],
+    "floweringWeeks": [
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "bringInsideWeek": null,
+    "successionSowWeeks": [
+      15,
+      19
+    ],
+    "frostSensitive": true
+  },
+  "care": {
+    "sowIndoors": "Sow seeds 1.5cm deep in individual pots in April. Keep on a sunny windowsill at 18–21°C. They grow fast, so may need potting up before planting out.",
+    "sowOutdoors": "Sow directly in late May once frost has passed. Clear the area of weeds and protect from slugs immediately.",
+    "hardenOff": "Gradually acclimatise to outdoor conditions over 7–10 days in May.",
+    "plantOut": "Space giant varieties at least 45cm apart. Provide a sturdy stake (bamboo cane) at planting time to support the future height.",
+    "watering": "Water daily in hot weather. Deep watering encourages a strong taproot.",
+    "feeding": "Feed weekly with a balanced liquid fertiliser until flowering, then switch to a high-potash (tomato) feed.",
+    "harvest": "Cut flowers for vases when the petals start to unfurl. To save seeds, leave the head on the plant until it turns brown and the back feels papery.",
+    "overwintering": "Annual — leave dead heads for the birds in autumn, then compost the stalks."
+  },
+  "propagation": {
+    "fromSeed": true,
+    "seedDescription": "Large, teardrop-shaped seeds with a striped or solid grey/black shell.",
+    "germinationDays": "7–14 days at 18–21°C",
+    "fromCuttings": false,
+    "cuttingsMethod": null,
+    "fromDivision": false,
+    "divisionMethod": null
+  },
+  "deadheading": {
+    "required": false,
+    "notes": "Deadheading the main bloom won't usually produce more flowers on giant single-stem varieties, but it can encourage side shoots on multi-branching types."
+  },
+  "seedSaving": {
+    "canSaveSeeds": true,
+    "method": "Cover the ripening head with mesh to protect from birds. Once the back turns brown and the seeds are plump, cut the head and hang it in a dry place to finish drying.",
+    "seedPodDescription": "Large central disc packed with hundreds of individual seeds."
+  },
+  "companionPlants": [
+    "lettuce",
+    "climbing-beans",
+    "squash",
+    "sweetcorn",
+    "basil"
+  ],
+  "commonProblems": [
+    "Slugs and snails (very dangerous to seedlings)",
+    "Mildew",
+    "Birds (eating seeds)",
+    "Wind damage (needs staking)"
+  ],
+  "funFact": "Sunflowers are 'phytoremediators'—they were planted at Chernobyl to help extract radioactive toxins from the soil!"
+}
