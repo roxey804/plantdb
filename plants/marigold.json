@@ -23,52 +23,30 @@
     "containerSize": "15cm+ per plant, or several in a 30cm+ pot"
   },
   "schedule": {
-    "sowIndoorsWeeks": [
-      10,
-      11,
-      12
+    "january": [],
+    "february": [],
+    "march": [
+      "🌱 Sow seeds indoors"
     ],
-    "sowOutdoorsWeeks": [
-      21,
-      22,
-      23
+    "april": [
+      "🌤️ Harden off seedlings",
+      "🔄 Sow again for continuous harvests"
     ],
-    "hardenOffWeeks": [
-      17,
-      18,
-      19
+    "may": [
+      "🌿 Sow seeds outdoors",
+      "🌤️ Harden off seedlings",
+      "🪴 Plant out into final containers",
+      "🔄 Sow again for continuous harvests"
     ],
-    "plantOutWeeks": [
-      20,
-      21,
-      22
+    "june": [
+      "🌿 Sow seeds outdoors"
     ],
-    "harvestWeeks": [],
-    "floweringWeeks": [
-      26,
-      27,
-      28,
-      29,
-      30,
-      31,
-      32,
-      33,
-      34,
-      35,
-      36,
-      37,
-      38,
-      39,
-      40,
-      41,
-      42,
-      43
-    ],
-    "bringInsideWeek": null,
-    "successionSowWeeks": [
-      14,
-      18
-    ],
+    "july": [],
+    "august": [],
+    "september": [],
+    "october": [],
+    "november": [],
+    "december": [],
     "frostSensitive": true
   },
   "care": {

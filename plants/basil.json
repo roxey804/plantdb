@@ -23,71 +23,42 @@
     "containerSize": "2L+ pot (or windowsill pot)"
   },
   "schedule": {
-    "sowIndoorsWeeks": [
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18
+    "january": [],
+    "february": [],
+    "march": [
+      "🌱 Sow seeds indoors"
     ],
-    "sowOutdoorsWeeks": [],
-    "hardenOffWeeks": [
-      19,
-      20,
-      21
+    "april": [
+      "🌱 Sow seeds indoors",
+      "🔄 Sow again for continuous harvests"
     ],
-    "plantOutWeeks": [
-      21,
-      22,
-      23
+    "may": [
+      "🌱 Sow seeds indoors",
+      "🌤️ Harden off seedlings",
+      "🪴 Plant out into final containers",
+      "✂️ Harvest regularly",
+      "🔄 Sow again for continuous harvests"
     ],
-    "harvestWeeks": [
-      18,
-      19,
-      20,
-      21,
-      22,
-      23,
-      24,
-      25,
-      26,
-      27,
-      28,
-      29,
-      30,
-      31,
-      32,
-      33,
-      34,
-      35,
-      36,
-      37,
-      38,
-      39,
-      40
+    "june": [
+      "🪴 Plant out into final containers",
+      "✂️ Harvest regularly",
+      "🔄 Sow again for continuous harvests"
     ],
-    "floweringWeeks": [
-      26,
-      27,
-      28,
-      29,
-      30,
-      31,
-      32,
-      33,
-      34
+    "july": [
+      "✂️ Harvest regularly"
     ],
-    "bringInsideWeek": 38,
-    "successionSowWeeks": [
-      14,
-      18,
-      22,
-      26
+    "august": [
+      "✂️ Harvest regularly"
     ],
+    "september": [
+      "✂️ Harvest regularly",
+      "🧣 Bring inside or protect from frost"
+    ],
+    "october": [
+      "✂️ Harvest regularly"
+    ],
+    "november": [],
+    "december": [],
     "frostSensitive": true
   },
   "care": {

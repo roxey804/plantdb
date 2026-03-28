@@ -23,64 +23,36 @@
     "containerSize": "5L+ pot (keep it contained!)"
   },
   "schedule": {
-    "sowIndoorsWeeks": [],
-    "sowOutdoorsWeeks": [],
-    "hardenOffWeeks": [],
-    "plantOutWeeks": [
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19,
-      20
+    "january": [],
+    "february": [],
+    "march": [
+      "🪴 Plant out into final containers"
     ],
-    "harvestWeeks": [
-      14,
-      15,
-      16,
-      17,
-      18,
-      19,
-      20,
-      21,
-      22,
-      23,
-      24,
-      25,
-      26,
-      27,
-      28,
-      29,
-      30,
-      31,
-      32,
-      33,
-      34,
-      35,
-      36,
-      37,
-      38,
-      39,
-      40,
-      41,
-      42,
-      43,
-      44
+    "april": [
+      "🪴 Plant out into final containers",
+      "✂️ Harvest regularly"
     ],
-    "floweringWeeks": [
-      26,
-      27,
-      28,
-      29,
-      30,
-      31,
-      32
+    "may": [
+      "🪴 Plant out into final containers",
+      "✂️ Harvest regularly"
     ],
-    "bringInsideWeek": null,
-    "successionSowWeeks": [],
+    "june": [
+      "✂️ Harvest regularly"
+    ],
+    "july": [
+      "✂️ Harvest regularly"
+    ],
+    "august": [
+      "✂️ Harvest regularly"
+    ],
+    "september": [
+      "✂️ Harvest regularly"
+    ],
+    "october": [
+      "✂️ Harvest regularly"
+    ],
+    "november": [],
+    "december": [],
     "frostSensitive": false
   },
   "care": {

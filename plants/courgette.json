@@ -24,58 +24,34 @@
     "containerSize": "45cm+ (30-50L) pot"
   },
   "schedule": {
-    "sowIndoorsWeeks": [
-      15,
-      16,
-      17,
-      18,
-      19
+    "january": [],
+    "february": [],
+    "march": [],
+    "april": [
+      "🌱 Sow seeds indoors"
     ],
-    "sowOutdoorsWeeks": [
-      21,
-      22,
-      23
+    "may": [
+      "🌱 Sow seeds indoors",
+      "🌿 Sow seeds outdoors",
+      "🌤️ Harden off seedlings",
+      "🪴 Plant out into final containers"
     ],
-    "hardenOffWeeks": [
-      20,
-      21
+    "june": [
+      "🌿 Sow seeds outdoors",
+      "🪴 Plant out into final containers"
     ],
-    "plantOutWeeks": [
-      21,
-      22,
-      23,
-      24
+    "july": [
+      "✂️ Harvest regularly"
     ],
-    "harvestWeeks": [
-      27,
-      28,
-      29,
-      30,
-      31,
-      32,
-      33,
-      34,
-      35,
-      36,
-      37,
-      38
+    "august": [
+      "✂️ Harvest regularly"
     ],
-    "floweringWeeks": [
-      24,
-      25,
-      26,
-      27,
-      28,
-      29,
-      30,
-      31,
-      32,
-      33,
-      34,
-      35
+    "september": [
+      "✂️ Harvest regularly"
     ],
-    "bringInsideWeek": null,
-    "successionSowWeeks": [],
+    "october": [],
+    "november": [],
+    "december": [],
     "frostSensitive": true
   },
   "care": {

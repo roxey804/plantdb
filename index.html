@@ -7,6 +7,7 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
   <script src="plants/data.js"></script>
   <script src="wishlist/data.js"></script>
+  <script src="general_tasks.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -245,6 +246,7 @@ const TASK_TYPES = {
   harvest:     { label: 'Harvest',      color: 'bg-red-100 text-red-800 border-red-200',       barColor: '#ef4444', icon: '✂️', desc: 'Pick your crops — enjoy!' },
   succession:  { label: 'Sow Again',   color: 'bg-lime-100 text-lime-800 border-lime-200',     barColor: '#84cc16', icon: '🔄', desc: 'Sow another batch for continuous harvests.' },
   protect:     { label: 'Protect',      color: 'bg-slate-100 text-slate-800 border-slate-200',  barColor: '#64748b', icon: '🧣', desc: 'Bring inside or cover with fleece for frost protection.' },
+  general:     { label: 'Garden Maintenance', color: 'bg-indigo-100 text-indigo-800 border-indigo-200', barColor: '#6366f1', icon: '🧹', desc: 'General care for your garden and balcony space.' },
 };
 
 const GLOSSARY = {
@@ -314,7 +316,23 @@ function weekDates(wk, yr = new Date().getFullYear()) {
   return { mon, sun, label: `${f(mon)} – ${f(sun)}` };
 }
 
-function monthName(i) { return ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][i]; }
+const MONTH_NAMES = ['january','february','march','april','may','june','july','august','september','october','november','december'];
+function monthName(i) { return ['January','February','March','April','May','June','July','August','September','October','November','December'][i]; }
+function getMonthIndex(wk) {
+  if (wk >= 1 && wk <= 4) return 0;
+  if (wk >= 5 && wk <= 8) return 1;
+  if (wk >= 9 && wk <= 13) return 2;
+  if (wk >= 14 && wk <= 17) return 3;
+  if (wk >= 18 && wk <= 22) return 4;
+  if (wk >= 23 && wk <= 26) return 5;
+  if (wk >= 27 && wk <= 31) return 6;
+  if (wk >= 32 && wk <= 35) return 7;
+  if (wk >= 36 && wk <= 39) return 8;
+  if (wk >= 40 && wk <= 44) return 9;
+  if (wk >= 45 && wk <= 48) return 10;
+  if (wk >= 49 && wk <= 52) return 11;
+  return 0;
+}
 
 // ============================================================
 // PLANT LOADING
@@ -330,25 +348,33 @@ function activePlants() {
   return state.plants.filter(p => state.selectedPlants.has(p.id));
 }
 
-function tasksForWeek(wk) {
+function tasksForMonth(mIdx) {
+  const mName = monthName(mIdx).toLowerCase();
   const tasks = [];
   for (const p of activePlants()) {
     const s = p.schedule || {};
-    const c = p.care || {};
-    if (s.sowIndoorsWeeks?.includes(wk))  tasks.push({ plant: p, type: 'sowIndoors',  text: c.sowIndoors || 'Sow seeds indoors on a warm windowsill.' });
-    if (s.sowOutdoorsWeeks?.includes(wk)) tasks.push({ plant: p, type: 'sowOutdoors', text: c.sowOutdoors || 'Sow seeds directly into outdoor containers.' });
-    if (s.hardenOffWeeks?.includes(wk))   tasks.push({ plant: p, type: 'hardenOff',   text: c.hardenOff || 'Gradually move outside over 7-10 days.' });
-    if (s.plantOutWeeks?.includes(wk))    tasks.push({ plant: p, type: 'plantOut',    text: c.plantOut || 'Move to final outdoor container.' });
-    if (s.harvestWeeks?.includes(wk))     tasks.push({ plant: p, type: 'harvest',     text: c.harvest || 'Harvest when ready!' });
-    if (s.successionSowWeeks?.includes(wk)) tasks.push({ plant: p, type: 'succession', text: 'Sow another small batch for continuous harvests.' });
-    if (s.bringInsideWeek === wk)         tasks.push({ plant: p, type: 'protect',     text: c.overwintering || 'Bring inside or protect from frost.' });
+    const monthTasks = s[mName] || [];
+    for (const t of monthTasks) {
+      // Determine type from emoji for color coding
+      let type = 'maintain';
+      if (t.includes('🌱')) type = 'sowIndoors';
+      else if (t.includes('🌿')) type = 'sowOutdoors';
+      else if (t.includes('🌤️')) type = 'hardenOff';
+      else if (t.includes('🪴')) type = 'plantOut';
+      else if (t.includes('✂️')) type = 'harvest';
+      else if (t.includes('🔄')) type = 'succession';
+      else if (t.includes('🧣')) type = 'protect';
+
+      tasks.push({ plant: p, type, text: t });
+    }
   }
-  const order = ['sowIndoors','sowOutdoors','hardenOff','plantOut','succession','harvest','protect'];
-  tasks.sort((a, b) => order.indexOf(a.type) - order.indexOf(b.type));
   return tasks;
 }
 
-function taskKey(wk, pid, type) { return `${wk}-${pid}-${type}`; }
+function taskKey(pid, taskText) { 
+  // Create a stable key from plant ID and task text
+  return `${pid}-${taskText.replace(/\s+/g, '-').toLowerCase()}`;
+}
 function catEmoji(c) { return { vegetable:'🥬', herb:'🌿', flower:'🌸', fruit:'🍓', houseplant:'🏠' }[c] || '🌱'; }
 
 // ============================================================
@@ -356,45 +382,63 @@ function catEmoji(c) { return { vegetable:'🥬', herb:'🌿', flower:'🌸', fr
 // ============================================================
 function renderWeek() {
   const wk = state.viewWeek;
-  const wd = weekDates(wk);
-  const now = getISOWeek(new Date());
+  const mIdx = getMonthIndex(wk);
+  const nowWk = getISOWeek(new Date());
+  const nowMIdx = getMonthIndex(nowWk);
 
-  document.getElementById('weekHeading').textContent = wk === now ? `This Week (Week ${wk})` : `Week ${wk}`;
-  document.getElementById('weekDates').textContent = wd.label;
+  document.getElementById('weekHeading').textContent = mIdx === nowMIdx ? `${monthName(mIdx)} Tasks (This Month)` : `${monthName(mIdx)} Tasks`;
+  document.getElementById('weekDates').textContent = `Tasks for the whole of ${monthName(mIdx)}`;
 
-  // Late start banner
+  // Late start banner (only show in spring months)
   const banner = document.getElementById('lateStartBanner');
-  (wk >= 10 && wk <= 16 && wk === now) ? banner.classList.remove('hidden') : banner.classList.add('hidden');
+  (mIdx >= 2 && mIdx <= 4 && mIdx === nowMIdx) ? banner.classList.remove('hidden') : banner.classList.add('hidden');
 
   // Progress
-  const pct = Math.max(0, Math.min(100, ((now - 8) / (44 - 8)) * 100));
+  const pct = Math.max(0, Math.min(100, ((nowWk - 8) / (44 - 8)) * 100));
   document.getElementById('progressBar').style.width = `${pct}%`;
   const done = Object.values(state.completedTasks).filter(Boolean).length;
   document.getElementById('progressText').textContent = `${done} tasks completed`;
 
-  const tasks = tasksForWeek(wk);
+  const tasks = tasksForMonth(mIdx);
+  const mName = MONTH_NAMES[mIdx];
+  const generalTasks = (window.GENERAL_TASKS && window.GENERAL_TASKS[mName]) || [];
+  
   const container = document.getElementById('weekTasks');
   const empty = document.getElementById('emptyWeek');
 
-  if (!tasks.length) {
+  if (!tasks.length && !generalTasks.length) {
     container.innerHTML = '';
     empty.classList.remove('hidden');
-    let nw = wk + 1;
-    while (nw <= 52 && !tasksForWeek(nw).length) nw++;
-    document.getElementById('nextTaskInfo').textContent = nw <= 52
-      ? `Next tasks: Week ${nw} (${weekDates(nw).label})`
-      : 'Season winding down — time to mark plants as growing in My Plants!';
+    let nmIdx = (mIdx + 1) % 12;
+    let count = 0;
+    while (count < 12 && !tasksForMonth(nmIdx).length && !(window.GENERAL_TASKS && window.GENERAL_TASKS[MONTH_NAMES[nmIdx]])) { nmIdx = (nmIdx + 1) % 12; count++; }
+    document.getElementById('nextTaskInfo').textContent = count < 12
+      ? `Next tasks in ${monthName(nmIdx)}`
+      : 'No tasks scheduled for the rest of the year!';
     return;
   }
   empty.classList.add('hidden');
 
   const groups = {};
   for (const t of tasks) { (groups[t.type] = groups[t.type] || []).push(t); }
+  
+  // Add general tasks
+  if (generalTasks.length) {
+    groups['general'] = generalTasks.map(t => ({
+      text: t,
+      type: 'general',
+      plant: { id: 'general', commonName: 'General Maintenance', category: 'houseplant' } // houseplant emoji is 🏠
+    }));
+  }
 
   let html = '';
-  for (const [type, items] of Object.entries(groups)) {
-    const tt = TASK_TYPES[type];
-    html += `<div class="mb-2">
+  const order = ['general','sowIndoors','sowOutdoors','hardenOff','plantOut','succession','harvest','protect','maintain'];
+  const sortedTypes = Object.keys(groups).sort((a, b) => order.indexOf(a) - order.indexOf(b));
+
+  for (const type of sortedTypes) {
+    const items = groups[type];
+    const tt = TASK_TYPES[type] || { label: 'Maintain', icon: '🧹', desc: 'General garden maintenance.' };
+    html += `<div class="mb-6">
       <div class="flex items-center gap-2 mb-2">
         <span class="text-xl">${tt.icon}</span>
         <h3 class="font-semibold text-forest">${tt.label}</h3>
@@ -403,7 +447,7 @@ function renderWeek() {
       <p class="text-xs text-gray-500 mb-3 ml-8">${tt.desc}</p>`;
 
     for (const t of items) {
-      const k = taskKey(wk, t.plant.id, t.type);
+      const k = taskKey(t.plant.id, t.text);
       const done = state.completedTasks[k];
       const img = t.plant.images?.plant;
 
@@ -451,46 +495,58 @@ function renderTimeline() {
   }
 
   document.getElementById('timelineLegend').innerHTML = Object.entries(TASK_TYPES)
-    .map(([_, t]) => `<div class="flex items-center gap-1"><span class="w-3 h-3 rounded" style="background:${t.barColor}"></span><span>${t.label}</span></div>`).join('');
+    .map(([_, t]) => `<div class="flex items-center gap-1"><span class="w-3 h-3 rounded" style="background:${t.barColor}"></span><span>${t.label}</span></div>`).join('') +
+    `<div class="flex items-center gap-1"><span class="w-3 h-3 rounded bg-gray-300"></span><span>Maintain</span></div>`;
 
   const cats = { vegetable: [], herb: [], flower: [], fruit: [], houseplant: [] };
   for (const p of plants) (cats[p.category] || (cats[p.category] = [])).push(p);
 
   const catLabel = { vegetable:'🥬 Vegetables', herb:'🌿 Herbs', flower:'🌸 Flowers', fruit:'🍓 Fruit', houseplant:'🏠 Houseplant' };
   const curWk = getISOWeek(new Date());
+  const curMIdx = getMonthIndex(curWk);
   let h = '';
 
-  h += '<div class="grid" style="grid-template-columns: 160px repeat(52, 1fr); position: sticky; top: 0; background: white; z-index: 5; border-bottom: 1px solid #e5e7eb;">';
+  h += '<div class="grid" style="grid-template-columns: 160px repeat(12, 1fr); position: sticky; top: 0; background: white; z-index: 5; border-bottom: 1px solid #e5e7eb;">';
   h += '<div class="p-2 text-xs font-semibold text-gray-500 border-r border-gray-100">Plant</div>';
-  let cm = -1;
-  for (let w = 1; w <= 52; w++) {
-    const m = weekDates(w).mon.getMonth();
-    h += m !== cm ? (cm = m, `<div class="text-[10px] text-gray-400 pt-2 text-center font-medium">${monthName(m)}</div>`) : '<div></div>';
+  for (let m = 0; m < 12; m++) {
+    h += `<div class="text-[10px] text-gray-400 pt-2 text-center font-medium ${m === curMIdx ? 'bg-red-50 text-red-500' : ''}">${monthName(m).substring(0, 3)}</div>`;
   }
   h += '</div>';
 
   for (const [cat, ps] of Object.entries(cats)) {
     if (!ps.length) continue;
-    h += `<div class="grid" style="grid-template-columns: 160px repeat(52, 1fr); background: rgba(216,243,220,0.3);">`;
+    h += `<div class="grid" style="grid-template-columns: 160px repeat(12, 1fr); background: rgba(216,243,220,0.3);">`;
     h += `<div class="p-2 text-xs font-bold text-forest" style="grid-column: 1 / -1;">${catLabel[cat] || cat}</div></div>`;
 
     for (const p of ps) {
-      h += `<div class="grid border-b border-gray-50 hover:bg-gray-50/50" style="grid-template-columns: 160px repeat(52, 1fr);">`;
+      h += `<div class="grid border-b border-gray-50 hover:bg-gray-50/50" style="grid-template-columns: 160px repeat(12, 1fr);">`;
       h += `<div class="p-2 text-xs font-medium text-gray-700 border-r border-gray-100 truncate cursor-pointer hover:text-forest" onclick="showProfile('${p.id}')">${p.commonName}</div>`;
 
       const s = p.schedule || {};
-      for (let w = 1; w <= 52; w++) {
-        let bg = '', title = '';
-        if (s.sowIndoorsWeeks?.includes(w))  { bg = TASK_TYPES.sowIndoors.barColor; title = 'Sow Indoors'; }
-        else if (s.hardenOffWeeks?.includes(w))   { bg = TASK_TYPES.hardenOff.barColor; title = 'Harden Off'; }
-        else if (s.plantOutWeeks?.includes(w))    { bg = TASK_TYPES.plantOut.barColor; title = 'Plant Out'; }
-        else if (s.sowOutdoorsWeeks?.includes(w)) { bg = TASK_TYPES.sowOutdoors.barColor; title = 'Sow Outdoors'; }
-        else if (s.successionSowWeeks?.includes(w)) { bg = TASK_TYPES.succession.barColor; title = 'Sow Again'; }
-        else if (s.harvestWeeks?.includes(w))     { bg = TASK_TYPES.harvest.barColor; title = 'Harvest'; }
-        else if (s.bringInsideWeek === w)         { bg = TASK_TYPES.protect.barColor; title = 'Protect'; }
-
-        h += `<div class="relative ${w === curWk ? 'ring-2 ring-red-400 ring-inset' : ''}" title="${title ? `Wk ${w}: ${title}` : `Wk ${w}`}">`;
-        if (bg) h += `<div class="gantt-bar w-full h-5 my-0.5" style="background:${bg};opacity:.8"></div>`;
+      for (let m = 0; m < 12; m++) {
+        const mName = monthName(m).toLowerCase();
+        const mTasks = s[mName] || [];
+        
+        h += `<div class="relative border-r border-gray-50 flex flex-col gap-0.5 p-0.5 ${m === curMIdx ? 'bg-red-50/30' : ''}">`;
+        if (mTasks.length) {
+          // Detect task types for colors
+          const types = new Set();
+          for (const t of mTasks) {
+            if (t.includes('🌱')) types.add('sowIndoors');
+            else if (t.includes('🌿')) types.add('sowOutdoors');
+            else if (t.includes('🌤️')) types.add('hardenOff');
+            else if (t.includes('🪴')) types.add('plantOut');
+            else if (t.includes('✂️')) types.add('harvest');
+            else if (t.includes('🔄')) types.add('succession');
+            else if (t.includes('🧣')) types.add('protect');
+            else types.add('maintain');
+          }
+          
+          for (const type of types) {
+            const color = TASK_TYPES[type]?.barColor || '#d1d5db';
+            h += `<div class="h-1.5 w-full rounded-full" style="background:${color}" title="${mTasks.join(', ')}"></div>`;
+          }
+        }
         h += '</div>';
       }
       h += '</div>';
@@ -760,28 +816,21 @@ function showProfile(id) {
     </div>`;
   }
 
-  const schedTypes = [
-    ['sowIndoorsWeeks','sowIndoors'], ['sowOutdoorsWeeks','sowOutdoors'],
-    ['hardenOffWeeks','hardenOff'], ['plantOutWeeks','plantOut'],
-    ['harvestWeeks','harvest'],
-  ];
-  const hasSchedule = schedTypes.some(([k]) => s[k]?.length);
+  const hasSchedule = MONTH_NAMES.some(m => s[m]?.length);
   if (hasSchedule) {
     h += `<div class="bg-white rounded-xl p-5 shadow-sm mb-4">
       <h2 class="font-bold text-forest mb-3">📅 Growing Calendar</h2>
-      <div class="overflow-x-auto"><div style="min-width:400px">
-      <div class="flex mb-1">${'Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec'.split(',').map(m => `<div class="flex-1 text-center text-[10px] text-gray-400">${m}</div>`).join('')}</div>
-      ${schedTypes.filter(([k]) => s[k]?.length).map(([k, type]) => {
-        const tt = TASK_TYPES[type];
-        return `<div class="flex items-center gap-1 mb-1">
-          ${Array.from({length:52}, (_, i) => {
-            const w = i + 1, on = s[k].includes(w);
-            return `<div class="flex-1 h-3 rounded-sm" style="background:${on ? tt.barColor : 'transparent'};opacity:${on ? .8 : 0}"></div>`;
-          }).join('')}
-          <span class="text-[10px] text-gray-500 w-20 text-right shrink-0">${tt.label}</span>
-        </div>`;
-      }).join('')}
-      </div></div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2 text-sm">
+        ${MONTH_NAMES.map((m, i) => {
+          const tasks = s[m] || [];
+          return `<div class="flex items-start gap-3 py-2 ${i < 10 ? 'border-b border-gray-50' : ''} ${tasks.length ? '' : 'opacity-40'}">
+            <span class="w-10 font-bold text-forest uppercase text-[10px] mt-1">${m.substring(0, 3)}</span>
+            <div class="flex-1">
+              ${tasks.length ? tasks.map(t => `<div class="text-gray-700 mb-1">${t}</div>`).join('') : '<span class="text-gray-400 italic">No tasks</span>'}
+            </div>
+          </div>`;
+        }).join('')}
+      </div>
     </div>`;
   }
 

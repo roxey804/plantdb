@@ -23,98 +23,51 @@
     "containerSize": "2L+ pot (deep pot preferred for taproot)"
   },
   "schedule": {
-    "sowIndoorsWeeks": [
-      8,
-      9,
-      10,
-      11,
-      12
+    "january": [],
+    "february": [
+      "🌱 Sow seeds indoors"
     ],
-    "sowOutdoorsWeeks": [
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19,
-      20,
-      21,
-      22,
-      23,
-      24,
-      25,
-      26,
-      27,
-      28,
-      29,
-      30,
-      31,
-      32,
-      33,
-      34,
-      35
+    "march": [
+      "🌱 Sow seeds indoors",
+      "🌿 Sow seeds outdoors",
+      "🌤️ Harden off seedlings",
+      "🪴 Plant out into final containers",
+      "🔄 Sow again for continuous harvests"
     ],
-    "hardenOffWeeks": [
-      12,
-      13,
-      14
+    "april": [
+      "🌿 Sow seeds outdoors",
+      "🌤️ Harden off seedlings",
+      "🪴 Plant out into final containers",
+      "🔄 Sow again for continuous harvests"
     ],
-    "plantOutWeeks": [
-      13,
-      14,
-      15,
-      16
+    "may": [
+      "🌿 Sow seeds outdoors",
+      "✂️ Harvest regularly",
+      "🔄 Sow again for continuous harvests"
     ],
-    "harvestWeeks": [
-      18,
-      19,
-      20,
-      21,
-      22,
-      23,
-      24,
-      25,
-      26,
-      27,
-      28,
-      29,
-      30,
-      31,
-      32,
-      33,
-      34,
-      35,
-      36,
-      37,
-      38,
-      39,
-      40,
-      41,
-      42
+    "june": [
+      "🌿 Sow seeds outdoors",
+      "✂️ Harvest regularly",
+      "🔄 Sow again for continuous harvests"
     ],
-    "floweringWeeks": [
-      24,
-      25,
-      26,
-      27,
-      28,
-      29,
-      30,
-      31,
-      32
+    "july": [
+      "🌿 Sow seeds outdoors",
+      "✂️ Harvest regularly",
+      "🔄 Sow again for continuous harvests"
     ],
-    "bringInsideWeek": null,
-    "successionSowWeeks": [
-      13,
-      16,
-      19,
-      22,
-      25,
-      28,
-      31,
-      34
+    "august": [
+      "🌿 Sow seeds outdoors",
+      "✂️ Harvest regularly",
+      "🔄 Sow again for continuous harvests"
     ],
+    "september": [
+      "✂️ Harvest regularly"
+    ],
+    "october": [
+      "✂️ Harvest regularly"
+    ],
+    "november": [],
+    "december": [],
     "frostSensitive": true
   },
   "care": {

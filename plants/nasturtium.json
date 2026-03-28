@@ -23,67 +23,34 @@
     "containerSize": "5L+ pot or hanging basket"
   },
   "schedule": {
-    "sowIndoorsWeeks": [
-      14,
-      15,
-      16
+    "january": [],
+    "february": [],
+    "march": [],
+    "april": [
+      "🌱 Sow seeds indoors"
     ],
-    "sowOutdoorsWeeks": [
-      18,
-      19,
-      20,
-      21,
-      22
+    "may": [
+      "🌿 Sow seeds outdoors",
+      "🌤️ Harden off seedlings",
+      "🪴 Plant out into final containers"
     ],
-    "hardenOffWeeks": [
-      18,
-      19
+    "june": [
+      "✂️ Harvest regularly"
     ],
-    "plantOutWeeks": [
-      20,
-      21,
-      22
+    "july": [
+      "✂️ Harvest regularly"
     ],
-    "harvestWeeks": [
-      24,
-      25,
-      26,
-      27,
-      28,
-      29,
-      30,
-      31,
-      32,
-      33,
-      34,
-      35,
-      36,
-      37,
-      38,
-      39,
-      40
+    "august": [
+      "✂️ Harvest regularly"
     ],
-    "floweringWeeks": [
-      24,
-      25,
-      26,
-      27,
-      28,
-      29,
-      30,
-      31,
-      32,
-      33,
-      34,
-      35,
-      36,
-      37,
-      38,
-      39,
-      40
+    "september": [
+      "✂️ Harvest regularly"
     ],
-    "bringInsideWeek": null,
-    "successionSowWeeks": [],
+    "october": [
+      "✂️ Harvest regularly"
+    ],
+    "november": [],
+    "december": [],
     "frostSensitive": true
   },
   "care": {
