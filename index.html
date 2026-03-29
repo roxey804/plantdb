@@ -543,7 +543,7 @@ function renderTimeline() {
           }
           
           for (const type of types) {
-            const color = TASK_TYPES[type]?.barColor || '#d1d5db';
+            const color = TASK_TYPES[type]?.iarColor || '#d1d5db';
             h += `<div class="h-1.5 w-full rounded-full" style="background:${color}" title="${mTasks.join(', ')}"></div>`;
           }
         }
@@ -766,6 +766,15 @@ function showProfile(id) {
   const imgs = Object.entries(im).filter(([_, v]) => v);
   if (imgs.length > 1) {
     const labels = { plant:'Plant', seed:'Seeds', flower:'Flower', fruit:'Fruit', seedling:'Seedling' };
+    
+    // Sort logic based on category
+    let sortOrder = ['plant', 'flower', 'fruit', 'seedling', 'seed']; // Default
+    if (p.category === 'flower') {
+      sortOrder = ['plant', 'flower', 'seedling', 'seed'];
+    }
+    
+    imgs.sort((a, b) => sortOrder.indexOf(a[0]) - sortOrder.indexOf(b[0]));
+
     h += `<div class="bg-white rounded-xl p-5 shadow-sm mb-4">
       <h2 class="font-bold text-forest mb-3">📸 Gallery</h2>
       <div class="grid grid-cols-3 md:grid-cols-5 gap-2">
@@ -795,7 +804,7 @@ function showProfile(id) {
     </div>`;
   }
 
-  if (p.category === 'fruit' || p.category === 'vegetable') {
+  if (p.category === 'flower' || p.category === 'fruit' || p.category === 'vegetable') {
     const tracking = state.tracking[id] || {};
     const firstFlowerDate = tracking.firstFlowerDate || p.schedule?.firstFlowerDate || '';
     h += `<div class="bg-white rounded-xl p-5 shadow-sm mb-4 border-2 border-terra/20">

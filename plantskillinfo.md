@@ -27,7 +27,7 @@ When the `plant` skill is used to add a new plant to the diary, it researches th
 
 ### 📸 Visuals & Tracking
 *   **Image Sourcing:** High-quality images of the plant, seed, flower, seedling, and fruit (if applicable).
-*   **Growth Tracking:** For fruits and vegetables, it can initialize tracking for the "First Flower Date."
+*   **Growth Tracking:** For flowers, fruits and vegetables, it can initialize tracking for the "First Flower Date."
 
 ---
 

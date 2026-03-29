@@ -21,9 +21,7 @@ This skill guides the process of adding a new plant to the UK Plant diary. It in
     *   Companion plants and common problems.
     *   A fun fact.
     *   *Note*: Calibrate all dates for London/South England (Last frost: Week 15, First frost: Week 44).
-    <!-- 
-    *   **Growth Tracking**: For `fruit` and `vegetable` categories, the app now supports tracking the **First Flower Date** (DDMMYY). If adding a plant that is already growing, you can initialize this field.
-    -->
+    *   **Growth Tracking**: For `flower`, `fruit` and `vegetable` categories, the app now supports tracking the **First Flower Date** (DDMMYY). If adding a plant that is already growing, you can initialize this field.
 
 <!-- 
 2.  **Image Sourcing (DISABLED)**:
