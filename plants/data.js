@@ -2,7 +2,7 @@
 window.PLANT_DATA = [
   {
     "id": "basil",
-    "commonName": "Sweet Basil",
+    "commonName": "Basil",
     "latinName": "Ocimum basilicum",
     "family": "Lamiaceae",
     "category": "herb",

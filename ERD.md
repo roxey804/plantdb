@@ -89,5 +89,5 @@ Each plant is defined in its own JSON file with the following relevant fields:
 | `category` | High-level grouping (herb, vegetable, flower, or fruit) used for filtering in the UI. | `herb`, `vegetable`, `flower`, `fruit` |
 | `family` | Botanical family (used here as a subcategory). | `Lamiaceae`, `Solanaceae` |
 | `id` | Unique slug/identifier for the plant. | `basil` |
-| `commonName`| User-friendly name. | `Sweet Basil` |
+| `commonName`| User-friendly name. | `Basil` |
 | `edible` | Object describing if the plant/flower is edible (mostly for the flower category). | `{ "isEdible": true, "notes": "..." }` |
