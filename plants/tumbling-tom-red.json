@@ -26,12 +26,14 @@
   "schedule": {
     "january": [],
     "february": [
-      "🌱 Sow seeds indoors"
+      "🌱 Sow seeds indoors (plant near sunny windowsill to avoid leggy seedlings)"
     ],
     "march": [
-      "🌱 Sow seeds indoors"
+      "🌱 Sow seeds indoors (plant near sunny windowsill to avoid leggy seedlings)"
     ],
-    "april": [],
+    "april": [
+      "🪴 Plant out into final containers (if protected)"
+    ],
     "may": [
       "🌤️ Harden off seedlings",
       "🪴 Plant out into final containers"
@@ -57,7 +59,7 @@
     "frostSensitive": true
   },
   "care": {
-    "sowIndoors": "Sow seeds 0.5cm deep in small pots on a warm windowsill (18–21°C). Keep moist. Seeds sprout in 7–14 days.",
+    "sowIndoors": "Sow seeds 0.5cm deep in small pots on a warm, sunny windowsill (18–21°C) to avoid leggy seedlings. Keep moist. Seeds sprout in 7–14 days.",
     "sowOutdoors": null,
     "hardenOff": "From mid-May, gradually acclimatise plants to outdoor conditions over 7–10 days.",
     "plantOut": "After the last frost (mid-May in London), plant 1 plant per 25cm basket or 3 in a 35cm basket. Hang in a sunny, sheltered spot.",

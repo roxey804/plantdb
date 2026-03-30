@@ -11,12 +11,13 @@ window.GENERAL_TASKS = {
   "march": [
     "🌱 De-weed containers and balcony corners",
     "🚜 Turn over soil in large pots",
-    "🪴 Mulch around existing growth to retain moisture",
+    "🪴 Apply mulch around outdoor plants"
   ],
   "april": [
     "💦 Check irrigation system or water butts",
     "🐛 Inspect plants for early signs of pests like aphids",
-    "🧹 Sweep balcony floor to remove winter grit"
+    "🧹 Sweep balcony floor to remove winter grit",
+    "🍋 Move citrus plants outside"
   ],
   "may": [
     "🌤️ Prepare shade options for hot afternoons",
