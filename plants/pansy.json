@@ -1,0 +1,114 @@
+{
+  "id": "pansy",
+  "commonName": "Pansy",
+  "latinName": "Viola × wittrockiana",
+  "family": "Violaceae",
+  "category": "flower",
+  "variety": "Matrix",
+  "description": "Pansies are iconic garden flowers known for their large, overlapping petals and distinctive 'faces'. They are incredibly versatile, offering bright colours in both spring and winter when many other plants are dormant.",
+  "images": {
+    "plant": "images/pansy/plant.jpg",
+    "flower": "images/pansy/flower.jpg",
+    "seedling": "images/pansy/seedling.jpg",
+    "seed": "images/pansy/seed.jpg"
+  },
+  "characteristics": {
+    "matureHeight": "15–25cm",
+    "matureSpread": "15–20cm",
+    "hardiness": "Fully hardy",
+    "lifespan": "Short-lived perennial (usually grown as annual)",
+    "sunRequirement": "Full sun or partial shade",
+    "waterNeeds": "Moderate — keep soil moist but not waterlogged",
+    "soilType": "Well-drained, fertile multi-purpose compost",
+    "containerSize": "1–2L pot or window box"
+  },
+  "schedule": {
+    "january": [
+      "✂️ Deadhead any winter blooms"
+    ],
+    "february": [
+      "🌱 Sow seeds indoors (for spring/summer display)",
+      "✂️ Deadhead regularly"
+    ],
+    "march": [
+      "🌱 Sow seeds indoors",
+      "🌤️ Harden off autumn-sown seedlings",
+      "🪴 Plant out autumn-sown plants"
+    ],
+    "april": [
+      "🌱 Sow seeds indoors",
+      "🌤️ Harden off spring seedlings",
+      "🪴 Plant out into containers"
+    ],
+    "may": [
+      "🌱 Sow seeds indoors (for autumn display)",
+      "🪴 Plant out into final containers",
+      "✂️ Deadhead to extend flowering"
+    ],
+    "june": [
+      "🌱 Sow seeds indoors",
+      "✂️ Deadhead faded blooms"
+    ],
+    "july": [
+      "🌿 Sow seeds outdoors",
+      "✂️ Deadhead regularly"
+    ],
+    "august": [
+      "🪴 Plant out for autumn display",
+      "✂️ Deadhead spring-sown plants"
+    ],
+    "september": [
+      "🪴 Plant out for winter/spring display",
+      "✂️ Deadhead regularly"
+    ],
+    "october": [
+      "🪴 Plant out winter-hardy varieties",
+      "✂️ Deadhead to keep plant tidy"
+    ],
+    "november": [
+      "🧣 Protect pots from freezing solid in severe cold"
+    ],
+    "december": [
+      "🧣 Ensure pots are in a sheltered spot"
+    ],
+    "frostSensitive": false
+  },
+  "care": {
+    "sowIndoors": "Sow thinly in seed trays. Cover seeds with a thin layer of compost as they need darkness to germinate. Keep at 18–24°C.",
+    "sowOutdoors": "Sow directly in pots in July for autumn colour, ensuring the soil stays cool and moist.",
+    "hardenOff": "Acclimatize indoor seedlings to the outdoors over 7–10 days before final planting.",
+    "plantOut": "Space plants 15–20cm apart in pots or window boxes. Ensure they are planted at the same depth they were in their trays.",
+    "watering": "Water regularly, especially in dry weather. In winter, only water when the soil surface is dry to avoid root rot.",
+    "feeding": "Apply a balanced liquid fertilizer every 2 weeks during the main flowering periods (spring and autumn).",
+    "harvest": null,
+    "overwintering": "Winter-flowering pansies are very hardy but benefit from being moved to a sheltered spot to prevent the root ball from freezing solid."
+  },
+  "propagation": {
+    "fromSeed": true,
+    "seedDescription": "Small, round, brownish-black seeds. Require darkness for germination.",
+    "germinationDays": "10–21 days at 18–24°C",
+    "fromCuttings": false,
+    "fromDivision": false
+  },
+  "deadheading": {
+    "required": true,
+    "notes": "Pinch off faded flowers including the green seed pod at the base. This prevents the plant from putting energy into seeds and encourages more flowers."
+  },
+  "seedSaving": {
+    "canSaveSeeds": true,
+    "method": "Allow a few pods to turn brown and brittle. Open them over a paper bag to collect the small seeds.",
+    "seedPodDescription": "Small green oval pods that turn brown and split into three sections when ripe."
+  },
+  "companionPlants": [
+    "tulips",
+    "daffodils",
+    "primrose",
+    "viola"
+  ],
+  "commonProblems": [
+    "Slugs and Snails — particularly problematic in damp autumn weather.",
+    "Aphids — common in spring; rinse off with water.",
+    "Powdery Mildew — greyish-white coating on leaves; improve airflow."
+  ],
+  "funFact": "The name 'pansy' comes from the French word 'pensée', meaning 'thought' or 'remembrance'."
+}
