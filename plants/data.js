@@ -1537,7 +1537,7 @@ window.PLANT_DATA = [
   },
   {
     "id": "runner-beans",
-    "commonName": "Runner Beans",
+    "commonName": "Climbing Beans",
     "latinName": "Phaseolus coccineus",
     "family": "Fabaceae",
     "category": "vegetable",
