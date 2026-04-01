@@ -221,7 +221,7 @@
       <div class="text-center mb-6">
         <div class="text-5xl mb-3">🌿</div>
         <h2 class="text-2xl font-bold text-forest">Welcome to Plant db</h2>
-        <p class="text-gray-500 mt-2">Your balcony planting scheduler for London</p>
+        <p class="text-gray-500 mt-2">A Gardener's diary, online</p>
       </div>
       <div class="space-y-3 text-sm text-gray-600 mb-6">
         <div class="flex gap-3"><span class="text-lg">📋</span><p><strong>This Week</strong> — exactly what to do right now, with checkboxes to track progress.</p></div>
@@ -229,6 +229,27 @@
         <div class="flex gap-3"><span class="text-lg">🌱</span><p><strong>My Plants</strong> — your plant encyclopedia. Tap any plant for the full guide.</p></div>
       </div>
       <button onclick="closeWelcome()" class="w-full bg-forest text-white py-3 rounded-xl font-medium hover:bg-forest/90 transition-colors">Let's Grow! 🌱</button>
+    </div>
+  </div>
+
+  <!-- Planting Tracker Modal -->
+  <div id="trackerModal" class="hidden fixed inset-0 bg-black/50 z-[200] flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-4xl w-full p-6 shadow-2xl overflow-y-auto max-h-[90vh]">
+      <div class="flex items-center justify-between mb-6">
+        <div>
+          <h2 class="text-2xl font-bold text-forest">📋 Planting Tracker</h2>
+          <p id="trackerPlantName" class="text-gray-500 text-sm italic"></p>
+        </div>
+        <button onclick="closeTrackerModal()" class="text-gray-400 hover:text-gray-600">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+      
+      <div id="trackerContent"></div>
+      
+      <div class="mt-8 flex justify-end">
+        <button onclick="closeTrackerModal()" class="bg-forest text-white px-6 py-2 rounded-xl font-medium hover:bg-forest/90 transition-colors">Done</button>
+      </div>
     </div>
   </div>
 
@@ -283,7 +304,25 @@ function loadState() {
     if (s.completedTasks) state.completedTasks = s.completedTasks;
     if (s.welcomeShown) state.welcomeShown = s.welcomeShown;
     if (s.wishlist) state.wishlist = s.wishlist;
-    if (s.tracking) state.tracking = s.tracking;
+    if (s.tracking) {
+      for (const id in s.tracking) {
+        if (!Array.isArray(s.tracking[id])) {
+          const oldData = s.tracking[id];
+          s.tracking[id] = [{
+            batch: 1,
+            year: 2026,
+            location: 'indoors',
+            covered: false,
+            seedPlantedDate: '',
+            seedlingAppearedDate: '',
+            trueLeavesAppearedDate: '',
+            firstFlowerDate: oldData.firstFlowerDate || '',
+            firstFruitDate: ''
+          }];
+        }
+      }
+      state.tracking = s.tracking;
+    }
   } catch (e) {}
 }
 
@@ -355,7 +394,6 @@ function tasksForMonth(mIdx) {
     const s = p.schedule || {};
     const monthTasks = s[mName] || [];
     for (const t of monthTasks) {
-      // Determine type from emoji for color coding
       let type = 'maintain';
       if (t.includes('🌱')) type = 'sowIndoors';
       else if (t.includes('🌿')) type = 'sowOutdoors';
@@ -372,7 +410,6 @@ function tasksForMonth(mIdx) {
 }
 
 function taskKey(pid, taskText) { 
-  // Create a stable key from plant ID and task text
   return `${pid}-${taskText.replace(/\s+/g, '-').toLowerCase()}`;
 }
 function catEmoji(c) { return { vegetable:'🥬', herb:'🌿', flower:'🌸', fruit:'🍓', houseplant:'🏠' }[c] || '🌱'; }
@@ -389,11 +426,9 @@ function renderWeek() {
   document.getElementById('weekHeading').textContent = mIdx === nowMIdx ? `${monthName(mIdx)} Tasks (This Month)` : `${monthName(mIdx)} Tasks`;
   document.getElementById('weekDates').textContent = `Tasks for the whole of ${monthName(mIdx)}`;
 
-  // Late start banner (only show in spring months)
   const banner = document.getElementById('lateStartBanner');
   (mIdx >= 2 && mIdx <= 4 && mIdx === nowMIdx) ? banner.classList.remove('hidden') : banner.classList.add('hidden');
 
-  // Progress
   const pct = Math.max(0, Math.min(100, ((nowWk - 8) / (44 - 8)) * 100));
   document.getElementById('progressBar').style.width = `${pct}%`;
   const done = Object.values(state.completedTasks).filter(Boolean).length;
@@ -422,12 +457,11 @@ function renderWeek() {
   const groups = {};
   for (const t of tasks) { (groups[t.type] = groups[t.type] || []).push(t); }
   
-  // Add general tasks
   if (generalTasks.length) {
     groups['general'] = generalTasks.map(t => ({
       text: t,
       type: 'general',
-      plant: { id: 'general', commonName: 'General Maintenance', category: 'houseplant' } // houseplant emoji is 🏠
+      plant: { id: 'general', commonName: 'General Maintenance', category: 'houseplant' }
     }));
   }
 
@@ -478,10 +512,143 @@ function renderWeek() {
 
 function toggleTask(k) { state.completedTasks[k] = !state.completedTasks[k]; saveState(); renderWeek(); }
 function navigateWeek(d) { state.viewWeek = Math.max(1, Math.min(52, state.viewWeek + d)); renderWeek(); }
-function updateTracking(id, field, value) {
-  if (!state.tracking[id]) state.tracking[id] = {};
-  state.tracking[id][field] = value;
+
+// ============================================================
+// TRACKER MODAL LOGIC
+// ============================================================
+function openTrackerModal(plantId) {
+  const p = state.plants.find(x => x.id === plantId);
+  if (!p) return;
+  document.getElementById('trackerPlantName').textContent = p.commonName;
+  renderTracker(plantId);
+  document.getElementById('trackerModal').classList.remove('hidden');
+}
+
+function closeTrackerModal() {
+  document.getElementById('trackerModal').classList.add('hidden');
+  // Refresh profile if open to show updated batch dates
+  const activeProfileId = document.getElementById('trackerPlantName').getAttribute('data-plant-id');
+  if (state.currentTab === 'profile' && activeProfileId) {
+    showProfile(activeProfileId, true);
+  }
+}
+
+function renderTracker(plantId) {
+  const p = state.plants.find(x => x.id === plantId);
+  const batches = state.tracking[plantId] || [];
+  const container = document.getElementById('trackerContent');
+  document.getElementById('trackerPlantName').setAttribute('data-plant-id', plantId);
+  
+  let h = `<div class="flex items-center justify-between mb-4">
+    <h3 class="font-bold text-forest text-lg">Batches</h3>
+    <button onclick="addTrackingBatch('${plantId}')" class="text-xs bg-terra text-white px-3 py-1.5 rounded-lg font-medium hover:bg-terra/90 transition-colors">+ Add New Batch</button>
+  </div>`;
+// ... (rest of renderTracker logic)
+  
+  if (batches.length === 0) {
+    h += `<p class="text-sm text-gray-400 italic text-center py-8 bg-gray-50 rounded-xl border border-dashed border-gray-200">No tracking data yet. Start a new batch to track your plant's progress!</p>`;
+  } else {
+    h += `<div class="space-y-6">
+      ${batches.map((b, idx) => `
+        <div class="bg-gray-50 rounded-xl p-5 border border-gray-200 relative group">
+          <button onclick="deleteTrackingBatch('${plantId}', ${idx})" class="absolute top-4 right-4 text-gray-300 hover:text-red-500 transition-colors opacity-0 group-hover:opacity-100 p-1">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
+          </button>
+          
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
+            <div>
+              <label class="block text-[10px] font-bold uppercase text-gray-400 mb-1">Batch Info</label>
+              <div class="flex items-center gap-2">
+                <input type="number" value="${b.batch}" onchange="updateTrackingBatch('${plantId}', ${idx}, 'batch', this.value)" class="w-12 bg-white border border-gray-200 rounded px-1.5 py-1 text-sm font-bold text-forest">
+                <input type="number" value="${b.year}" onchange="updateTrackingBatch('${plantId}', ${idx}, 'year', this.value)" class="w-20 bg-white border border-gray-200 rounded px-1.5 py-1 text-sm text-gray-600">
+              </div>
+            </div>
+            <div>
+              <label class="block text-[10px] font-bold uppercase text-gray-400 mb-1">Location</label>
+              <select onchange="updateTrackingBatch('${plantId}', ${idx}, 'location', this.value)" class="bg-white border border-gray-200 rounded px-2 py-1.5 text-sm outline-none focus:ring-1 focus:ring-terra w-full">
+                <option value="indoors" ${b.location === 'indoors' ? 'selected' : ''}>🏠 Indoors</option>
+                <option value="outdoors" ${b.location === 'outdoors' ? 'selected' : ''}>🌤️ Outdoors</option>
+              </select>
+            </div>
+            <div class="${b.location === 'outdoors' ? '' : 'hidden'}">
+              <label class="block text-[10px] font-bold uppercase text-gray-400 mb-1">Covered?</label>
+              <label class="flex items-center gap-2 cursor-pointer mt-2">
+                <input type="checkbox" ${b.covered ? 'checked' : ''} onchange="updateTrackingBatch('${plantId}', ${idx}, 'covered', this.checked ? 'true' : 'false')" class="w-5 h-5 rounded border-gray-300 text-terra focus:ring-terra">
+                <span class="text-sm text-gray-600 font-medium">${b.covered ? 'Yes' : 'No'}</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            <div>
+              <label class="block text-[10px] font-bold uppercase text-gray-400 mb-1">Seed Planted</label>
+              <input type="text" placeholder="DDMMYY" maxlength="6" value="${b.seedPlantedDate || ''}" onchange="updateTrackingBatch('${plantId}', ${idx}, 'seedPlantedDate', this.value)" class="w-full bg-white border border-gray-200 rounded px-3 py-2 text-sm font-mono outline-none focus:ring-1 focus:ring-terra">
+            </div>
+            <div>
+              <label class="block text-[10px] font-bold uppercase text-gray-400 mb-1">Sprouted</label>
+              <input type="text" placeholder="DDMMYY" maxlength="6" value="${b.seedlingAppearedDate || ''}" onchange="updateTrackingBatch('${plantId}', ${idx}, 'seedlingAppearedDate', this.value)" class="w-full bg-white border border-gray-200 rounded px-3 py-2 text-sm font-mono outline-none focus:ring-1 focus:ring-terra">
+            </div>
+            <div>
+              <label class="block text-[10px] font-bold uppercase text-gray-400 mb-1">True Leaves</label>
+              <input type="text" placeholder="DDMMYY" maxlength="6" value="${b.trueLeavesAppearedDate || ''}" onchange="updateTrackingBatch('${plantId}', ${idx}, 'trueLeavesAppearedDate', this.value)" class="w-full bg-white border border-gray-200 rounded px-3 py-2 text-sm font-mono outline-none focus:ring-1 focus:ring-terra">
+            </div>
+            <div>
+              <label class="block text-[10px] font-bold uppercase text-gray-400 mb-1">First Flower</label>
+              <input type="text" placeholder="DDMMYY" maxlength="6" value="${b.firstFlowerDate || ''}" onchange="updateTrackingBatch('${plantId}', ${idx}, 'firstFlowerDate', this.value)" class="w-full bg-white border border-gray-200 rounded px-3 py-2 text-sm font-mono outline-none focus:ring-1 focus:ring-terra">
+            </div>
+            ${p.category !== 'herb' ? `
+            <div>
+              <label class="block text-[10px] font-bold uppercase text-gray-400 mb-1">First Fruit</label>
+              <input type="text" placeholder="DDMMYY" maxlength="6" value="${b.firstFruitDate || ''}" onchange="updateTrackingBatch('${plantId}', ${idx}, 'firstFruitDate', this.value)" class="w-full bg-white border border-gray-200 rounded px-3 py-2 text-sm font-mono outline-none focus:ring-1 focus:ring-terra">
+            </div>` : ''}
+          </div>
+        </div>
+      `).join('')}
+    </div>`;
+  }
+  
+  container.innerHTML = h;
+}
+
+function addTrackingBatch(plantId) {
+  if (!state.tracking[plantId]) state.tracking[plantId] = [];
+  const nextBatchNum = state.tracking[plantId].length + 1;
+  state.tracking[plantId].push({
+    batch: nextBatchNum,
+    year: new Date().getFullYear(),
+    location: 'indoors',
+    covered: false,
+    seedPlantedDate: '',
+    seedlingAppearedDate: '',
+    trueLeavesAppearedDate: '',
+    firstFlowerDate: '',
+    firstFruitDate: ''
+  });
   saveState();
+  renderTracker(plantId);
+}
+
+function updateTrackingBatch(plantId, index, field, value) {
+  if (!state.tracking[plantId] || !state.tracking[plantId][index]) return;
+  
+  if (field === 'covered') {
+    state.tracking[plantId][index][field] = value === 'true';
+  } else if (field === 'batch' || field === 'year') {
+    state.tracking[plantId][index][field] = parseInt(value) || value;
+  } else {
+    state.tracking[plantId][index][field] = value;
+  }
+  saveState();
+  renderTracker(plantId);
+}
+
+function deleteTrackingBatch(plantId, index) {
+  if (confirm('Are you sure you want to delete this tracking batch?')) {
+    state.tracking[plantId].splice(index, 1);
+    state.tracking[plantId].forEach((b, i) => b.batch = i + 1);
+    saveState();
+    renderTracker(plantId);
+  }
 }
 
 // ============================================================
@@ -520,7 +687,7 @@ function renderTimeline() {
 
     for (const p of ps) {
       h += `<div class="grid border-b border-gray-50 hover:bg-gray-50/50" style="grid-template-columns: 160px repeat(12, 1fr);">`;
-      h += `<div class="p-2 text-xs font-medium text-gray-700 border-r border-gray-100 truncate cursor-pointer hover:text-forest" onclick="showProfile('${p.id}')">${p.commonName}</div>`;
+      h += `<div class="p-2 text-xs font-medium text-gray-700 border-r border-gray-100 t2cate cursor-pointer hover:text-forest" onclick="showProfile('${p.id}')">${p.commonName}</div>`;
 
       const s = p.schedule || {};
       for (let m = 0; m < 12; m++) {
@@ -529,7 +696,6 @@ function renderTimeline() {
         
         h += `<div class="relative border-r border-gray-50 flex flex-col gap-0.5 p-0.5 ${m === curMIdx ? 'bg-red-50/30' : ''}">`;
         if (mTasks.length) {
-          // Detect task types for colors
           const types = new Set();
           for (const t of mTasks) {
             if (t.includes('🌱')) types.add('sowIndoors');
@@ -543,7 +709,7 @@ function renderTimeline() {
           }
           
           for (const type of types) {
-            const color = TASK_TYPES[type]?.iarColor || '#d1d5db';
+            const color = TASK_TYPES[type]?.barColor || '#d1d5db';
             h += `<div class="h-1.5 w-full rounded-full" style="background:${color}" title="${mTasks.join(', ')}"></div>`;
           }
         }
@@ -766,13 +932,8 @@ function showProfile(id) {
   const imgs = Object.entries(im).filter(([_, v]) => v);
   if (imgs.length > 1) {
     const labels = { plant:'Plant', seed:'Seeds', flower:'Flower', fruit:'Fruit', seedling:'Seedling' };
-    
-    // Sort logic based on category
-    let sortOrder = ['plant', 'flower', 'fruit', 'seedling', 'seed']; // Default
-    if (p.category === 'flower') {
-      sortOrder = ['plant', 'flower', 'seedling', 'seed'];
-    }
-    
+    let sortOrder = ['plant', 'flower', 'fruit', 'seedling', 'seed'];
+    if (p.category === 'flower') sortOrder = ['plant', 'flower', 'seedling', 'seed'];
     imgs.sort((a, b) => sortOrder.indexOf(a[0]) - sortOrder.indexOf(b[0]));
 
     h += `<div class="bg-white rounded-xl p-5 shadow-sm mb-4">
@@ -804,24 +965,40 @@ function showProfile(id) {
     </div>`;
   }
 
-  if (p.category === 'flower' || p.category === 'fruit' || p.category === 'vegetable') {
-    const tracking = state.tracking[id] || {};
-    const firstFlowerDate = tracking.firstFlowerDate || p.schedule?.firstFlowerDate || '';
+  if (p.category === 'flower' || p.category === 'fruit' || p.category === 'vegetable' || p.category === 'herb') {
+    const batches = state.tracking[id] || [];
     h += `<div class="bg-white rounded-xl p-5 shadow-sm mb-4 border-2 border-terra/20">
-      <h2 class="font-bold text-forest mb-3 flex items-center gap-2">📈 Growth Tracking</h2>
-      <div class="text-sm">
-        <label class="block text-gray-700 font-medium mb-1">First Flower Date (DDMMYY)</label>
-        <div class="flex gap-2">
-          <input type="text" 
-                 id="input-first-flower-${id}" 
-                 placeholder="e.g. 150626" 
-                 value="${firstFlowerDate}"
-                 maxlength="6"
-                 class="px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-terra focus:border-terra outline-none w-32 font-mono"
-                 oninput="updateTracking('${id}', 'firstFlowerDate', this.value)">
-          <span class="text-xs text-gray-400 self-center">📅 Recorded for your diary</span>
+      <div class="flex items-center justify-between mb-4">
+        <div class="flex items-center gap-2">
+          <span class="text-xl">📋</span>
+          <div>
+            <h2 class="font-bold text-forest">Planting Tracker</h2>
+            <p class="text-xs text-gray-500">Track seeds, sprouts, and harvests</p>
+          </div>
         </div>
+        <button onclick="openTrackerModal('${id}')" class="bg-terra text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-terra/90 transition-colors">Open Tracker</button>
       </div>
+      
+      ${batches.length > 0 ? `
+        <div class="space-y-2 border-t border-terra/10 pt-4">
+          <h3 class="text-[10px] font-bold uppercase text-gray-400 mb-2">Current Batches</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            ${batches.map((b, idx) => `
+              <button onclick="openTrackerModal('${id}')" class="flex items-center justify-between p-3 bg-terra/5 hover:bg-terra/10 border border-terra/10 rounded-lg transition-colors text-left">
+                <div class="min-w-0">
+                  <div class="text-xs font-bold text-terra">Batch ${b.batch} <span class="font-normal text-gray-400">(${b.year})</span></div>
+                  <div class="text-sm font-medium text-forest truncate">
+                    ${b.seedPlantedDate ? `Planted: ${b.seedPlantedDate}` : '<span class="text-gray-400 italic">No date set</span>'}
+                  </div>
+                </div>
+                <div class="text-[10px] uppercase font-bold px-1.5 py-0.5 rounded ${b.location === 'indoors' ? 'bg-amber-100 text-amber-700' : 'bg-green-100 text-green-700'}">
+                  ${b.location === 'indoors' ? '🏠 Indoors' : '🌤️ Outdoors'}
+                </div>
+              </button>
+            `).join('')}
+          </div>
+        </div>
+      ` : ''}
     </div>`;
   }
 
@@ -927,7 +1104,6 @@ function showProfile(id) {
 
   document.getElementById('profileContent').innerHTML = h;
   switchTab('profile');
-  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 // ============================================================
@@ -948,6 +1124,8 @@ function switchTab(tab) {
   if (tab === 'timeline') renderTimeline();
   if (tab === 'plants') renderPlants();
   if (tab === 'wishlist') renderWishlist();
+
+  window.scrollTo(0, 0);
 }
 
 function closeWelcome() {

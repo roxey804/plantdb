@@ -54,15 +54,35 @@ CREATE TABLE user_profiles (
   updated_at TIMESTAMPTZ DEFAULT NOW()
 );
 
--- 4. Enable Row Level Security (RLS)
+-- 4. Create the planting tracker table
+CREATE TABLE planting_tracker (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  user_id UUID REFERENCES auth.users(id),
+  plant_id TEXT REFERENCES plants(id),
+  batch_no INTEGER CHECK (batch_no BETWEEN 1 AND 10),
+  year INTEGER,
+  location TEXT, -- 'indoors' or 'outdoors'
+  covered BOOLEAN DEFAULT false,
+  date_planted TEXT, -- ddmmyy
+  date_sprouted TEXT, -- ddmmyy
+  date_true_leaves TEXT, -- ddmmyy
+  date_first_flower TEXT, -- ddmmyy
+  date_first_fruit TEXT, -- ddmmyy
+  created_at TIMESTAMPTZ DEFAULT NOW(),
+  updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- 5. Enable Row Level Security (RLS)
 ALTER TABLE plants ENABLE ROW LEVEL SECURITY;
 ALTER TABLE wishlist ENABLE ROW LEVEL SECURITY;
 ALTER TABLE user_profiles ENABLE ROW LEVEL SECURITY;
+ALTER TABLE planting_tracker ENABLE ROW LEVEL SECURITY;
 
--- 5. Set up access policies
+-- 6. Set up access policies
 CREATE POLICY "Allow public read access on plants" ON plants FOR SELECT USING (true);
 CREATE POLICY "Allow users to manage their own wishlist" ON wishlist FOR ALL USING (auth.uid() = user_id);
 CREATE POLICY "Allow users to manage their own profile" ON user_profiles FOR ALL USING (auth.uid() = id);
+CREATE POLICY "Allow users to manage their own tracker entries" ON planting_tracker FOR ALL USING (auth.uid() = user_id);
 ```
 
 ## Setup Steps
