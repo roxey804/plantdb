@@ -32,9 +32,10 @@ This skill guides the process of adding a new plant to the UK Plant diary. It in
 -->
 
 2.  **Data Generation**:
-    *   Create a JSON file at `plants/<plant-id>.json` following the schema in `AIrequirements.md`.
+    *   Create a JSON file at `plants/<category_subdir>/<plant-id>.json` following the schema in `AIrequirements.md`.
+    *   Subdirectories: `flowers`, `houseplants`, `fruit_and_veg` (for herbs, fruit, and vegetables).
     *   Update `plants/index.json` with the new ID.
-    *   Regenerate `plants/data.js` by combining all plant JSON files into a single `window.PLANT_DATA` array.
+    *   Regenerate `plants/data.js` by running `.gemini/skills/plant/scripts/update_plant_data.cjs`.
 
 3.  **Verification**:
     *   Check that the new plant appears in the "My Plants" view of the app.

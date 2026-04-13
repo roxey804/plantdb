@@ -17,7 +17,7 @@ window.WEED_DATA = [
     "category": "weed",
     "description": "A common annual weed that grows in lush mats. It has small white star-shaped flowers.",
     "images": {
-      "plant": "https://upload.wikimedia.org/wikipedia/commons/4/44/Stellaria_media_001.JPG"
+      "plant": "images/chickweed/plant.jpg"
     }
   },
   {
@@ -27,7 +27,18 @@ window.WEED_DATA = [
     "category": "weed",
     "description": "Common perennial weed with bright yellow flowers and a deep taproot.",
     "images": {
-      "plant": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Taraxacum_officinale_-_flower_det.jpg"
+      "plant": "images/dandelion/plant.jpg"
+    }
+  },
+  {
+    "id": "forget-me-not",
+    "commonName": "Field Forget-me-not",
+    "latinName": "Myosotis arvensis",
+    "category": "weed",
+    "description": "A slender, hairy annual or biennial frequently found in arable land, paths, and disturbed ground. It features very small (3-5mm) sky-blue flowers with yellow centers. While charming, it is a prolific self-seeder that can quickly colonize vegetable patches and flower beds.",
+    "funFact": "Before the 19th century, forget-me-nots were commonly known as 'Scorpion-grass' because their flower clusters coil tightly like a scorpion's tail before they unfurl.",
+    "images": {
+      "plant": "images/forget-me-not/plant.jpg"
     }
   },
   {
@@ -37,7 +48,7 @@ window.WEED_DATA = [
     "category": "weed",
     "description": "Common annual weed with small yellow flowers that quickly turn to seed.",
     "images": {
-      "plant": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Senecio_vulgaris_01.jpg"
+      "plant": "images/groundsel/plant.jpg"
     }
   },
   {
@@ -48,7 +59,7 @@ window.WEED_DATA = [
     "description": "A low-growing British native cranesbill with small, five-petalled pink flowers and reddish stems. Its leaves are often tinged with red and emit a distinctive 'mousey' smell when crushed. It seeds prolifically in shady spots.",
     "funFact": "Once known as Saint Robert's Herb, was named after a French monk who used the herb to heal skin conditions, including wounds and herpes.",
     "images": {
-      "plant": "https://images.immediate.co.uk/production/volatile/sites/10/2022/02/2048x1365-Herb-robert-Geranium-robertianum-GettyImages-1215330357-799959c.jpg"
+      "plant": "images/herb-robert/plant.jpg"
     }
   },
   {

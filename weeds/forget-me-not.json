@@ -1,0 +1,11 @@
+{
+  "id": "forget-me-not",
+  "commonName": "Field Forget-me-not",
+  "latinName": "Myosotis arvensis",
+  "category": "weed",
+  "description": "A slender, hairy annual or biennial frequently found in arable land, paths, and disturbed ground. It features very small (3-5mm) sky-blue flowers with yellow centers. While charming, it is a prolific self-seeder that can quickly colonize vegetable patches and flower beds.",
+  "funFact": "Before the 19th century, forget-me-nots were commonly known as 'Scorpion-grass' because their flower clusters coil tightly like a scorpion's tail before they unfurl.",
+  "images": {
+    "plant": "images/forget-me-not/plant.jpg"
+  }
+}

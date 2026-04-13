@@ -5,21 +5,32 @@ const plantsDir = path.join(process.cwd(), 'plants');
 const dataFilePath = path.join(plantsDir, 'data.js');
 const indexFilePath = path.join(plantsDir, 'index.json');
 
+function getAllJsonFiles(dir, fileList = []) {
+  const files = fs.readdirSync(dir);
+  for (const file of files) {
+    const filePath = path.join(dir, file);
+    if (fs.statSync(filePath).isDirectory()) {
+      getAllJsonFiles(filePath, fileList);
+    } else if (file.endsWith('.json') && file !== 'index.json') {
+      fileList.push(filePath);
+    }
+  }
+  return fileList;
+}
+
 function updatePlantData() {
-  const files = fs.readdirSync(plantsDir);
-  const jsonFiles = files.filter(f => f.endsWith('.json') && f !== 'index.json');
+  const jsonFiles = getAllJsonFiles(plantsDir);
   
   const plantData = [];
   const plantIds = [];
 
-  for (const file of jsonFiles) {
-    const filePath = path.join(plantsDir, file);
+  for (const filePath of jsonFiles) {
     try {
       const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
       plantData.push(data);
       plantIds.push(data.id);
     } catch (e) {
-      console.error(`Error reading ${file}: ${e.message}`);
+      console.error(`Error reading ${filePath}: ${e.message}`);
     }
   }
 
