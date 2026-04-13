@@ -213,6 +213,7 @@ window.PLANT_DATA = [
     "latinName": "Calendula officinalis",
     "family": "Asteraceae",
     "category": "flower",
+    "edible": true,
     "variety": "Orange King",
     "description": "Calendula is a cheerful, hardy annual with vibrant orange or yellow blooms. It's incredibly easy to grow and highly beneficial in the garden, attracting pollinators and acting as a 'trap crop' for pests. The petals are edible and have many traditional medicinal uses.",
     "images": {
@@ -1349,6 +1350,7 @@ window.PLANT_DATA = [
     "latinName": "Tagetes patula",
     "family": "Asteraceae",
     "category": "flower",
+    "edible": true,
     "variety": "French",
     "description": "French marigolds are one of the easiest and most rewarding flowers for balcony containers. They bloom non-stop from early summer until the first frost, producing cheerful orange, yellow, and mahogany flowers. Their strong scent naturally deters many common garden pests, making them brilliant companion plants for your tomatoes and herbs.",
     "images": {
@@ -1416,10 +1418,6 @@ window.PLANT_DATA = [
     "deadheading": {
       "required": true,
       "notes": "Deadhead spent flowers at least twice a week during peak season (July-August) by snipping the whole flower head just above the nearest set of leaves. This prevents seed formation and redirects energy into new blooms, keeping plants flowering continuously until frost. Stop deadheading in mid-September if you want to save seed."
-    },
-    "edible": {
-      "isEdible": false,
-      "notes": "Some marigolds (like Tagetes tenuifolia) are edible, but French marigolds (Tagetes patula) are primarily grown for ornament and pest control."
     },
     "seedSaving": {
       "canSaveSeeds": true,
@@ -1752,6 +1750,7 @@ window.PLANT_DATA = [
     "latinName": "Viola × wittrockiana",
     "family": "Violaceae",
     "category": "flower",
+    "edible": true,
     "variety": "Matrix",
     "description": "Pansies are iconic garden flowers known for their large, overlapping petals and distinctive 'faces'. They are incredibly versatile, offering bright colours in both spring and winter when many other plants are dormant.",
     "images": {
@@ -1862,12 +1861,12 @@ window.PLANT_DATA = [
   },
   {
     "id": "radish",
-    "commonName": "Radish",
-    "latinName": "Raphanus sativus",
+    "commonName": "French Radish",
+    "latinName": "Raphanus sativus 'French Breakfast'",
     "family": "Brassicaceae",
     "category": "vegetable",
     "variety": "French Breakfast",
-    "description": "The fastest vegetable you can grow — ready to eat in just 4 weeks! Radishes are perfect for beginners and impatient gardeners. They need very little space and grow happily in shallow pots or window boxes.",
+    "description": "An annual bunching radish featuring elongated red roots with a distinct white tip. It is prized for its crisp texture and mild flavor. Extremely fast-growing, making it perfect for filling small gaps in the garden.",
     "images": {
       "plant": "images/radish/plant.jpg",
       "flower": null,
@@ -1875,13 +1874,13 @@ window.PLANT_DATA = [
       "seed": "images/radish/seed.jpg"
     },
     "characteristics": {
-      "matureHeight": "10–15cm",
-      "matureSpread": "5–8cm",
-      "hardiness": "Hardy (tolerates frost)",
+      "matureHeight": "Up to 10cm",
+      "matureSpread": "10–50cm",
+      "hardiness": "H2 (Tolerant of low temperatures but will not survive being frozen)",
       "lifespan": "Annual",
-      "sunRequirement": "Partial shade to full sun (3–6 hours)",
-      "waterNeeds": "Regular — even moisture for best roots",
-      "soilType": "Light, well-drained potting compost",
+      "sunRequirement": "Full sun",
+      "waterNeeds": "Regular — keep soil moist to delay bolting",
+      "soilType": "Moist but well-drained; Chalk, Clay, Loam, or Sand",
       "containerSize": "2L+ pot (at least 15cm deep)"
     },
     "schedule": {
@@ -1924,22 +1923,22 @@ window.PLANT_DATA = [
       ],
       "november": [],
       "december": [],
-      "frostSensitive": false
+      "frostSensitive": true
     },
     "care": {
       "sowIndoors": null,
       "sowOutdoors": "Sow seeds 1cm deep, 2–3cm apart, directly into containers from late March. Keep moist. Seedlings appear in 3–5 days.",
       "hardenOff": null,
       "plantOut": "No transplanting needed — sow directly where they'll grow. Radishes don't like being moved.",
-      "watering": "Keep evenly moist. Inconsistent watering causes radishes to crack or become woody and hollow.",
+      "watering": "Ensure the soil remains consistently moist to prevent the roots from becoming woody or 'bolting' (flowering prematurely).",
       "feeding": "No feeding needed — radishes grow too fast to benefit from it.",
-      "harvest": "Pull up when the root is about 2–3cm across (check by brushing soil away from the top). Don't leave them too long or they go woody.",
+      "harvest": "Pull up when the root is about 2–3cm across (check by brushing soil away from the top). Typically ready in 21–28 days.",
       "overwintering": "Not applicable — sow winter radish varieties (mooli) in late summer for autumn harvest."
     },
     "propagation": {
       "fromSeed": true,
-      "seedDescription": "Round, reddish-brown seeds about 3mm across. Very easy to handle and sow. Stay viable for 4+ years.",
-      "germinationDays": "3–5 days at 10–20°C",
+      "seedDescription": "Small, round, reddish-brown seeds about 3mm across. Very easy to handle and sow. Stay viable for 4+ years.",
+      "germinationDays": "3–7 days at 10–20°C",
       "fromCuttings": false,
       "cuttingsMethod": null,
       "fromDivision": false,
@@ -1960,11 +1959,11 @@ window.PLANT_DATA = [
       "nasturtium"
     ],
     "commonProblems": [
-      "Woody/pithy roots — left in the ground too long. Harvest promptly when ready.",
-      "Flea beetle — tiny holes in leaves. Cover with fine mesh or fleece.",
-      "Splitting — caused by uneven watering. Keep soil consistently moist."
+      "Slugs and Snails",
+      "Flea beetles (which leave small holes in the leaves)",
+      "Woody/pithy roots — left in the ground too long. Harvest promptly when ready."
     ],
-    "funFact": "Radishes were so valued in ancient Greece that gold replicas were made of them as offerings to the god Apollo!"
+    "funFact": "Extremely versatile in the kitchen—great for eating raw, pickling, or even cooking with butter and garlic!"
   },
   {
     "id": "rocket",

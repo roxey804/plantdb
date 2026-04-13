@@ -162,16 +162,16 @@
 
     <!-- PLANT PROFILE VIEW -->
     <div id="view-profile" class="hidden fade-in">
-      <button onclick="switchTab('plants')" class="flex items-center gap-1 text-forest hover:text-leaf mb-4 text-sm font-medium">
+      <button id="profile-back-btn" onclick="switchTab('plants')" class="flex items-center gap-1 text-forest hover:text-leaf mb-4 text-sm font-medium">
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
-        Back to My Plants
+        <span>Back to My Plants</span>
       </button>
       <div id="profileContent"></div>
       
       <!-- Floating Back Button -->
-      <button onclick="switchTab('plants')" class="fixed bottom-4 left-4 z-[60] bg-white/60 backdrop-blur-sm text-forest px-3 py-2 rounded-lg shadow-md hover:bg-white/80 transition-all flex items-center gap-1.5 font-bold text-xs sm:text-sm border border-forest active:scale-95 no-print">
+      <button id="profile-floating-back-btn" onclick="switchTab('plants')" class="fixed bottom-4 left-4 z-[60] bg-white/60 backdrop-blur-sm text-forest px-3 py-2 rounded-lg shadow-md hover:bg-white/80 transition-all flex items-center gap-1.5 font-bold text-xs sm:text-sm border border-forest active:scale-95 no-print">
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
-        Back to My Plants
+        <span>Back to My Plants</span>
       </button>
     </div>
   </main>
@@ -321,6 +321,7 @@ let state = {
   tracking: {},
   categoryFilter: 'all',
   welcomeShown: false,
+  lastProfileId: null,
 };
 
 function loadState() {
@@ -1028,8 +1029,26 @@ function removeWishlistItem(id) {
 // PLANT PROFILE
 // ============================================================
 function showProfile(id) {
-  const p = state.plants.find(x => x.id === id);
+  const p = state.plants.find(x => x.id === id) || (window.WEED_DATA || []).find(x => x.id === id);
   if (!p) return;
+
+  state.lastProfileId = id;
+  const isWeed = p.category === 'weed';
+  
+  // Update back buttons
+  const backBtn = document.getElementById('profile-back-btn');
+  const floatingBtn = document.getElementById('profile-floating-back-btn');
+  const targetTab = isWeed ? 'weeds' : 'plants';
+  const label = isWeed ? 'Back to Weeds' : 'Back to My Plants';
+  
+  if (backBtn) {
+    backBtn.setAttribute('onclick', `switchTab('${targetTab}')`);
+    backBtn.querySelector('span').textContent = label;
+  }
+  if (floatingBtn) {
+    floatingBtn.setAttribute('onclick', `switchTab('${targetTab}')`);
+    floatingBtn.querySelector('span').textContent = label;
+  }
 
   const ch = p.characteristics || {};
   const s = p.schedule || {};
