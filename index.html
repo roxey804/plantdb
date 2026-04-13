@@ -873,7 +873,7 @@ function renderWeeds() {
   }
 
   grid.innerHTML = weeds.map(item => `
-    <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden group">
+    <div onclick="showProfile('${item.id}')" class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden group cursor-pointer hover:shadow-md transition-shadow">
       <div class="relative h-32">
         ${item.images?.plant ? `<img src="${item.images.plant}" alt="${item.commonName}" class="w-full h-full object-cover">` : `<div class="img-placeholder w-full h-full">🌿</div>`}
       </div>

@@ -1,0 +1,10 @@
+{
+  "id": "groundsel",
+  "commonName": "Groundsel",
+  "latinName": "Senecio vulgaris",
+  "category": "weed",
+  "description": "Common annual weed with small yellow flowers that quickly turn to seed.",
+  "images": {
+    "plant": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Senecio_vulgaris_01.jpg"
+  }
+}
