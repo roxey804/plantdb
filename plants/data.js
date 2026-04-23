@@ -7,6 +7,7 @@ window.PLANT_DATA = [
     "family": "Lamiaceae",
     "category": "herb",
     "variety": "Genovese",
+    "edible": true,
     "description": "The classic Italian herb with bright green, aromatic leaves. Basil loves warmth and sun, making a south-facing balcony ideal. Pinch off the growing tips regularly to keep it bushy and productive.",
     "images": {
       "plant": "images/basil/plant.jpg",
@@ -18,7 +19,7 @@ window.PLANT_DATA = [
       "matureHeight": "20–45cm",
       "matureSpread": "15–30cm",
       "hardiness": "Tender (dislikes cold and frost)",
-      "lifespan": "Annual",
+      "lifespan": "Annual (collect seeds)",
       "sunRequirement": "Full sun (6+ hours)",
       "waterNeeds": "Moderate — keep moist but not waterlogged",
       "soilType": "Rich, well-drained potting compost",
@@ -88,7 +89,7 @@ window.PLANT_DATA = [
     },
     "deadheading": {
       "required": true,
-      "notes": "Pinch off flower spikes as soon as they appear — this keeps the plant producing leaves instead of going to seed. Once basil flowers, the leaves lose flavour."
+      "info": "Pinch off flower spikes as soon as they appear — this keeps the plant producing leaves instead of going to seed. Once basil flowers, the leaves lose flavour."
     },
     "seedSaving": {
       "canSaveSeeds": true,
@@ -106,7 +107,13 @@ window.PLANT_DATA = [
       "Overwatering — causes root rot. Let soil surface dry slightly between waterings.",
       "Slugs — protect young seedlings with copper tape around pots."
     ],
-    "funFact": "In Italy, placing a pot of basil on your balcony was traditionally a signal that you were ready for a suitor to come courting!"
+    "funFact": "In Italy, placing a pot of basil on your balcony was traditionally a signal that you were ready for a suitor to come courting!",
+    "milestones": {
+      "2026": {
+        "firstFlowerDate": "",
+        "firstFruitDate": ""
+      }
+    }
   },
   {
     "id": "broad-beans",
@@ -115,6 +122,7 @@ window.PLANT_DATA = [
     "family": "Fabaceae",
     "category": "vegetable",
     "variety": "The Sutton",
+    "edible": true,
     "description": "A fantastic dwarf variety perfect for balconies and containers. 'The Sutton' only grows to about 45cm, so it doesn't need the elaborate staking that taller varieties require. It produces heavy crops of tender, delicious beans and is very hardy.",
     "images": {
       "plant": "images/broad-beans/plant.jpg",
@@ -127,7 +135,7 @@ window.PLANT_DATA = [
       "matureHeight": "45cm",
       "matureSpread": "25cm",
       "hardiness": "Fully hardy",
-      "lifespan": "Annual",
+      "lifespan": "Annual (collect seeds)",
       "sunRequirement": "Full sun or partial shade",
       "waterNeeds": "Moderate, especially during flowering and pod development",
       "soilType": "Rich, well-drained compost",
@@ -190,7 +198,7 @@ window.PLANT_DATA = [
     },
     "deadheading": {
       "required": false,
-      "notes": "Not needed. However, pinching out the top 5-10cm of the plant once pods start to form is vital to prevent blackfly."
+      "info": "Not needed. However, pinching out the top 5-10cm of the plant once pods start to form is vital to prevent blackfly."
     },
     "seedSaving": {
       "canSaveSeeds": true,
@@ -213,7 +221,13 @@ window.PLANT_DATA = [
       "Chocolate Spot — brown spots on leaves in damp weather; improve airflow.",
       "Mice — can dig up seeds; protect with wire mesh or start indoors."
     ],
-    "funFact": "Broad beans are nitrogen fixers! They take nitrogen from the air and store it in nodules on their roots, fertilizing the soil for future plants."
+    "funFact": "Broad beans are nitrogen fixers! They take nitrogen from the air and store it in nodules on their roots, fertilizing the soil for future plants.",
+    "milestones": {
+      "2026": {
+        "firstFlowerDate": "",
+        "firstFruitDate": ""
+      }
+    }
   },
   {
     "id": "calendula",
@@ -228,13 +242,14 @@ window.PLANT_DATA = [
       "plant": "images/calendula/plant.jpg",
       "flower": "images/calendula/flower.jpg",
       "seedling": "images/calendula/seedling.jpg",
-      "seed": "images/calendula/seed.jpg"
+      "seed": "images/calendula/seed.jpg",
+      "seedPod": "images/calendula/seed-pod.jpg"
     },
     "characteristics": {
       "matureHeight": "30–60cm",
       "matureSpread": "30–45cm",
       "hardiness": "Hardy annual (tolerates light frost)",
-      "lifespan": "Annual",
+      "lifespan": "Annual (collect seeds)",
       "sunRequirement": "Full sun to partial shade",
       "waterNeeds": "Moderate — water during dry spells",
       "soilType": "Well-drained, average fertility",
@@ -305,7 +320,7 @@ window.PLANT_DATA = [
     },
     "deadheading": {
       "required": true,
-      "notes": "Essential to keep the plant blooming. Remove the entire flower stalk once the bloom has faded."
+      "info": "Essential to keep the plant blooming. Remove the entire flower stalk once the bloom has faded."
     },
     "seedSaving": {
       "canSaveSeeds": true,
@@ -323,7 +338,13 @@ window.PLANT_DATA = [
       "Aphids — common on stems. Can be hosed off or left as a trap crop for beneficial insects.",
       "Slugs and Snails — protect young seedlings in spring."
     ],
-    "funFact": "Known as 'Poor Man's Saffron' because its petals can be used to add a golden yellow color to rice, butter, and cheese!"
+    "funFact": "Known as 'Poor Man's Saffron' because its petals can be used to add a golden yellow color to rice, butter, and cheese!",
+    "milestones": {
+      "2026": {
+        "firstFlowerDate": "",
+        "firstFruitDate": ""
+      }
+    }
   },
   {
     "id": "carnation-pinks",
@@ -343,7 +364,7 @@ window.PLANT_DATA = [
       "matureHeight": "30–60cm",
       "matureSpread": "30–45cm",
       "hardiness": "Hardy perennial (London)",
-      "lifespan": "Short-lived perennial",
+      "lifespan": "Perennial (comes back every year) (short-lived)",
       "sunRequirement": "Full sun (6+ hours)",
       "waterNeeds": "Moderate — well-drained soil is crucial",
       "soilType": "Well-drained, slightly alkaline to neutral potting compost",
@@ -404,11 +425,11 @@ window.PLANT_DATA = [
     },
     "deadheading": {
       "required": true,
-      "notes": "Moderately remove spent flowers down to the base of the stem to encourage continuous blooming."
+      "info": "Moderately remove spent flowers down to the base of the stem to encourage continuous blooming."
     },
     "edible": {
       "isEdible": true,
-      "notes": "The petals have a mild, spicy, clove-like flavor. Only eat the petals; the white base is bitter."
+      "info": "The petals have a mild, spicy, clove-like flavor. Only eat the petals; the white base is bitter."
     },
     "seedSaving": {
       "canSaveSeeds": true,
@@ -426,7 +447,13 @@ window.PLANT_DATA = [
       "Rust in damp conditions",
       "Stem rot if overwatered"
     ],
-    "funFact": "The name 'Dianthus' comes from the Greek words 'dios' (god) and 'anthos' (flower), meaning 'Flower of the Gods'!"
+    "funFact": "The name 'Dianthus' comes from the Greek words 'dios' (god) and 'anthos' (flower), meaning 'Flower of the Gods'!",
+    "milestones": {
+      "2026": {
+        "firstFlowerDate": "",
+        "firstFruitDate": ""
+      }
+    }
   },
   {
     "id": "chives",
@@ -435,6 +462,7 @@ window.PLANT_DATA = [
     "family": "Amaryllidaceae",
     "category": "herb",
     "variety": "Common",
+    "edible": true,
     "description": "A hardy perennial herb that comes back year after year with zero fuss. The mild onion-flavoured leaves are brilliant snipped over eggs, salads, and potatoes. Pretty purple pom-pom flowers in summer are edible too.",
     "images": {
       "plant": "images/chives/plant.jpg",
@@ -446,7 +474,7 @@ window.PLANT_DATA = [
       "matureHeight": "20–30cm",
       "matureSpread": "15–20cm",
       "hardiness": "Fully hardy (survives UK winters)",
-      "lifespan": "Perennial",
+      "lifespan": "Perennial (comes back every year)",
       "sunRequirement": "Full sun to partial shade (4+ hours)",
       "waterNeeds": "Moderate — tolerates some dryness",
       "soilType": "Any reasonable potting compost",
@@ -513,7 +541,7 @@ window.PLANT_DATA = [
     },
     "deadheading": {
       "required": false,
-      "notes": "Optional. The purple flowers are pretty and edible. Removing them redirects energy to leaf growth, but it's not essential."
+      "info": "Optional. The purple flowers are pretty and edible. Removing them redirects energy to leaf growth, but it's not essential."
     },
     "seedSaving": {
       "canSaveSeeds": true,
@@ -530,7 +558,13 @@ window.PLANT_DATA = [
       "Overcrowding — clumps get congested after 2–3 years. Divide and repot.",
       "Aphids — rarely serious. Wash off with water."
     ],
-    "funFact": "Bunches of chives were hung in doorways in medieval Europe to ward off evil spirits and disease. They're also one of the 'fines herbes' of French cuisine."
+    "funFact": "Bunches of chives were hung in doorways in medieval Europe to ward off evil spirits and disease. They're also one of the 'fines herbes' of French cuisine.",
+    "milestones": {
+      "2026": {
+        "firstFlowerDate": "",
+        "firstFruitDate": ""
+      }
+    }
   },
   {
     "id": "climbing-beans",
@@ -539,6 +573,7 @@ window.PLANT_DATA = [
     "family": "Fabaceae",
     "category": "vegetable",
     "variety": "Borlotti",
+    "edible": true,
     "description": "Climbing beans are versatile and productive. The 'Borlotti' variety is prized for its beautiful speckled pods and seeds, which can be eaten fresh or dried. They are excellent climbers that provide both a visual screen and a heavy crop of beans.",
     "images": {
       "plant": "images/climbing-beans/plant.jpg",
@@ -551,7 +586,7 @@ window.PLANT_DATA = [
       "matureHeight": "45cm (Dwarf) / 2m+ (Climbing)",
       "matureSpread": "30cm",
       "hardiness": "Tender (not frost tolerant)",
-      "lifespan": "Annual (grown as)",
+      "lifespan": "Annual (collect seeds)",
       "sunRequirement": "Full sun (6+ hours)",
       "waterNeeds": "High — containers must stay moist",
       "soilType": "Rich, moisture-retentive compost",
@@ -614,7 +649,7 @@ window.PLANT_DATA = [
     },
     "deadheading": {
       "required": false,
-      "notes": "Not needed, but regular harvesting of pods acts in the same way to keep the plant productive."
+      "info": "Not needed, but regular harvesting of pods acts in the same way to keep the plant productive."
     },
     "seedSaving": {
       "canSaveSeeds": true,
@@ -638,7 +673,13 @@ window.PLANT_DATA = [
       "Blackfly — aphids love new growth. Spray with water or soapy mix.",
       "Slugs — protect young seedlings with copper tape or grit."
     ],
-    "funFact": "Climbing beans are actually perennials in their native Central America, where they grow from tuberous roots. In the UK, we grow them as annuals because they can't survive our winters."
+    "funFact": "Climbing beans are actually perennials in their native Central America, where they grow from tuberous roots. In the UK, we grow them as annuals because they can't survive our winters.",
+    "milestones": {
+      "2026": {
+        "firstFlowerDate": "",
+        "firstFruitDate": ""
+      }
+    }
   },
   {
     "id": "coriander",
@@ -647,6 +688,7 @@ window.PLANT_DATA = [
     "family": "Apiaceae",
     "category": "herb",
     "variety": "Calypso",
+    "edible": true,
     "description": "A dual-purpose herb grown for its fresh citrusy leaves (cilantro) and aromatic seeds (coriander). It grows fast but is prone to bolting in hot weather. Sow little and often for a constant supply.",
     "images": {
       "plant": "images/coriander/plant.jpg",
@@ -658,7 +700,7 @@ window.PLANT_DATA = [
       "matureHeight": "30–60cm",
       "matureSpread": "20–30cm",
       "hardiness": "Half-hardy (survives light frosts)",
-      "lifespan": "Annual",
+      "lifespan": "Annual (collect seeds)",
       "sunRequirement": "Partial shade (summer) to full sun (spring/autumn)",
       "waterNeeds": "Moderate — keep soil moist to delay bolting",
       "soilType": "Light, well-drained potting compost",
@@ -737,7 +779,7 @@ window.PLANT_DATA = [
     },
     "deadheading": {
       "required": false,
-      "notes": "Bolting is natural. If you want leaves, harvest the whole plant when it bolts. If you want seeds (coriander spice), let it flower and set seed."
+      "info": "Bolting is natural. If you want leaves, harvest the whole plant when it bolts. If you want seeds (coriander spice), let it flower and set seed."
     },
     "seedSaving": {
       "canSaveSeeds": true,
@@ -754,7 +796,13 @@ window.PLANT_DATA = [
       "Aphids — can attack soft shoot tips.",
       "Root rot — if overwatered in winter."
     ],
-    "funFact": "Coriander is one of the world's oldest spices, found in seeds in the tomb of Tutankhamun!"
+    "funFact": "Coriander is one of the world's oldest spices, found in seeds in the tomb of Tutankhamun!",
+    "milestones": {
+      "2026": {
+        "firstFlowerDate": "",
+        "firstFruitDate": ""
+      }
+    }
   },
   {
     "id": "cosmos-bipinnatus",
@@ -763,6 +811,7 @@ window.PLANT_DATA = [
     "family": "Asteraceae",
     "category": "flower",
     "variety": "",
+    "edible": false,
     "description": "A graceful, tall annual with feathery foliage and large, daisy-like flowers in shades of pink, white, and crimson. Loved by pollinators and perfect for cutting.",
     "images": {
       "plant": "images/cosmos-bipinnatus/plant.jpg",
@@ -774,7 +823,7 @@ window.PLANT_DATA = [
       "matureHeight": "90cm–1.2m",
       "matureSpread": "45–60cm",
       "hardiness": "Half-hardy annual",
-      "lifespan": "Annual",
+      "lifespan": "Annual (collect seeds)",
       "sunRequirement": "Full sun",
       "waterNeeds": "Moderate — drought tolerant once established",
       "soilType": "Poor to moderately fertile, well-drained soil",
@@ -827,7 +876,7 @@ window.PLANT_DATA = [
     },
     "deadheading": {
       "required": true,
-      "notes": "Deadhead spent blooms regularly to encourage continuous flowering until the first frosts."
+      "info": "Deadhead spent blooms regularly to encourage continuous flowering until the first frosts."
     },
     "seedSaving": {
       "canSaveSeeds": true,
@@ -844,7 +893,13 @@ window.PLANT_DATA = [
       "Aphids on soft shoot tips.",
       "Powdery mildew in late summer if crowded or dry at the roots."
     ],
-    "funFact": "The name Cosmos comes from the Greek word for 'order' or 'harmony', referring to the plant's evenly placed petals."
+    "funFact": "The name Cosmos comes from the Greek word for 'order' or 'harmony', referring to the plant's evenly placed petals.",
+    "milestones": {
+      "2026": {
+        "firstFlowerDate": "",
+        "firstFruitDate": ""
+      }
+    }
   },
   {
     "id": "courgette",
@@ -853,6 +908,7 @@ window.PLANT_DATA = [
     "family": "Cucurbitaceae",
     "category": "vegetable",
     "variety": "Defender",
+    "edible": true,
     "description": "Courgettes are incredibly productive and satisfying to grow. A single plant can produce dozens of fruits throughout the summer. They love the warmth and will thrive in a large pot on a sunny balcony.",
     "images": {
       "plant": "images/courgette/plant.jpg",
@@ -865,7 +921,7 @@ window.PLANT_DATA = [
       "matureHeight": "45–90cm",
       "matureSpread": "90–120cm",
       "hardiness": "Half-hardy (not frost tolerant)",
-      "lifespan": "Annual",
+      "lifespan": "Annual (collect seeds)",
       "sunRequirement": "Full sun (6+ hours)",
       "waterNeeds": "High — requires daily watering in summer",
       "soilType": "Rich, well-drained potting compost with added manure",
@@ -930,7 +986,7 @@ window.PLANT_DATA = [
     },
     "deadheading": {
       "required": false,
-      "notes": "Harvesting the fruit effectively 'deadheads' the plant. You can also harvest the male flowers for cooking."
+      "info": "Harvesting the fruit effectively 'deadheads' the plant. You can also harvest the male flowers for cooking."
     },
     "seedSaving": {
       "canSaveSeeds": true,
@@ -949,7 +1005,13 @@ window.PLANT_DATA = [
       "Poor Pollination — if fruits shrivel, try hand-pollination.",
       "Tiny courgettes begin to form but then drop or shrivel are due to poor pollination. Plenty of flowers but no fruit forming. To help nature along and ensure successful fruit production, you can hand pollinate female flowers when natural methods fail: Pick a fresh male flower. Gently remove the petals to expose the stamen. Lightly brush it onto the stigma of a female flower. You can also use a small paintbrush or cotton bud if you don’t want to remove flowers. Do this early in the morning, when flowers are open and pollen is fresh."
     ],
-    "funFact": "If you don't harvest courgettes, they can grow into giant marrows over a metre long in just a few weeks! Courgette flowers are edible, stuffed or deep-fried in batter, or added to pasta and stir-fry dishes."
+    "funFact": "If you don't harvest courgettes, they can grow into giant marrows over a metre long in just a few weeks! Courgette flowers are edible, stuffed or deep-fried in batter, or added to pasta and stir-fry dishes.",
+    "milestones": {
+      "2026": {
+        "firstFlowerDate": "",
+        "firstFruitDate": ""
+      }
+    }
   },
   {
     "id": "hellebore",
@@ -958,6 +1020,7 @@ window.PLANT_DATA = [
     "family": "Ranunculaceae",
     "category": "flower",
     "variety": "Orientalis Hybrids (Lenten Rose)",
+    "edible": false,
     "description": "Hellebores are the stars of the winter garden. These incredibly hardy perennials provide elegant, nodding flowers from mid-winter through early spring. They are perfect for shaded balcony corners where few other plants thrive. Their leathery, evergreen foliage provides year-round structure.",
     "images": {
       "plant": "images/hellebore/plant.jpg",
@@ -969,7 +1032,7 @@ window.PLANT_DATA = [
       "matureHeight": "30-45cm",
       "matureSpread": "30-45cm",
       "hardiness": "Fully hardy (thrives in UK winters)",
-      "lifespan": "Perennial",
+      "lifespan": "Perennial (comes back every year)",
       "sunRequirement": "Dappled shade to partial shade",
       "waterNeeds": "Moderate — prefers consistently moist but well-drained soil",
       "soilType": "Rich, moisture-retentive but well-drained alkaline soil",
@@ -1032,7 +1095,7 @@ window.PLANT_DATA = [
     },
     "deadheading": {
       "required": true,
-      "notes": "Remove faded flower stems to the base unless you want them to self-seed. This helps the plant focus energy on root and leaf growth."
+      "info": "Remove faded flower stems to the base unless you want them to self-seed. This helps the plant focus energy on root and leaf growth."
     },
     "seedSaving": {
       "canSaveSeeds": true,
@@ -1050,7 +1113,13 @@ window.PLANT_DATA = [
       "Aphids in spring — wash off with water",
       "Slugs on young growth — use grit or copper tape"
     ],
-    "funFact": "The 'Hellebore Haircut' is a traditional gardening task where all old foliage is cut back in late winter to let the new flowers shine without being hidden by tattered leaves."
+    "funFact": "The 'Hellebore Haircut' is a traditional gardening task where all old foliage is cut back in late winter to let the new flowers shine without being hidden by tattered leaves.",
+    "milestones": {
+      "2026": {
+        "firstFlowerDate": "",
+        "firstFruitDate": ""
+      }
+    }
   },
   {
     "id": "hollyhock",
@@ -1059,6 +1128,7 @@ window.PLANT_DATA = [
     "family": "Malvaceae",
     "category": "flower",
     "variety": "Spring Celebrities",
+    "edible": false,
     "description": "A wonderful dwarf series of hollyhocks that grow to a manageable 60-80cm, making them perfect for large pots on a balcony. Unlike traditional biennials, 'Spring Celebrities' often flowers in its first year if sown early. They produce beautiful, large, double blooms in a range of colours.",
     "images": {
       "plant": "images/hollyhock/plant.jpg",
@@ -1070,7 +1140,7 @@ window.PLANT_DATA = [
       "matureHeight": "60–80cm",
       "matureSpread": "30–45cm",
       "hardiness": "Fully hardy",
-      "lifespan": "Short-lived perennial (often grown as biennial)",
+      "lifespan": "Biennial (flowers in second year)",
       "sunRequirement": "Full sun (6+ hours)",
       "waterNeeds": "Moderate — pots dry out fast in summer",
       "soilType": "Rich, well-drained potting compost",
@@ -1137,7 +1207,7 @@ window.PLANT_DATA = [
     },
     "deadheading": {
       "required": true,
-      "notes": "Removing spent flowers can extend the blooming period. However, if you want the plant to self-seed or if you want to save seeds, leave the last spikes of the season."
+      "info": "Removing spent flowers can extend the blooming period. However, if you want the plant to self-seed or if you want to save seeds, leave the last spikes of the season."
     },
     "seedSaving": {
       "canSaveSeeds": true,
@@ -1161,7 +1231,13 @@ window.PLANT_DATA = [
       "Slugs and Snails — love young seedlings. Use beer traps or copper tape.",
       "Caterpillars — can shred leaves. Pick off by hand."
     ],
-    "funFact": "In the Victorian language of flowers, hollyhocks symbolise ambition and fecundity. They were often planted near outhouses in the past to hide them from view!"
+    "funFact": "In the Victorian language of flowers, hollyhocks symbolise ambition and fecundity. They were often planted near outhouses in the past to hide them from view!",
+    "milestones": {
+      "2026": {
+        "firstFlowerDate": "",
+        "firstFruitDate": ""
+      }
+    }
   },
   {
     "id": "lavender",
@@ -1170,6 +1246,7 @@ window.PLANT_DATA = [
     "family": "Lamiaceae",
     "category": "herb",
     "variety": "Hidcote",
+    "edible": true,
     "description": "A beautiful, fragrant, evergreen perennial that thrives in pots and loves the well-drained conditions that containers provide. The purple flower spikes appear in summer and are absolute magnets for bees. Low maintenance once established.",
     "images": {
       "plant": "images/lavender/plant.jpg",
@@ -1181,7 +1258,7 @@ window.PLANT_DATA = [
       "matureHeight": "30–60cm",
       "matureSpread": "30–45cm",
       "hardiness": "Fully hardy",
-      "lifespan": "Perennial (5–15 years)",
+      "lifespan": "Perennial (comes back every year) (5–15 years)",
       "sunRequirement": "Full sun (6+ hours)",
       "waterNeeds": "Low — drought-tolerant once established",
       "soilType": "Well-drained, gritty compost (add perlite or grit)",
@@ -1245,7 +1322,7 @@ window.PLANT_DATA = [
     },
     "deadheading": {
       "required": true,
-      "notes": "After flowering, trim off spent flower stalks and lightly shape the plant. In late August, give it a light haircut — but never cut into old wood (the brown stems), as lavender won't regrow from them."
+      "info": "After flowering, trim off spent flower stalks and lightly shape the plant. In late August, give it a light haircut — but never cut into old wood (the brown stems), as lavender won't regrow from them."
     },
     "seedSaving": {
       "canSaveSeeds": true,
@@ -1261,7 +1338,13 @@ window.PLANT_DATA = [
       "Woody/leggy growth — prune annually after flowering. Never cut into old wood.",
       "Frost damage on wet roots — raise pots off the ground in winter to prevent waterlogging."
     ],
-    "funFact": "The name lavender comes from the Latin 'lavare' meaning 'to wash' — the Romans used it to scent their baths. It's been used for over 2,500 years for its calming fragrance."
+    "funFact": "The name lavender comes from the Latin 'lavare' meaning 'to wash' — the Romans used it to scent their baths. It's been used for over 2,500 years for its calming fragrance.",
+    "milestones": {
+      "2026": {
+        "firstFlowerDate": "",
+        "firstFruitDate": ""
+      }
+    }
   },
   {
     "id": "lettuce",
@@ -1270,19 +1353,20 @@ window.PLANT_DATA = [
     "family": "Asteraceae",
     "category": "vegetable",
     "variety": "Little Gem",
+    "edible": true,
     "description": "The easiest edible to grow on a balcony. Salad leaves grow fast, tolerate partial shade, and can be harvested in as little as 3–4 weeks. Sow small amounts every 2 weeks for a continuous supply all summer.",
     "images": {
       "plant": "images/lettuce/plant.jpg",
       "flower": null,
-      "seedling": "images/lettuce/seedling.jpg",
-      "seed": "images/lettuce/seed.jpg",
+      "seedling": null,
+      "seed": null,
       "fruit": null
     },
     "characteristics": {
       "matureHeight": "15–30cm",
       "matureSpread": "15–25cm",
       "hardiness": "Hardy (tolerates light frost)",
-      "lifespan": "Annual",
+      "lifespan": "Annual (collect seeds)",
       "sunRequirement": "Partial shade to full sun (3–6 hours)",
       "waterNeeds": "Moderate — keep soil consistently moist",
       "soilType": "Any good potting compost",
@@ -1358,7 +1442,7 @@ window.PLANT_DATA = [
     },
     "deadheading": {
       "required": false,
-      "notes": "Not applicable — harvest before flowering. If the plant bolts (sends up a tall flower stalk), the leaves turn bitter. Pull it out and sow fresh."
+      "info": "Not applicable — harvest before flowering. If the plant bolts (sends up a tall flower stalk), the leaves turn bitter. Pull it out and sow fresh."
     },
     "seedSaving": {
       "canSaveSeeds": true,
@@ -1375,7 +1459,13 @@ window.PLANT_DATA = [
       "Slugs and snails — the number one enemy. Use copper tape, beer traps, or raise pots off the ground.",
       "Aphids — wash off with a jet of water or spray with diluted washing-up liquid."
     ],
-    "funFact": "Ancient Egyptians first cultivated lettuce over 4,500 years ago — but they grew it for the oil in its seeds, not for salad!"
+    "funFact": "Ancient Egyptians first cultivated lettuce over 4,500 years ago — but they grew it for the oil in its seeds, not for salad!",
+    "milestones": {
+      "2026": {
+        "firstFlowerDate": "",
+        "firstFruitDate": ""
+      }
+    }
   },
   {
     "id": "marigold",
@@ -1396,7 +1486,7 @@ window.PLANT_DATA = [
       "matureHeight": "20-30cm",
       "matureSpread": "20-25cm",
       "hardiness": "Half-hardy (killed by frost, but thrives outdoors May-October in London)",
-      "lifespan": "Annual",
+      "lifespan": "Annual (collect seeds)",
       "sunRequirement": "Full sun (6+ hours direct sunlight)",
       "waterNeeds": "Moderate — water when the top centimetre of compost feels dry, daily in hot spells",
       "soilType": "Any well-drained multipurpose compost; not fussy about soil",
@@ -1450,7 +1540,7 @@ window.PLANT_DATA = [
     },
     "deadheading": {
       "required": true,
-      "notes": "Deadhead spent flowers at least twice a week during peak season (July-August) by snipping the whole flower head just above the nearest set of leaves. This prevents seed formation and redirects energy into new blooms, keeping plants flowering continuously until frost. Stop deadheading in mid-September if you want to save seed."
+      "info": "Deadhead spent flowers at least twice a week during peak season (July-August) by snipping the whole flower head just above the nearest set of leaves. This prevents seed formation and redirects energy into new blooms, keeping plants flowering continuously until frost. Stop deadheading in mid-September if you want to save seed."
     },
     "seedSaving": {
       "canSaveSeeds": true,
@@ -1471,7 +1561,13 @@ window.PLANT_DATA = [
       "Poor flowering — usually too much shade or high-nitrogen feed; ensure 6+ hours of sun and switch to tomato feed",
       "Grey mould (botrytis) in wet weather — remove affected flowers promptly, improve airflow"
     ],
-    "funFact": "Despite their names, French marigolds and African marigolds are both from Mexico — the names come from 16th-century trade routes. In Mexico, marigolds (cempasuchil) are the iconic flower of Dia de los Muertos, believed to guide spirits of the dead back to the living with their bright colour and strong scent."
+    "funFact": "Despite their names, French marigolds and African marigolds are both from Mexico — the names come from 16th-century trade routes. In Mexico, marigolds (cempasuchil) are the iconic flower of Dia de los Muertos, believed to guide spirits of the dead back to the living with their bright colour and strong scent.",
+    "milestones": {
+      "2026": {
+        "firstFlowerDate": "",
+        "firstFruitDate": ""
+      }
+    }
   },
   {
     "id": "matthiola",
@@ -1480,6 +1576,7 @@ window.PLANT_DATA = [
     "family": "Brassicaceae",
     "category": "flower",
     "variety": "Dwarf Ten Week",
+    "edible": false,
     "description": "Stocks are much-loved for their wonderful, spicy clove-like fragrance and beautiful spikes of flowers in soft pastel shades. The 'Dwarf Ten Week' variety is perfect for containers, as it stays compact and bushy, reaching full bloom just 10 weeks after sowing. They are excellent for cutting and bringing the scent indoors.",
     "images": {
       "plant": "images/matthiola/plant.jpg",
@@ -1491,7 +1588,7 @@ window.PLANT_DATA = [
       "matureHeight": "30cm",
       "matureSpread": "25cm",
       "hardiness": "Half-hardy annual",
-      "lifespan": "Annual",
+      "lifespan": "Annual (collect seeds)",
       "sunRequirement": "Full sun (6+ hours)",
       "waterNeeds": "Moderate — keep soil moist but not waterlogged",
       "soilType": "Fertile, well-drained, neutral to slightly alkaline",
@@ -1562,7 +1659,7 @@ window.PLANT_DATA = [
     },
     "deadheading": {
       "required": true,
-      "notes": "Removing the main flower spike once it fades will encourage the plant to produce smaller side-shoots and extend the flowering season."
+      "info": "Removing the main flower spike once it fades will encourage the plant to produce smaller side-shoots and extend the flowering season."
     },
     "seedSaving": {
       "canSaveSeeds": true,
@@ -1580,7 +1677,13 @@ window.PLANT_DATA = [
       "Aphids — can cluster on new growth. Wash off or use organic soap spray.",
       "Flea Beetle — can pepper leaves with small holes. Keep plants well-watered."
     ],
-    "funFact": "In the Victorian 'Language of Flowers', Stocks symbolised 'lasting beauty' and a 'happy life' — likely due to their enduring, sweet scent!"
+    "funFact": "In the Victorian 'Language of Flowers', Stocks symbolised 'lasting beauty' and a 'happy life' — likely due to their enduring, sweet scent!",
+    "milestones": {
+      "2026": {
+        "firstFlowerDate": "",
+        "firstFruitDate": ""
+      }
+    }
   },
   {
     "id": "mint",
@@ -1589,6 +1692,7 @@ window.PLANT_DATA = [
     "family": "Lamiaceae",
     "category": "herb",
     "variety": "Garden Mint",
+    "edible": true,
     "description": "Almost impossible to kill! Mint is incredibly vigorous and perfect for beginners. Keep it in its own pot — it spreads aggressively and will take over anything it's planted with. Great for tea, cocktails, and cooking.",
     "images": {
       "plant": "images/mint/plant.jpg",
@@ -1600,7 +1704,7 @@ window.PLANT_DATA = [
       "matureHeight": "30–60cm",
       "matureSpread": "Indefinite (spreads by runners)",
       "hardiness": "Fully hardy",
-      "lifespan": "Perennial",
+      "lifespan": "Perennial (comes back every year)",
       "sunRequirement": "Partial shade to full sun (3+ hours)",
       "waterNeeds": "Moderate — likes moist soil",
       "soilType": "Any potting compost",
@@ -1664,7 +1768,7 @@ window.PLANT_DATA = [
     },
     "deadheading": {
       "required": false,
-      "notes": "Not essential. Cutting back before or during flowering encourages fresh leafy growth. The flowers attract bees, so leaving some is beneficial."
+      "info": "Not essential. Cutting back before or during flowering encourages fresh leafy growth. The flowers attract bees, so leaving some is beneficial."
     },
     "seedSaving": {
       "canSaveSeeds": false,
@@ -1680,7 +1784,13 @@ window.PLANT_DATA = [
       "Spreading too aggressively — ALWAYS keep in its own pot. Never plant with other herbs.",
       "Leggy growth — cut back hard in midsummer for a flush of fresh leaves."
     ],
-    "funFact": "In Greek mythology, mint was originally a nymph called Minthe who was transformed into a plant by the jealous goddess Persephone. But she retained her wonderful fragrance."
+    "funFact": "In Greek mythology, mint was originally a nymph called Minthe who was transformed into a plant by the jealous goddess Persephone. But she retained her wonderful fragrance.",
+    "milestones": {
+      "2026": {
+        "firstFlowerDate": "",
+        "firstFruitDate": ""
+      }
+    }
   },
   {
     "id": "nasturtium",
@@ -1700,7 +1810,7 @@ window.PLANT_DATA = [
       "matureHeight": "20–30cm (bush) or trailing 1m+",
       "matureSpread": "30–60cm",
       "hardiness": "Half-hardy (killed by frost)",
-      "lifespan": "Annual",
+      "lifespan": "Annual (collect seeds)",
       "sunRequirement": "Full sun to partial shade (4+ hours)",
       "waterNeeds": "Low to Moderate — actually flowers better in poor, dry soil",
       "soilType": "Poor to average potting compost (don't enrich it!)",
@@ -1758,11 +1868,11 @@ window.PLANT_DATA = [
     },
     "deadheading": {
       "required": false,
-      "notes": "Optional but beneficial. Removing spent flowers encourages more blooms. If you want to save seeds, leave some flowers to set seed at the end of summer."
+      "info": "Optional but beneficial. Removing spent flowers encourages more blooms. If you want to save seeds, leave some flowers to set seed at the end of summer."
     },
     "edible": {
       "isEdible": true,
-      "notes": "Flowers, leaves, and seed pods are all edible with a peppery, watercress-like flavour."
+      "info": "Flowers, leaves, and seed pods are all edible with a peppery, watercress-like flavour."
     },
     "seedSaving": {
       "canSaveSeeds": true,
@@ -1779,7 +1889,13 @@ window.PLANT_DATA = [
       "Caterpillars — cabbage white butterflies love nasturtiums. Pick off caterpillars by hand.",
       "Too much foliage, not enough flowers — you're feeding/watering too much. Cut back on both."
     ],
-    "funFact": "Nasturtium seed pods were widely used as a caper substitute during WWII rationing in Britain. They're still pickled today — search for 'poor man's capers' recipes!"
+    "funFact": "Nasturtium seed pods were widely used as a caper substitute during WWII rationing in Britain. They're still pickled today — search for 'poor man's capers' recipes!",
+    "milestones": {
+      "2026": {
+        "firstFlowerDate": "",
+        "firstFruitDate": ""
+      }
+    }
   },
   {
     "id": "pansy",
@@ -1799,9 +1915,9 @@ window.PLANT_DATA = [
     "characteristics": {
       "matureHeight": "15–25cm",
       "matureSpread": "15–20cm",
-      "hardiness": "Fully hardy",
-      "lifespan": "Short-lived perennial (usually grown as annual)",
-      "sunRequirement": "Full sun or partial shade",
+      "hardiness": "Fully hardy (to -15°C)",
+      "lifespan": "Annual (collect seeds)",
+      "sunRequirement": "Full sun to partial shade",
       "waterNeeds": "Moderate — keep soil moist but not waterlogged",
       "soilType": "Well-drained, fertile multi-purpose compost",
       "containerSize": "1–2L pot or window box"
@@ -1876,7 +1992,7 @@ window.PLANT_DATA = [
     },
     "deadheading": {
       "required": true,
-      "notes": "Pinch off faded flowers including the green seed pod at the base. This prevents the plant from putting energy into seeds and encourages more flowers."
+      "info": "Pinch off faded flowers including the green seed pod at the base. This prevents the plant from putting energy into seeds and encourages more flowers."
     },
     "seedSaving": {
       "canSaveSeeds": true,
@@ -1894,7 +2010,145 @@ window.PLANT_DATA = [
       "Aphids — common in spring; rinse off with water.",
       "Powdery Mildew — greyish-white coating on leaves; improve airflow."
     ],
-    "funFact": "The name 'pansy' comes from the French word 'pensée', meaning 'thought' or 'remembrance'."
+    "funFact": "The name 'pansy' comes from the French word 'pensée', meaning 'thought' or 'remembrance'.",
+    "milestones": {
+      "2026": {
+        "firstFlowerDate": "",
+        "firstFruitDate": ""
+      }
+    }
+  },
+  {
+    "id": "parsley",
+    "commonName": "Parsley",
+    "latinName": "Petroselinum crispum",
+    "family": "Apiaceae",
+    "category": "herb",
+    "variety": "French / Giant of Italy",
+    "edible": true,
+    "description": "A versatile and hardy biennial herb, usually grown as an annual. Essential in many cuisines, it comes in curly and flat-leaved varieties. Parsley is rich in vitamins and adds a fresh, clean flavor to dishes.",
+    "images": {
+      "plant": "images/parsley/plant.jpg",
+      "flower": null,
+      "seedling": null,
+      "seed": null
+    },
+    "characteristics": {
+      "matureHeight": "30-45cm",
+      "matureSpread": "20-30cm",
+      "hardiness": "Hardy",
+      "lifespan": "Biennial (usually grown as an annual)",
+      "sunRequirement": "Full sun or partial shade",
+      "waterNeeds": "Regular — keep soil moist",
+      "soilType": "Fertile, moist, well-drained soil",
+      "containerSize": "2-5L pot",
+      "pinchOutTops": {
+        "required": false,
+        "info": "Not typically pinched out, but removing flower stalks in the first year is recommended."
+      }
+    },
+    "schedule": {
+      "january": [
+        "🌱 Sow seeds indoors"
+      ],
+      "february": [
+        "🌱 Sow seeds indoors"
+      ],
+      "march": [
+        "🌱 Sow seeds indoors",
+        "🌿 Sow seeds outdoors"
+      ],
+      "april": [
+        "🌱 Sow seeds indoors",
+        "🌿 Sow seeds outdoors",
+        "🌤️ Harden off seedlings"
+      ],
+      "may": [
+        "🌿 Sow seeds outdoors",
+        "🌤️ Harden off seedlings",
+        "🪴 Plant out into final containers",
+        "✂️ Harvest regularly"
+      ],
+      "june": [
+        "🌿 Sow seeds outdoors",
+        "🪴 Plant out into final containers",
+        "✂️ Harvest regularly"
+      ],
+      "july": [
+        "🌿 Sow seeds outdoors",
+        "✂️ Harvest regularly"
+      ],
+      "august": [
+        "🌿 Sow seeds outdoors",
+        "✂️ Harvest regularly"
+      ],
+      "september": [
+        "✂️ Harvest regularly"
+      ],
+      "october": [
+        "✂️ Harvest regularly"
+      ],
+      "november": [
+        "🧣 Protect with cloche for late harvests"
+      ],
+      "december": [
+        "🧣 Protect with cloche for late harvests"
+      ],
+      "frostSensitive": false
+    },
+    "care": {
+      "sowIndoors": "Sow seeds 1cm deep in pots on a warm windowsill (18-21°C). Germination is slow, often taking 3-4 weeks. Soaking seeds in warm water overnight can help.",
+      "sowOutdoors": "Sow in drills 1cm deep directly into pots or prepared ground. Thin seedlings to 15-20cm apart.",
+      "hardenOff": "Gradually acclimatise young plants to outdoor conditions for 7-10 days before planting out.",
+      "plantOut": "Space plants 15-30cm apart in moist, fertile soil. They prefer a spot that doesn't dry out completely.",
+      "watering": "Keep well-watered, especially during dry spells. Parsley likes consistent moisture.",
+      "feeding": "Feed with a general-purpose liquid fertiliser every few weeks during the growing season.",
+      "harvest": "Pick leaves from the outside of the plant to encourage new growth from the centre. Harvest regularly to keep the plant productive.",
+      "overwintering": "Hardy enough to survive winter. Use a cloche or cold frame to keep leaves in good condition for winter picking."
+    },
+    "propagation": {
+      "fromSeed": true,
+      "seedDescription": "Small, ribbed, brownish seeds. Known for slow and sometimes erratic germination.",
+      "germinationDays": "14-28 days at 18-21°C",
+      "fromCuttings": false,
+      "cuttingsMethod": null,
+      "fromDivision": false,
+      "divisionMethod": null
+    },
+    "deadheading": {
+      "required": true,
+      "info": "Remove any flower stalks as they appear in the first year to prevent the leaves from turning bitter and to keep the plant focused on foliage."
+    },
+    "seedSaving": {
+      "canSaveSeeds": true,
+      "method": "Allow the plant to flower in its second year. Harvest seed heads once they turn brown and dry. Shake into a paper bag.",
+      "seedPodDescription": "Seeds are produced in umbels (umbrella-like clusters)."
+    },
+    "varieties": [
+      "French (Giant of Italy)",
+      "Moss Curled",
+      "Bravour",
+      "Titan"
+    ],
+    "companionPlants": [
+      "tomato",
+      "asparagus",
+      "carrot",
+      "rose"
+    ],
+    "troubleshooting": [
+      "Slow germination — be patient, it can take up to a month.",
+      "Carrot fly — can occasionally attack the roots; consider using fine mesh.",
+      "Slugs and snails — especially fond of young seedlings.",
+      "Bolting — usually happens in its second year, but can happen early if stressed by drought."
+    ],
+    "funFact": "In ancient Greece, parsley was so highly regarded it was used to make wreaths for winners of athletic competitions and even to decorate tombs.",
+    "milestones": {
+      "2026": {
+        "firstFlowerDate": "",
+        "firstFruitDate": ""
+      }
+    }
   },
   {
     "id": "radish",
@@ -1903,6 +2157,7 @@ window.PLANT_DATA = [
     "family": "Brassicaceae",
     "category": "vegetable",
     "variety": "French Breakfast",
+    "edible": true,
     "description": "An annual bunching radish featuring elongated red roots with a distinct white tip. It is prized for its crisp texture and mild flavor. Extremely fast-growing, making it perfect for filling small gaps in the garden.",
     "images": {
       "plant": "images/radish/plant.jpg",
@@ -1914,7 +2169,7 @@ window.PLANT_DATA = [
       "matureHeight": "Up to 10cm",
       "matureSpread": "10–50cm",
       "hardiness": "H2 (Tolerant of low temperatures but will not survive being frozen)",
-      "lifespan": "Annual",
+      "lifespan": "Annual (collect seeds)",
       "sunRequirement": "Full sun",
       "waterNeeds": "Moderate — keep soil moist to delay bolting",
       "soilType": "Moist but well-drained; Chalk, Clay, Loam, or Sand",
@@ -1987,7 +2242,7 @@ window.PLANT_DATA = [
     },
     "deadheading": {
       "required": false,
-      "notes": "Not applicable — harvest before flowering. If radishes bolt and flower, the roots become inedible, but the flowers are edible and tasty in salads."
+      "info": "Not applicable — harvest before flowering. If radishes bolt and flower, the roots become inedible, but the flowers are edible and tasty in salads."
     },
     "seedSaving": {
       "canSaveSeeds": true,
@@ -2004,7 +2259,13 @@ window.PLANT_DATA = [
       "Flea beetles (which leave small holes in the leaves)",
       "Woody/pithy roots — left in the ground too long. Harvest promptly when ready."
     ],
-    "funFact": "Extremely versatile in the kitchen—great for eating raw, pickling, or even cooking with butter and garlic!"
+    "funFact": "Extremely versatile in the kitchen—great for eating raw, pickling, or even cooking with butter and garlic!",
+    "milestones": {
+      "2026": {
+        "firstFlowerDate": "",
+        "firstFruitDate": ""
+      }
+    }
   },
   {
     "id": "raspberries",
@@ -2013,6 +2274,7 @@ window.PLANT_DATA = [
     "family": "Rosaceae",
     "category": "fruit",
     "variety": "General",
+    "edible": true,
     "description": "A delicious and popular soft fruit, raspberries are hardy and relatively easy to grow. They are categorized into summer-fruiting and autumn-fruiting varieties, providing a long harvest season from June to October. They are members of the rose family and thrive in the UK's climate.",
     "images": {
       "plant": "images/raspberries/plant.jpg",
@@ -2023,7 +2285,7 @@ window.PLANT_DATA = [
       "matureHeight": "1.2–1.8m",
       "matureSpread": "0.5–1m",
       "hardiness": "Fully hardy (perennial)",
-      "lifespan": "Perennial (productive for 10-15 years)",
+      "lifespan": "Perennial (comes back every year) (productive for 10-15 years)",
       "sunRequirement": "Full sun or partial shade",
       "waterNeeds": "Moderate — keep well-watered, especially during fruit swelling",
       "soilType": "Slightly acidic, moisture-retentive, well-drained soil",
@@ -2097,7 +2359,7 @@ window.PLANT_DATA = [
     },
     "deadheading": {
       "required": true,
-      "notes": "Remove 'suckers' that appear outside the designated growing area to prevent spreading."
+      "info": "Remove 'suckers' that appear outside the designated growing area to prevent spreading."
     },
     "seedSaving": {
       "canSaveSeeds": false,
@@ -2116,7 +2378,13 @@ window.PLANT_DATA = [
       "Grey mould (Botrytis)",
       "Root rot"
     ],
-    "funFact": "The word 'raspberry' is derived from the Old English 'rasp', which meant 'to scrape', referring to its thorny stems."
+    "funFact": "The word 'raspberry' is derived from the Old English 'rasp', which meant 'to scrape', referring to its thorny stems.",
+    "milestones": {
+      "2026": {
+        "firstFlowerDate": "",
+        "firstFruitDate": ""
+      }
+    }
   },
   {
     "id": "rocket",
@@ -2125,6 +2393,7 @@ window.PLANT_DATA = [
     "family": "Brassicaceae",
     "category": "herb",
     "variety": "Salad Rocket",
+    "edible": true,
     "description": "A fast-growing, peppery salad leaf that is incredibly easy to grow in pots. Regular picking keeps the leaves young and tender. Ideally grown in cooler weather (spring/autumn) as heat makes it bolt and turn spicy.",
     "images": {
       "plant": "images/rocket/plant.jpg",
@@ -2136,7 +2405,7 @@ window.PLANT_DATA = [
       "matureHeight": "20–50cm",
       "matureSpread": "20–30cm",
       "hardiness": "Hardy (tolerates frost)",
-      "lifespan": "Annual",
+      "lifespan": "Annual (collect seeds)",
       "sunRequirement": "Partial shade to full sun",
       "waterNeeds": "Moderate — keep moist to prevent bolting",
       "soilType": "Any moisture-retentive potting compost",
@@ -2213,7 +2482,7 @@ window.PLANT_DATA = [
     },
     "deadheading": {
       "required": false,
-      "notes": "If it flowers, the leaves become bitter. You can eat the flowers though! Remove flower spikes to extend leaf harvest slightly."
+      "info": "If it flowers, the leaves become bitter. You can eat the flowers though! Remove flower spikes to extend leaf harvest slightly."
     },
     "seedSaving": {
       "canSaveSeeds": true,
@@ -2230,7 +2499,13 @@ window.PLANT_DATA = [
       "Bolting — flowering prematurely due to heat or dryness. Keep watered and shaded in summer.",
       "Bitter taste — usually due to heat or old leaves."
     ],
-    "funFact": "Rocket has been grown in the Mediterranean since Roman times and was once considered an aphrodisiac!"
+    "funFact": "Rocket has been grown in the Mediterranean since Roman times and was once considered an aphrodisiac!",
+    "milestones": {
+      "2026": {
+        "firstFlowerDate": "",
+        "firstFruitDate": ""
+      }
+    }
   },
   {
     "id": "snapdragon",
@@ -2251,7 +2526,7 @@ window.PLANT_DATA = [
       "matureHeight": "20–90cm (depending on variety)",
       "matureSpread": "25–45cm",
       "hardiness": "Half-hardy annual",
-      "lifespan": "Annual / Short-lived perennial",
+      "lifespan": "Annual / Perennial (comes back every year) (short-lived)",
       "sunRequirement": "Full sun (6+ hours)",
       "waterNeeds": "Moderate — keep moist but not waterlogged",
       "soilType": "Well-drained, fertile soil",
@@ -2310,11 +2585,11 @@ window.PLANT_DATA = [
     },
     "deadheading": {
       "required": true,
-      "notes": "Crucial for continuous flowering. Pinch off spent flower spikes at the base."
+      "info": "Crucial for continuous flowering. Pinch off spent flower spikes at the base."
     },
     "edible": {
       "isEdible": false,
-      "notes": "Technically edible but often very bitter; not commonly used as a food plant."
+      "info": "Technically edible but often very bitter; not commonly used as a food plant."
     },
     "seedSaving": {
       "canSaveSeeds": true,
@@ -2331,7 +2606,13 @@ window.PLANT_DATA = [
       "Aphids",
       "Slugs and snails (especially young plants)"
     ],
-    "funFact": "The common name 'snapdragon' comes from the flower's resemblance to a dragon's snout, which snaps open and shut when squeezed."
+    "funFact": "The common name 'snapdragon' comes from the flower's resemblance to a dragon's snout, which snaps open and shut when squeezed.",
+    "milestones": {
+      "2026": {
+        "firstFlowerDate": "",
+        "firstFruitDate": ""
+      }
+    }
   },
   {
     "id": "spinach-f1-apollo",
@@ -2340,6 +2621,7 @@ window.PLANT_DATA = [
     "family": "Amaranthaceae",
     "category": "vegetable",
     "variety": "Apollo F1",
+    "edible": true,
     "description": "A high-yielding, RHS Award of Garden Merit variety specifically bred for its resistance to bolting and downy mildew. Excellent for both baby leaf salads and mature cooking greens. Its compact growth makes it perfect for pots and window boxes.",
     "images": {
       "plant": "images/spinach-f1-apollo/plant.jpg",
@@ -2349,7 +2631,7 @@ window.PLANT_DATA = [
       "matureHeight": "15-30cm",
       "matureSpread": "15-30cm",
       "hardiness": "Hardy",
-      "lifespan": "Annual",
+      "lifespan": "Annual (collect seeds)",
       "sunRequirement": "Partial shade to full sun",
       "waterNeeds": "Moderate — never let soil dry out",
       "soilType": "Fertile, moisture-retentive soil",
@@ -2421,7 +2703,7 @@ window.PLANT_DATA = [
     },
     "deadheading": {
       "required": false,
-      "notes": "No deadheading needed. However, pinch out any flower stalks immediately to prevent bolting."
+      "info": "No deadheading needed. However, pinch out any flower stalks immediately to prevent bolting."
     },
     "seedSaving": {
       "canSaveSeeds": true,
@@ -2439,7 +2721,13 @@ window.PLANT_DATA = [
       "Downy mildew — Apollo F1 is resistant, but ensure good air circulation.",
       "Slugs and snails — protect young seedlings."
     ],
-    "funFact": "Spinach 'Apollo' F1 holds the RHS Award of Garden Merit, confirming its status as an outstanding variety for home gardeners."
+    "funFact": "Spinach 'Apollo' F1 holds the RHS Award of Garden Merit, confirming its status as an outstanding variety for home gardeners.",
+    "milestones": {
+      "2026": {
+        "firstFlowerDate": "",
+        "firstFruitDate": ""
+      }
+    }
   },
   {
     "id": "strawberry",
@@ -2448,6 +2736,7 @@ window.PLANT_DATA = [
     "family": "Rosaceae",
     "category": "fruit",
     "variety": "Cambridge Favourite",
+    "edible": true,
     "description": "A garden classic, strawberries are one of the most rewarding fruits for beginners. 'Cambridge Favourite' is a mid-season variety known for its reliability, heavy crops, and excellent flavor. Perfect for pots, hanging baskets, or balcony troughs.",
     "images": {
       "plant": "images/strawberry/plant.jpg",
@@ -2460,7 +2749,7 @@ window.PLANT_DATA = [
       "matureHeight": "20–30cm",
       "matureSpread": "30–45cm",
       "hardiness": "Fully hardy (perennial)",
-      "lifespan": "Perennial (productive for 3-4 years)",
+      "lifespan": "Perennial (comes back every year) (productive for 3-4 years)",
       "sunRequirement": "Full sun (6+ hours)",
       "waterNeeds": "High — keep well-watered when fruiting",
       "soilType": "Fertile, well-drained potting compost",
@@ -2519,7 +2808,7 @@ window.PLANT_DATA = [
     },
     "deadheading": {
       "required": true,
-      "notes": "Remove runners during the fruiting season to focus the plant's energy on berries. Cut off dead leaves after the harvest."
+      "info": "Remove runners during the fruiting season to focus the plant's energy on berries. Cut off dead leaves after the harvest."
     },
     "seedSaving": {
       "canSaveSeeds": true,
@@ -2538,7 +2827,13 @@ window.PLANT_DATA = [
       "Grey mould (Botrytis)",
       "Powdery mildew"
     ],
-    "funFact": "Strawberries are the only fruit that wear their seeds on the outside—an average strawberry has about 200 seeds!"
+    "funFact": "Strawberries are the only fruit that wear their seeds on the outside—an average strawberry has about 200 seeds!",
+    "milestones": {
+      "2026": {
+        "firstFlowerDate": "",
+        "firstFruitDate": ""
+      }
+    }
   },
   {
     "id": "sunflower",
@@ -2547,6 +2842,10 @@ window.PLANT_DATA = [
     "family": "Asteraceae",
     "category": "flower",
     "variety": "Russian Giant",
+    "edible": {
+      "isEdible": true,
+      "info": "Once seeds have dried they make an edible snack raw or roasted."
+    },
     "description": "The quintessential summer flower, Russian Giant sunflowers are famous for their incredible height and massive, golden-yellow heads. They are excellent for pollinators and provide a wonderful spectacle in any garden or large container. Children love growing them to see how high they can go!",
     "images": {
       "plant": "images/sunflower/plant.jpg",
@@ -2558,7 +2857,7 @@ window.PLANT_DATA = [
       "matureHeight": "2–3m+",
       "matureSpread": "60–90cm",
       "hardiness": "Half-hardy",
-      "lifespan": "Annual",
+      "lifespan": "Annual (collect seeds)",
       "sunRequirement": "Full sun (6-8+ hours)",
       "waterNeeds": "High — 'water hogs' during peak growth",
       "soilType": "Rich, fertile, well-drained soil (heavy feeders)",
@@ -2614,7 +2913,7 @@ window.PLANT_DATA = [
     },
     "deadheading": {
       "required": false,
-      "notes": "Deadheading the main bloom won't usually produce more flowers on giant single-stem varieties, but it can encourage side shoots on multi-branching types."
+      "info": "Deadheading the main bloom won't usually produce more flowers on giant single-stem varieties, but it can encourage side shoots on multi-branching types."
     },
     "seedSaving": {
       "canSaveSeeds": true,
@@ -2634,7 +2933,13 @@ window.PLANT_DATA = [
       "Birds (eating seeds)",
       "Wind damage (needs staking)"
     ],
-    "funFact": "Sunflowers are 'phytoremediators'—they were planted at Chernobyl to help extract radioactive toxins from the soil!"
+    "funFact": "Sunflowers are 'phytoremediators'—they were planted at Chernobyl to help extract radioactive toxins from the soil!",
+    "milestones": {
+      "2026": {
+        "firstFlowerDate": "",
+        "firstFruitDate": ""
+      }
+    }
   },
   {
     "id": "sweetcorn",
@@ -2643,6 +2948,7 @@ window.PLANT_DATA = [
     "family": "Poaceae",
     "category": "vegetable",
     "variety": "Lark (Tendersweet)",
+    "edible": true,
     "description": "Sweetcorn is a tall, architectural plant that produces incredibly sweet, tender cobs. Homegrown corn is far superior to shop-bought because the sugars begin to turn into starch immediately after harvest. They are wind-pollinated and must be planted in blocks for success.",
     "images": {
       "plant": "images/sweetcorn/plant.jpg",
@@ -2655,7 +2961,7 @@ window.PLANT_DATA = [
       "matureHeight": "1.5–2m",
       "matureSpread": "45cm",
       "hardiness": "Tender (not frost tolerant)",
-      "lifespan": "Annual",
+      "lifespan": "Annual (collect seeds)",
       "sunRequirement": "Full sun (6+ hours)",
       "waterNeeds": "High — requires regular watering as cobs develop",
       "soilType": "Rich, well-manured, well-drained soil",
@@ -2718,7 +3024,7 @@ window.PLANT_DATA = [
     },
     "deadheading": {
       "required": false,
-      "notes": "Not applicable. Do not remove the male tassels at the top, as they are needed for pollination."
+      "info": "Not applicable. Do not remove the male tassels at the top, as they are needed for pollination."
     },
     "seedSaving": {
       "canSaveSeeds": true,
@@ -2737,7 +3043,13 @@ window.PLANT_DATA = [
       "Slugs — can decimate young seedlings. Use beer traps or barriers.",
       "Wind Damage — tall plants can blow over. Stake if necessary or earth up the base."
     ],
-    "funFact": "An ear of corn almost always has an even number of rows — usually 16! Each silk on a cob is attached to one individual kernel."
+    "funFact": "An ear of corn almost always has an even number of rows — usually 16! Each silk on a cob is attached to one individual kernel.",
+    "milestones": {
+      "2026": {
+        "firstFlowerDate": "",
+        "firstFruitDate": ""
+      }
+    }
   },
   {
     "id": "tumbling-tom-red",
@@ -2746,6 +3058,7 @@ window.PLANT_DATA = [
     "family": "Solanaceae",
     "category": "vegetable",
     "variety": "Tumbling Tomato",
+    "edible": true,
     "description": "A prolific cascading cherry tomato that is perfect for hanging baskets and tall containers. It produces masses of sweet, red cherry tomatoes throughout the summer. No staking or side-shoot removal needed—just let it tumble!",
     "images": {
       "plant": "images/tumbling-tom-red/plant.jpg",
@@ -2758,7 +3071,7 @@ window.PLANT_DATA = [
       "matureHeight": "Trailing (30cm height, trails to 50cm+)",
       "matureSpread": "30–45cm",
       "hardiness": "Half-hardy (killed by frost)",
-      "lifespan": "Annual",
+      "lifespan": "Annual (collect seeds)",
       "sunRequirement": "Full sun (6+ hours)",
       "waterNeeds": "High — daily watering essential in baskets",
       "soilType": "Rich potting compost with water-retaining gel",
@@ -2824,7 +3137,7 @@ window.PLANT_DATA = [
     },
     "deadheading": {
       "required": false,
-      "notes": "No deadheading or pinching out needed. Just remove any yellowing leaves to improve airflow."
+      "info": "No deadheading or pinching out needed. Just remove any yellowing leaves to improve airflow."
     },
     "seedSaving": {
       "canSaveSeeds": true,
@@ -2841,7 +3154,13 @@ window.PLANT_DATA = [
       "Blossom end rot — caused by erratic watering.",
       "Aphids — wipe off or spray with soapy water."
     ],
-    "funFact": "Tumbling Tom was specifically bred to have a cascading habit, making it one of the most popular basket tomatoes in the UK."
+    "funFact": "Tumbling Tom was specifically bred to have a cascading habit, making it one of the most popular basket tomatoes in the UK.",
+    "milestones": {
+      "2026": {
+        "firstFlowerDate": "",
+        "firstFruitDate": ""
+      }
+    }
   },
   {
     "id": "tumbling-tom-yellow",
@@ -2850,6 +3169,7 @@ window.PLANT_DATA = [
     "family": "Solanaceae",
     "category": "vegetable",
     "variety": "Tumbling Tomato",
+    "edible": true,
     "description": "The golden cousin of the classic red tumbler. This variety produces masses of bright yellow cherry tomatoes with a slightly zestier, citrusy flavour. Looks spectacular mixed with red varieties in a hanging basket.",
     "images": {
       "plant": "images/tumbling-tom-yellow/plant.jpg",
@@ -2862,7 +3182,7 @@ window.PLANT_DATA = [
       "matureHeight": "Trailing (30cm height, trails to 50cm+)",
       "matureSpread": "30–45cm",
       "hardiness": "Half-hardy (killed by frost)",
-      "lifespan": "Annual",
+      "lifespan": "Annual (collect seeds)",
       "sunRequirement": "Full sun (6+ hours)",
       "waterNeeds": "High — daily watering essential in baskets",
       "soilType": "Rich potting compost with water-retaining gel",
@@ -2928,7 +3248,7 @@ window.PLANT_DATA = [
     },
     "deadheading": {
       "required": false,
-      "notes": "No deadheading needed. The plant is determinate (bushy) and will stop growing at a certain size naturally."
+      "info": "No deadheading needed. The plant is determinate (bushy) and will stop growing at a certain size naturally."
     },
     "seedSaving": {
       "canSaveSeeds": true,
@@ -2945,6 +3265,12 @@ window.PLANT_DATA = [
       "Sunscald — fruit can get bleached spots in intense sun if foliage is sparse.",
       "Aphids — check the underside of leaves regularly."
     ],
-    "funFact": "Yellow tomatoes are often lower in acid than red ones, making them gentler on the stomach for some people."
+    "funFact": "Yellow tomatoes are often lower in acid than red ones, making them gentler on the stomach for some people.",
+    "milestones": {
+      "2026": {
+        "firstFlowerDate": "",
+        "firstFruitDate": ""
+      }
+    }
   }
 ];

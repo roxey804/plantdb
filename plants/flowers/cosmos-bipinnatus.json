@@ -5,6 +5,7 @@
   "family": "Asteraceae",
   "category": "flower",
   "variety": "",
+  "edible": false,
   "description": "A graceful, tall annual with feathery foliage and large, daisy-like flowers in shades of pink, white, and crimson. Loved by pollinators and perfect for cutting.",
   "images": {
     "plant": "images/cosmos-bipinnatus/plant.jpg",
@@ -16,7 +17,7 @@
     "matureHeight": "90cm–1.2m",
     "matureSpread": "45–60cm",
     "hardiness": "Half-hardy annual",
-    "lifespan": "Annual",
+    "lifespan": "Annual (collect seeds)",
     "sunRequirement": "Full sun",
     "waterNeeds": "Moderate — drought tolerant once established",
     "soilType": "Poor to moderately fertile, well-drained soil",
@@ -69,7 +70,7 @@
   },
   "deadheading": {
     "required": true,
-    "notes": "Deadhead spent blooms regularly to encourage continuous flowering until the first frosts."
+    "info": "Deadhead spent blooms regularly to encourage continuous flowering until the first frosts."
   },
   "seedSaving": {
     "canSaveSeeds": true,
@@ -86,5 +87,11 @@
     "Aphids on soft shoot tips.",
     "Powdery mildew in late summer if crowded or dry at the roots."
   ],
-  "funFact": "The name Cosmos comes from the Greek word for 'order' or 'harmony', referring to the plant's evenly placed petals."
+  "funFact": "The name Cosmos comes from the Greek word for 'order' or 'harmony', referring to the plant's evenly placed petals.",
+  "milestones": {
+    "2026": {
+      "firstFlowerDate": "",
+      "firstFruitDate": ""
+    }
+  }
 }

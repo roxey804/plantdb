@@ -5,6 +5,7 @@
   "family": "Amaranthaceae",
   "category": "vegetable",
   "variety": "Apollo F1",
+  "edible": true,
   "description": "A high-yielding, RHS Award of Garden Merit variety specifically bred for its resistance to bolting and downy mildew. Excellent for both baby leaf salads and mature cooking greens. Its compact growth makes it perfect for pots and window boxes.",
   "images": {
     "plant": "images/spinach-f1-apollo/plant.jpg",
@@ -14,7 +15,7 @@
     "matureHeight": "15-30cm",
     "matureSpread": "15-30cm",
     "hardiness": "Hardy",
-    "lifespan": "Annual",
+    "lifespan": "Annual (collect seeds)",
     "sunRequirement": "Partial shade to full sun",
     "waterNeeds": "Moderate — never let soil dry out",
     "soilType": "Fertile, moisture-retentive soil",
@@ -86,7 +87,7 @@
   },
   "deadheading": {
     "required": false,
-    "notes": "No deadheading needed. However, pinch out any flower stalks immediately to prevent bolting."
+    "info": "No deadheading needed. However, pinch out any flower stalks immediately to prevent bolting."
   },
   "seedSaving": {
     "canSaveSeeds": true,
@@ -104,5 +105,11 @@
     "Downy mildew — Apollo F1 is resistant, but ensure good air circulation.",
     "Slugs and snails — protect young seedlings."
   ],
-  "funFact": "Spinach 'Apollo' F1 holds the RHS Award of Garden Merit, confirming its status as an outstanding variety for home gardeners."
+  "funFact": "Spinach 'Apollo' F1 holds the RHS Award of Garden Merit, confirming its status as an outstanding variety for home gardeners.",
+  "milestones": {
+    "2026": {
+      "firstFlowerDate": "",
+      "firstFruitDate": ""
+    }
+  }
 }

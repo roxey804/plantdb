@@ -5,6 +5,7 @@
   "family": "Rosaceae",
   "category": "fruit",
   "variety": "Cambridge Favourite",
+  "edible": true,
   "description": "A garden classic, strawberries are one of the most rewarding fruits for beginners. 'Cambridge Favourite' is a mid-season variety known for its reliability, heavy crops, and excellent flavor. Perfect for pots, hanging baskets, or balcony troughs.",
   "images": {
     "plant": "images/strawberry/plant.jpg",
@@ -17,7 +18,7 @@
     "matureHeight": "20–30cm",
     "matureSpread": "30–45cm",
     "hardiness": "Fully hardy (perennial)",
-    "lifespan": "Perennial (productive for 3-4 years)",
+    "lifespan": "Perennial (comes back every year) (productive for 3-4 years)",
     "sunRequirement": "Full sun (6+ hours)",
     "waterNeeds": "High — keep well-watered when fruiting",
     "soilType": "Fertile, well-drained potting compost",
@@ -76,7 +77,7 @@
   },
   "deadheading": {
     "required": true,
-    "notes": "Remove runners during the fruiting season to focus the plant's energy on berries. Cut off dead leaves after the harvest."
+    "info": "Remove runners during the fruiting season to focus the plant's energy on berries. Cut off dead leaves after the harvest."
   },
   "seedSaving": {
     "canSaveSeeds": true,
@@ -95,5 +96,11 @@
     "Grey mould (Botrytis)",
     "Powdery mildew"
   ],
-  "funFact": "Strawberries are the only fruit that wear their seeds on the outside—an average strawberry has about 200 seeds!"
+  "funFact": "Strawberries are the only fruit that wear their seeds on the outside—an average strawberry has about 200 seeds!",
+  "milestones": {
+    "2026": {
+      "firstFlowerDate": "",
+      "firstFruitDate": ""
+    }
+  }
 }

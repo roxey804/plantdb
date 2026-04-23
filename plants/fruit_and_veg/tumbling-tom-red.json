@@ -5,6 +5,7 @@
   "family": "Solanaceae",
   "category": "vegetable",
   "variety": "Tumbling Tomato",
+  "edible": true,
   "description": "A prolific cascading cherry tomato that is perfect for hanging baskets and tall containers. It produces masses of sweet, red cherry tomatoes throughout the summer. No staking or side-shoot removal needed—just let it tumble!",
   "images": {
     "plant": "images/tumbling-tom-red/plant.jpg",
@@ -17,7 +18,7 @@
     "matureHeight": "Trailing (30cm height, trails to 50cm+)",
     "matureSpread": "30–45cm",
     "hardiness": "Half-hardy (killed by frost)",
-    "lifespan": "Annual",
+    "lifespan": "Annual (collect seeds)",
     "sunRequirement": "Full sun (6+ hours)",
     "waterNeeds": "High — daily watering essential in baskets",
     "soilType": "Rich potting compost with water-retaining gel",
@@ -83,7 +84,7 @@
   },
   "deadheading": {
     "required": false,
-    "notes": "No deadheading or pinching out needed. Just remove any yellowing leaves to improve airflow."
+    "info": "No deadheading or pinching out needed. Just remove any yellowing leaves to improve airflow."
   },
   "seedSaving": {
     "canSaveSeeds": true,
@@ -100,5 +101,11 @@
     "Blossom end rot — caused by erratic watering.",
     "Aphids — wipe off or spray with soapy water."
   ],
-  "funFact": "Tumbling Tom was specifically bred to have a cascading habit, making it one of the most popular basket tomatoes in the UK."
+  "funFact": "Tumbling Tom was specifically bred to have a cascading habit, making it one of the most popular basket tomatoes in the UK.",
+  "milestones": {
+    "2026": {
+      "firstFlowerDate": "",
+      "firstFruitDate": ""
+    }
+  }
 }

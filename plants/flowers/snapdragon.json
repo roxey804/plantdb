@@ -14,38 +14,38 @@
     "seedPod": "images/snapdragon/seed-pod.jpg"
   },
   "characteristics": {
-    "matureHeight": "20–90cm (depending on variety)",
-    "matureSpread": "25–45cm",
+    "matureHeight": "20\u201390cm (depending on variety)",
+    "matureSpread": "25\u201345cm",
     "hardiness": "Half-hardy annual",
-    "lifespan": "Annual / Short-lived perennial",
+    "lifespan": "Annual / Perennial (comes back every year) (short-lived)",
     "sunRequirement": "Full sun (6+ hours)",
-    "waterNeeds": "Moderate — keep moist but not waterlogged",
+    "waterNeeds": "Moderate \u2014 keep moist but not waterlogged",
     "soilType": "Well-drained, fertile soil",
     "containerSize": "1L+ pot (or larger for taller varieties)"
   },
   "schedule": {
     "january": [],
     "february": [
-      "🌱 Sow seeds indoors"
+      "\ud83c\udf31 Sow seeds indoors"
     ],
     "march": [
-      "🌱 Sow seeds indoors",
-      "🔄 Sow again for continuous harvests"
+      "\ud83c\udf31 Sow seeds indoors",
+      "\ud83d\udd04 Sow again for continuous harvests"
     ],
     "april": [
-      "🌱 Sow seeds indoors",
-      "🌤️ Harden off seedlings",
-      "🪴 Plant out into final containers",
-      "🔄 Sow again for continuous harvests"
+      "\ud83c\udf31 Sow seeds indoors",
+      "\ud83c\udf24\ufe0f Harden off seedlings",
+      "\ud83e\udeb4 Plant out into final containers",
+      "\ud83d\udd04 Sow again for continuous harvests"
     ],
     "may": [
-      "🌿 Sow seeds outdoors",
-      "🌤️ Harden off seedlings",
-      "🪴 Plant out into final containers",
-      "🔄 Sow again for continuous harvests"
+      "\ud83c\udf3f Sow seeds outdoors",
+      "\ud83c\udf24\ufe0f Harden off seedlings",
+      "\ud83e\udeb4 Plant out into final containers",
+      "\ud83d\udd04 Sow again for continuous harvests"
     ],
     "june": [
-      "🌿 Sow seeds outdoors"
+      "\ud83c\udf3f Sow seeds outdoors"
     ],
     "july": [],
     "august": [],
@@ -56,7 +56,7 @@
     "frostSensitive": true
   },
   "care": {
-    "sowIndoors": "Sow seeds thinly on surface of moist seed compost, do not cover as they need light to germinate. Keep at 18-21°C. Germination 7-14 days.",
+    "sowIndoors": "Sow seeds thinly on surface of moist seed compost, do not cover as they need light to germinate. Keep at 18-21\u00b0C. Germination 7-14 days.",
     "sowOutdoors": "Sow thinly in prepared seedbed in sunny, well-drained spot.",
     "hardenOff": "Gradually acclimatize plants to outdoor conditions over 7-10 days before planting out.",
     "plantOut": "Plant out after all danger of frost has passed.",
@@ -68,7 +68,7 @@
   "propagation": {
     "fromSeed": true,
     "seedDescription": "Very tiny, dark seeds.",
-    "germinationDays": "7–14 days at 18–21°C (needs light)",
+    "germinationDays": "7\u201314 days at 18\u201321\u00b0C (needs light)",
     "fromCuttings": true,
     "cuttingsMethod": "Take 5-10cm non-flowering shoots in late summer, root in moist compost.",
     "fromDivision": false,
@@ -76,11 +76,11 @@
   },
   "deadheading": {
     "required": true,
-    "notes": "Crucial for continuous flowering. Pinch off spent flower spikes at the base."
+    "info": "Crucial for continuous flowering. Pinch off spent flower spikes at the base."
   },
   "edible": {
     "isEdible": false,
-    "notes": "Technically edible but often very bitter; not commonly used as a food plant."
+    "info": "Technically edible but often very bitter; not commonly used as a food plant."
   },
   "seedSaving": {
     "canSaveSeeds": true,
@@ -97,5 +97,11 @@
     "Aphids",
     "Slugs and snails (especially young plants)"
   ],
-  "funFact": "The common name 'snapdragon' comes from the flower's resemblance to a dragon's snout, which snaps open and shut when squeezed."
+  "funFact": "The common name 'snapdragon' comes from the flower's resemblance to a dragon's snout, which snaps open and shut when squeezed.",
+  "milestones": {
+    "2026": {
+      "firstFlowerDate": "",
+      "firstFruitDate": ""
+    }
+  }
 }

@@ -5,6 +5,7 @@
   "family": "Lamiaceae",
   "category": "herb",
   "variety": "Genovese",
+  "edible": true,
   "description": "The classic Italian herb with bright green, aromatic leaves. Basil loves warmth and sun, making a south-facing balcony ideal. Pinch off the growing tips regularly to keep it bushy and productive.",
   "images": {
     "plant": "images/basil/plant.jpg",
@@ -16,7 +17,7 @@
     "matureHeight": "20–45cm",
     "matureSpread": "15–30cm",
     "hardiness": "Tender (dislikes cold and frost)",
-    "lifespan": "Annual",
+    "lifespan": "Annual (collect seeds)",
     "sunRequirement": "Full sun (6+ hours)",
     "waterNeeds": "Moderate — keep moist but not waterlogged",
     "soilType": "Rich, well-drained potting compost",
@@ -86,7 +87,7 @@
   },
   "deadheading": {
     "required": true,
-    "notes": "Pinch off flower spikes as soon as they appear — this keeps the plant producing leaves instead of going to seed. Once basil flowers, the leaves lose flavour."
+    "info": "Pinch off flower spikes as soon as they appear — this keeps the plant producing leaves instead of going to seed. Once basil flowers, the leaves lose flavour."
   },
   "seedSaving": {
     "canSaveSeeds": true,
@@ -104,5 +105,11 @@
     "Overwatering — causes root rot. Let soil surface dry slightly between waterings.",
     "Slugs — protect young seedlings with copper tape around pots."
   ],
-  "funFact": "In Italy, placing a pot of basil on your balcony was traditionally a signal that you were ready for a suitor to come courting!"
+  "funFact": "In Italy, placing a pot of basil on your balcony was traditionally a signal that you were ready for a suitor to come courting!",
+  "milestones": {
+    "2026": {
+      "firstFlowerDate": "",
+      "firstFruitDate": ""
+    }
+  }
 }

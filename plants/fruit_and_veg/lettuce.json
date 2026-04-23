@@ -5,19 +5,20 @@
   "family": "Asteraceae",
   "category": "vegetable",
   "variety": "Little Gem",
+  "edible": true,
   "description": "The easiest edible to grow on a balcony. Salad leaves grow fast, tolerate partial shade, and can be harvested in as little as 3–4 weeks. Sow small amounts every 2 weeks for a continuous supply all summer.",
   "images": {
     "plant": "images/lettuce/plant.jpg",
     "flower": null,
-    "seedling": "images/lettuce/seedling.jpg",
-    "seed": "images/lettuce/seed.jpg",
+    "seedling": null,
+    "seed": null,
     "fruit": null
   },
   "characteristics": {
     "matureHeight": "15–30cm",
     "matureSpread": "15–25cm",
     "hardiness": "Hardy (tolerates light frost)",
-    "lifespan": "Annual",
+    "lifespan": "Annual (collect seeds)",
     "sunRequirement": "Partial shade to full sun (3–6 hours)",
     "waterNeeds": "Moderate — keep soil consistently moist",
     "soilType": "Any good potting compost",
@@ -93,7 +94,7 @@
   },
   "deadheading": {
     "required": false,
-    "notes": "Not applicable — harvest before flowering. If the plant bolts (sends up a tall flower stalk), the leaves turn bitter. Pull it out and sow fresh."
+    "info": "Not applicable — harvest before flowering. If the plant bolts (sends up a tall flower stalk), the leaves turn bitter. Pull it out and sow fresh."
   },
   "seedSaving": {
     "canSaveSeeds": true,
@@ -110,5 +111,11 @@
     "Slugs and snails — the number one enemy. Use copper tape, beer traps, or raise pots off the ground.",
     "Aphids — wash off with a jet of water or spray with diluted washing-up liquid."
   ],
-  "funFact": "Ancient Egyptians first cultivated lettuce over 4,500 years ago — but they grew it for the oil in its seeds, not for salad!"
+  "funFact": "Ancient Egyptians first cultivated lettuce over 4,500 years ago — but they grew it for the oil in its seeds, not for salad!",
+  "milestones": {
+    "2026": {
+      "firstFlowerDate": "",
+      "firstFruitDate": ""
+    }
+  }
 }

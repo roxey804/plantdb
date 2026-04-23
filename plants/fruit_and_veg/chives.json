@@ -5,6 +5,7 @@
   "family": "Amaryllidaceae",
   "category": "herb",
   "variety": "Common",
+  "edible": true,
   "description": "A hardy perennial herb that comes back year after year with zero fuss. The mild onion-flavoured leaves are brilliant snipped over eggs, salads, and potatoes. Pretty purple pom-pom flowers in summer are edible too.",
   "images": {
     "plant": "images/chives/plant.jpg",
@@ -16,7 +17,7 @@
     "matureHeight": "20–30cm",
     "matureSpread": "15–20cm",
     "hardiness": "Fully hardy (survives UK winters)",
-    "lifespan": "Perennial",
+    "lifespan": "Perennial (comes back every year)",
     "sunRequirement": "Full sun to partial shade (4+ hours)",
     "waterNeeds": "Moderate — tolerates some dryness",
     "soilType": "Any reasonable potting compost",
@@ -83,7 +84,7 @@
   },
   "deadheading": {
     "required": false,
-    "notes": "Optional. The purple flowers are pretty and edible. Removing them redirects energy to leaf growth, but it's not essential."
+    "info": "Optional. The purple flowers are pretty and edible. Removing them redirects energy to leaf growth, but it's not essential."
   },
   "seedSaving": {
     "canSaveSeeds": true,
@@ -100,5 +101,11 @@
     "Overcrowding — clumps get congested after 2–3 years. Divide and repot.",
     "Aphids — rarely serious. Wash off with water."
   ],
-  "funFact": "Bunches of chives were hung in doorways in medieval Europe to ward off evil spirits and disease. They're also one of the 'fines herbes' of French cuisine."
+  "funFact": "Bunches of chives were hung in doorways in medieval Europe to ward off evil spirits and disease. They're also one of the 'fines herbes' of French cuisine.",
+  "milestones": {
+    "2026": {
+      "firstFlowerDate": "",
+      "firstFruitDate": ""
+    }
+  }
 }

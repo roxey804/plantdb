@@ -5,6 +5,7 @@
   "family": "Brassicaceae",
   "category": "flower",
   "variety": "Dwarf Ten Week",
+  "edible": false,
   "description": "Stocks are much-loved for their wonderful, spicy clove-like fragrance and beautiful spikes of flowers in soft pastel shades. The 'Dwarf Ten Week' variety is perfect for containers, as it stays compact and bushy, reaching full bloom just 10 weeks after sowing. They are excellent for cutting and bringing the scent indoors.",
   "images": {
     "plant": "images/matthiola/plant.jpg",
@@ -16,7 +17,7 @@
     "matureHeight": "30cm",
     "matureSpread": "25cm",
     "hardiness": "Half-hardy annual",
-    "lifespan": "Annual",
+    "lifespan": "Annual (collect seeds)",
     "sunRequirement": "Full sun (6+ hours)",
     "waterNeeds": "Moderate — keep soil moist but not waterlogged",
     "soilType": "Fertile, well-drained, neutral to slightly alkaline",
@@ -87,7 +88,7 @@
   },
   "deadheading": {
     "required": true,
-    "notes": "Removing the main flower spike once it fades will encourage the plant to produce smaller side-shoots and extend the flowering season."
+    "info": "Removing the main flower spike once it fades will encourage the plant to produce smaller side-shoots and extend the flowering season."
   },
   "seedSaving": {
     "canSaveSeeds": true,
@@ -105,5 +106,11 @@
     "Aphids — can cluster on new growth. Wash off or use organic soap spray.",
     "Flea Beetle — can pepper leaves with small holes. Keep plants well-watered."
   ],
-  "funFact": "In the Victorian 'Language of Flowers', Stocks symbolised 'lasting beauty' and a 'happy life' — likely due to their enduring, sweet scent!"
+  "funFact": "In the Victorian 'Language of Flowers', Stocks symbolised 'lasting beauty' and a 'happy life' — likely due to their enduring, sweet scent!",
+  "milestones": {
+    "2026": {
+      "firstFlowerDate": "",
+      "firstFruitDate": ""
+    }
+  }
 }

@@ -13,43 +13,43 @@
     "seedling": "images/carnation-pinks/seedling.jpg"
   },
   "characteristics": {
-    "matureHeight": "30–60cm",
-    "matureSpread": "30–45cm",
+    "matureHeight": "30\u201360cm",
+    "matureSpread": "30\u201345cm",
     "hardiness": "Hardy perennial (London)",
-    "lifespan": "Short-lived perennial",
+    "lifespan": "Perennial (comes back every year) (short-lived)",
     "sunRequirement": "Full sun (6+ hours)",
-    "waterNeeds": "Moderate — well-drained soil is crucial",
+    "waterNeeds": "Moderate \u2014 well-drained soil is crucial",
     "soilType": "Well-drained, slightly alkaline to neutral potting compost",
     "containerSize": "2L+ pot"
   },
   "schedule": {
     "january": [],
     "february": [
-      "🌱 Sow seeds indoors"
+      "\ud83c\udf31 Sow seeds indoors"
     ],
     "march": [
-      "🌱 Sow seeds indoors"
+      "\ud83c\udf31 Sow seeds indoors"
     ],
     "april": [
-      "🌿 Sow seeds outdoors",
-      "🌤️ Harden off seedlings"
+      "\ud83c\udf3f Sow seeds outdoors",
+      "\ud83c\udf24\ufe0f Harden off seedlings"
     ],
     "may": [
-      "🌿 Sow seeds outdoors",
-      "🌤️ Harden off seedlings",
-      "🪴 Plant out into final containers"
+      "\ud83c\udf3f Sow seeds outdoors",
+      "\ud83c\udf24\ufe0f Harden off seedlings",
+      "\ud83e\udeb4 Plant out into final containers"
     ],
     "june": [
-      "✂️ Harvest regularly"
+      "\u2702\ufe0f Harvest regularly"
     ],
     "july": [
-      "✂️ Harvest regularly"
+      "\u2702\ufe0f Harvest regularly"
     ],
     "august": [
-      "✂️ Harvest regularly"
+      "\u2702\ufe0f Harvest regularly"
     ],
     "september": [
-      "✂️ Harvest regularly"
+      "\u2702\ufe0f Harvest regularly"
     ],
     "october": [],
     "november": [],
@@ -57,7 +57,7 @@
     "frostSensitive": false
   },
   "care": {
-    "sowIndoors": "Sow seeds thinly on the surface of moist seed compost, lightly cover with vermiculite. Keep at 15-20°C. Germination in 14-21 days.",
+    "sowIndoors": "Sow seeds thinly on the surface of moist seed compost, lightly cover with vermiculite. Keep at 15-20\u00b0C. Germination in 14-21 days.",
     "sowOutdoors": "Sow seeds thinly in situ once the soil has warmed up in late spring. Thin to 20cm apart.",
     "hardenOff": "Gradually expose indoor-raised plants to outdoor conditions over 7-10 days before planting out.",
     "plantOut": "Plant in a sunny, well-drained spot. Don't bury the stems too deep. Pinks hate waterlogged roots.",
@@ -69,7 +69,7 @@
   "propagation": {
     "fromSeed": true,
     "seedDescription": "Small, flat, black or dark brown seeds.",
-    "germinationDays": "14–21 days at 15–20°C",
+    "germinationDays": "14\u201321 days at 15\u201320\u00b0C",
     "fromCuttings": true,
     "cuttingsMethod": "Take 5-10cm non-flowering shoots in summer, root in moist, gritty compost.",
     "fromDivision": true,
@@ -77,11 +77,11 @@
   },
   "deadheading": {
     "required": true,
-    "notes": "Moderately remove spent flowers down to the base of the stem to encourage continuous blooming."
+    "info": "Moderately remove spent flowers down to the base of the stem to encourage continuous blooming."
   },
   "edible": {
     "isEdible": true,
-    "notes": "The petals have a mild, spicy, clove-like flavor. Only eat the petals; the white base is bitter."
+    "info": "The petals have a mild, spicy, clove-like flavor. Only eat the petals; the white base is bitter."
   },
   "seedSaving": {
     "canSaveSeeds": true,
@@ -99,5 +99,11 @@
     "Rust in damp conditions",
     "Stem rot if overwatered"
   ],
-  "funFact": "The name 'Dianthus' comes from the Greek words 'dios' (god) and 'anthos' (flower), meaning 'Flower of the Gods'!"
+  "funFact": "The name 'Dianthus' comes from the Greek words 'dios' (god) and 'anthos' (flower), meaning 'Flower of the Gods'!",
+  "milestones": {
+    "2026": {
+      "firstFlowerDate": "",
+      "firstFruitDate": ""
+    }
+  }
 }

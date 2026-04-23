@@ -11,15 +11,16 @@
     "plant": "images/calendula/plant.jpg",
     "flower": "images/calendula/flower.jpg",
     "seedling": "images/calendula/seedling.jpg",
-    "seed": "images/calendula/seed.jpg"
+    "seed": "images/calendula/seed.jpg",
+    "seedPod": "images/calendula/seed-pod.jpg"
   },
   "characteristics": {
-    "matureHeight": "30–60cm",
-    "matureSpread": "30–45cm",
+    "matureHeight": "30\u201360cm",
+    "matureSpread": "30\u201345cm",
     "hardiness": "Hardy annual (tolerates light frost)",
-    "lifespan": "Annual",
+    "lifespan": "Annual (collect seeds)",
     "sunRequirement": "Full sun to partial shade",
-    "waterNeeds": "Moderate — water during dry spells",
+    "waterNeeds": "Moderate \u2014 water during dry spells",
     "soilType": "Well-drained, average fertility",
     "containerSize": "5L+ pot"
   },
@@ -27,51 +28,51 @@
     "january": [],
     "february": [],
     "march": [
-      "🌱 Sow seeds indoors"
+      "\ud83c\udf31 Sow seeds indoors"
     ],
     "april": [
-      "🌱 Sow seeds indoors",
-      "🌿 Sow seeds outdoors"
+      "\ud83c\udf31 Sow seeds indoors",
+      "\ud83c\udf3f Sow seeds outdoors"
     ],
     "may": [
-      "🌿 Sow seeds outdoors",
-      "🌤️ Harden off seedlings",
-      "🪴 Plant out into final position",
-      "✂️ Deadhead for more blooms"
+      "\ud83c\udf3f Sow seeds outdoors",
+      "\ud83c\udf24\ufe0f Harden off seedlings",
+      "\ud83e\udeb4 Plant out into final position",
+      "\u2702\ufe0f Deadhead for more blooms"
     ],
     "june": [
-      "🪴 Plant out into final position",
-      "✂️ Deadhead for more blooms",
-      "🌼 Harvest petals"
+      "\ud83e\udeb4 Plant out into final position",
+      "\u2702\ufe0f Deadhead for more blooms",
+      "\ud83c\udf3c Harvest petals"
     ],
     "july": [
-      "✂️ Deadhead for more blooms",
-      "🌼 Harvest petals"
+      "\u2702\ufe0f Deadhead for more blooms",
+      "\ud83c\udf3c Harvest petals"
     ],
     "august": [
-      "✂️ Deadhead for more blooms",
-      "🌼 Harvest petals"
+      "\u2702\ufe0f Deadhead for more blooms",
+      "\ud83c\udf3c Harvest petals"
     ],
     "september": [
-      "🌱 Sow seeds outdoors (for early spring flowers)",
-      "✂️ Deadhead for more blooms",
-      "🌼 Harvest petals"
+      "\ud83c\udf31 Sow seeds outdoors (for early spring flowers)",
+      "\u2702\ufe0f Deadhead for more blooms",
+      "\ud83c\udf3c Harvest petals"
     ],
     "october": [
-      "✂️ Deadhead for more blooms",
-      "🌼 Harvest petals"
+      "\u2702\ufe0f Deadhead for more blooms",
+      "\ud83c\udf3c Harvest petals"
     ],
     "november": [
-      "🍂 Clear dead plants or let self-seed"
+      "\ud83c\udf42 Clear dead plants or let self-seed"
     ],
     "december": [],
     "frostSensitive": false
   },
   "care": {
-    "sowIndoors": "Sow in modules in March or April. Cover with 1cm of compost. Keep at 15–20°C. Seeds sprout in 7–14 days.",
+    "sowIndoors": "Sow in modules in March or April. Cover with 1cm of compost. Keep at 15\u201320\u00b0C. Seeds sprout in 7\u201314 days.",
     "sowOutdoors": "Sow directly into flowering position from April to May, or in September for earlier blooms next year. Sow 1cm deep in drills 20cm apart.",
     "hardenOff": "Gradually acclimatise indoor-sown seedlings to the outdoors over a week in May before planting out.",
-    "plantOut": "Space plants 20–30cm apart in a sunny spot. They are unfussy about soil but prefer good drainage.",
+    "plantOut": "Space plants 20\u201330cm apart in a sunny spot. They are unfussy about soil but prefer good drainage.",
     "watering": "Water regularly when first planted and during dry summer spells. Avoid wetting the foliage to prevent mildew.",
     "feeding": "Generally doesn't need much feed. A light balanced fertiliser in early summer is sufficient.",
     "harvest": "Pick flower heads regularly to encourage continuous blooming. Petals can be dried for tea or used fresh in salads.",
@@ -80,7 +81,7 @@
   "propagation": {
     "fromSeed": true,
     "seedDescription": "Curved, bumpy, C-shaped seeds that look like dried caterpillars. Easy to handle and sow.",
-    "germinationDays": "7–14 days at 15–20°C",
+    "germinationDays": "7\u201314 days at 15\u201320\u00b0C",
     "fromCuttings": false,
     "cuttingsMethod": null,
     "fromDivision": false,
@@ -88,7 +89,7 @@
   },
   "deadheading": {
     "required": true,
-    "notes": "Essential to keep the plant blooming. Remove the entire flower stalk once the bloom has faded."
+    "info": "Essential to keep the plant blooming. Remove the entire flower stalk once the bloom has faded."
   },
   "seedSaving": {
     "canSaveSeeds": true,
@@ -102,9 +103,15 @@
     "nasturtium"
   ],
   "troubleshooting": [
-    "Powdery Mildew — white coating on leaves in late summer. Improve spacing and water at base.",
-    "Aphids — common on stems. Can be hosed off or left as a trap crop for beneficial insects.",
-    "Slugs and Snails — protect young seedlings in spring."
+    "Powdery Mildew \u2014 white coating on leaves in late summer. Improve spacing and water at base.",
+    "Aphids \u2014 common on stems. Can be hosed off or left as a trap crop for beneficial insects.",
+    "Slugs and Snails \u2014 protect young seedlings in spring."
   ],
-  "funFact": "Known as 'Poor Man's Saffron' because its petals can be used to add a golden yellow color to rice, butter, and cheese!"
+  "funFact": "Known as 'Poor Man's Saffron' because its petals can be used to add a golden yellow color to rice, butter, and cheese!",
+  "milestones": {
+    "2026": {
+      "firstFlowerDate": "",
+      "firstFruitDate": ""
+    }
+  }
 }

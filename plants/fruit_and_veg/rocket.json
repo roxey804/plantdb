@@ -5,6 +5,7 @@
   "family": "Brassicaceae",
   "category": "herb",
   "variety": "Salad Rocket",
+  "edible": true,
   "description": "A fast-growing, peppery salad leaf that is incredibly easy to grow in pots. Regular picking keeps the leaves young and tender. Ideally grown in cooler weather (spring/autumn) as heat makes it bolt and turn spicy.",
   "images": {
     "plant": "images/rocket/plant.jpg",
@@ -16,7 +17,7 @@
     "matureHeight": "20–50cm",
     "matureSpread": "20–30cm",
     "hardiness": "Hardy (tolerates frost)",
-    "lifespan": "Annual",
+    "lifespan": "Annual (collect seeds)",
     "sunRequirement": "Partial shade to full sun",
     "waterNeeds": "Moderate — keep moist to prevent bolting",
     "soilType": "Any moisture-retentive potting compost",
@@ -93,7 +94,7 @@
   },
   "deadheading": {
     "required": false,
-    "notes": "If it flowers, the leaves become bitter. You can eat the flowers though! Remove flower spikes to extend leaf harvest slightly."
+    "info": "If it flowers, the leaves become bitter. You can eat the flowers though! Remove flower spikes to extend leaf harvest slightly."
   },
   "seedSaving": {
     "canSaveSeeds": true,
@@ -110,5 +111,11 @@
     "Bolting — flowering prematurely due to heat or dryness. Keep watered and shaded in summer.",
     "Bitter taste — usually due to heat or old leaves."
   ],
-  "funFact": "Rocket has been grown in the Mediterranean since Roman times and was once considered an aphrodisiac!"
+  "funFact": "Rocket has been grown in the Mediterranean since Roman times and was once considered an aphrodisiac!",
+  "milestones": {
+    "2026": {
+      "firstFlowerDate": "",
+      "firstFruitDate": ""
+    }
+  }
 }

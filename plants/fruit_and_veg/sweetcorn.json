@@ -5,6 +5,7 @@
   "family": "Poaceae",
   "category": "vegetable",
   "variety": "Lark (Tendersweet)",
+  "edible": true,
   "description": "Sweetcorn is a tall, architectural plant that produces incredibly sweet, tender cobs. Homegrown corn is far superior to shop-bought because the sugars begin to turn into starch immediately after harvest. They are wind-pollinated and must be planted in blocks for success.",
   "images": {
     "plant": "images/sweetcorn/plant.jpg",
@@ -17,7 +18,7 @@
     "matureHeight": "1.5–2m",
     "matureSpread": "45cm",
     "hardiness": "Tender (not frost tolerant)",
-    "lifespan": "Annual",
+    "lifespan": "Annual (collect seeds)",
     "sunRequirement": "Full sun (6+ hours)",
     "waterNeeds": "High — requires regular watering as cobs develop",
     "soilType": "Rich, well-manured, well-drained soil",
@@ -80,7 +81,7 @@
   },
   "deadheading": {
     "required": false,
-    "notes": "Not applicable. Do not remove the male tassels at the top, as they are needed for pollination."
+    "info": "Not applicable. Do not remove the male tassels at the top, as they are needed for pollination."
   },
   "seedSaving": {
     "canSaveSeeds": true,
@@ -99,5 +100,11 @@
     "Slugs — can decimate young seedlings. Use beer traps or barriers.",
     "Wind Damage — tall plants can blow over. Stake if necessary or earth up the base."
   ],
-  "funFact": "An ear of corn almost always has an even number of rows — usually 16! Each silk on a cob is attached to one individual kernel."
+  "funFact": "An ear of corn almost always has an even number of rows — usually 16! Each silk on a cob is attached to one individual kernel.",
+  "milestones": {
+    "2026": {
+      "firstFlowerDate": "",
+      "firstFruitDate": ""
+    }
+  }
 }

@@ -5,7 +5,7 @@
   "family": "Tropaeolaceae",
   "category": "flower",
   "variety": "Jewel Mix",
-  "description": "Cheerful, trumpet-shaped flowers in fiery oranges, reds, and yellows that bloom all summer long. Nasturtiums are ridiculously easy to grow — just push the large seeds into compost and watch them go. Bonus: the flowers, leaves, and seed pods are all edible with a peppery, watercress-like flavour.",
+  "description": "Cheerful, trumpet-shaped flowers in fiery oranges, reds, and yellows that bloom all summer long. Nasturtiums are ridiculously easy to grow \u2014 just push the large seeds into compost and watch them go. Bonus: the flowers, leaves, and seed pods are all edible with a peppery, watercress-like flavour.",
   "images": {
     "plant": "images/nasturtium/plant.jpg",
     "flower": "images/nasturtium/flower.jpg",
@@ -13,12 +13,12 @@
     "seed": "images/nasturtium/seed.jpg"
   },
   "characteristics": {
-    "matureHeight": "20–30cm (bush) or trailing 1m+",
-    "matureSpread": "30–60cm",
+    "matureHeight": "20\u201330cm (bush) or trailing 1m+",
+    "matureSpread": "30\u201360cm",
     "hardiness": "Half-hardy (killed by frost)",
-    "lifespan": "Annual",
+    "lifespan": "Annual (collect seeds)",
     "sunRequirement": "Full sun to partial shade (4+ hours)",
-    "waterNeeds": "Low to Moderate — actually flowers better in poor, dry soil",
+    "waterNeeds": "Low to Moderate \u2014 actually flowers better in poor, dry soil",
     "soilType": "Poor to average potting compost (don't enrich it!)",
     "containerSize": "5L+ pot or hanging basket"
   },
@@ -27,46 +27,46 @@
     "february": [],
     "march": [],
     "april": [
-      "🌱 Sow seeds indoors"
+      "\ud83c\udf31 Sow seeds indoors"
     ],
     "may": [
-      "🌿 Sow seeds outdoors",
-      "🌤️ Harden off seedlings",
-      "🪴 Plant out into final containers"
+      "\ud83c\udf3f Sow seeds outdoors",
+      "\ud83c\udf24\ufe0f Harden off seedlings",
+      "\ud83e\udeb4 Plant out into final containers"
     ],
     "june": [
-      "✂️ Harvest regularly"
+      "\u2702\ufe0f Harvest regularly"
     ],
     "july": [
-      "✂️ Harvest regularly"
+      "\u2702\ufe0f Harvest regularly"
     ],
     "august": [
-      "✂️ Harvest regularly"
+      "\u2702\ufe0f Harvest regularly"
     ],
     "september": [
-      "✂️ Harvest regularly"
+      "\u2702\ufe0f Harvest regularly"
     ],
     "october": [
-      "✂️ Harvest regularly"
+      "\u2702\ufe0f Harvest regularly"
     ],
     "november": [],
     "december": [],
     "frostSensitive": true
   },
   "care": {
-    "sowIndoors": "Push the large, wrinkled seeds 2cm deep into small pots in April. They germinate in 7–12 days. The seeds are big enough for kids to handle easily.",
-    "sowOutdoors": "After last frost (mid-May in London), push seeds 2cm into the compost where you want them to grow. 2–3 seeds per pot.",
+    "sowIndoors": "Push the large, wrinkled seeds 2cm deep into small pots in April. They germinate in 7\u201312 days. The seeds are big enough for kids to handle easily.",
+    "sowOutdoors": "After last frost (mid-May in London), push seeds 2cm into the compost where you want them to grow. 2\u20133 seeds per pot.",
     "hardenOff": "If started indoors, harden off for a week in late May before planting out.",
     "plantOut": "Plant out after last frost. Nasturtiums don't like root disturbance, so handle gently.",
     "watering": "Water sparingly once established. Too much water (or rich soil) produces lots of leaves but few flowers.",
     "feeding": "Don't feed! Nasturtiums flower best in poor soil. Rich conditions produce lush foliage but few blooms.",
-    "harvest": "Pick flowers for salads — they taste peppery like watercress. The round leaves are edible too. Unripe green seed pods can be pickled like capers.",
-    "overwintering": "Annual — killed by the first frost. Pull up and compost."
+    "harvest": "Pick flowers for salads \u2014 they taste peppery like watercress. The round leaves are edible too. Unripe green seed pods can be pickled like capers.",
+    "overwintering": "Annual \u2014 killed by the first frost. Pull up and compost."
   },
   "propagation": {
     "fromSeed": true,
-    "seedDescription": "Large, round, wrinkled, pale brown seeds about 8–10mm. Easy to handle and sow — perfect for children.",
-    "germinationDays": "7–12 days at 15–20°C",
+    "seedDescription": "Large, round, wrinkled, pale brown seeds about 8\u201310mm. Easy to handle and sow \u2014 perfect for children.",
+    "germinationDays": "7\u201312 days at 15\u201320\u00b0C",
     "fromCuttings": false,
     "cuttingsMethod": null,
     "fromDivision": false,
@@ -74,11 +74,11 @@
   },
   "deadheading": {
     "required": false,
-    "notes": "Optional but beneficial. Removing spent flowers encourages more blooms. If you want to save seeds, leave some flowers to set seed at the end of summer."
+    "info": "Optional but beneficial. Removing spent flowers encourages more blooms. If you want to save seeds, leave some flowers to set seed at the end of summer."
   },
   "edible": {
     "isEdible": true,
-    "notes": "Flowers, leaves, and seed pods are all edible with a peppery, watercress-like flavour."
+    "info": "Flowers, leaves, and seed pods are all edible with a peppery, watercress-like flavour."
   },
   "seedSaving": {
     "canSaveSeeds": true,
@@ -91,9 +91,15 @@
     "lettuce"
   ],
   "troubleshooting": [
-    "Blackfly / aphids — nasturtiums are 'trap plants' that attract aphids AWAY from your vegetables. This is actually useful! Blast with water if they get bad.",
-    "Caterpillars — cabbage white butterflies love nasturtiums. Pick off caterpillars by hand.",
-    "Too much foliage, not enough flowers — you're feeding/watering too much. Cut back on both."
+    "Blackfly / aphids \u2014 nasturtiums are 'trap plants' that attract aphids AWAY from your vegetables. This is actually useful! Blast with water if they get bad.",
+    "Caterpillars \u2014 cabbage white butterflies love nasturtiums. Pick off caterpillars by hand.",
+    "Too much foliage, not enough flowers \u2014 you're feeding/watering too much. Cut back on both."
   ],
-  "funFact": "Nasturtium seed pods were widely used as a caper substitute during WWII rationing in Britain. They're still pickled today — search for 'poor man's capers' recipes!"
+  "funFact": "Nasturtium seed pods were widely used as a caper substitute during WWII rationing in Britain. They're still pickled today \u2014 search for 'poor man's capers' recipes!",
+  "milestones": {
+    "2026": {
+      "firstFlowerDate": "",
+      "firstFruitDate": ""
+    }
+  }
 }

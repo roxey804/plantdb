@@ -5,6 +5,7 @@
   "family": "Lamiaceae",
   "category": "herb",
   "variety": "Hidcote",
+  "edible": true,
   "description": "A beautiful, fragrant, evergreen perennial that thrives in pots and loves the well-drained conditions that containers provide. The purple flower spikes appear in summer and are absolute magnets for bees. Low maintenance once established.",
   "images": {
     "plant": "images/lavender/plant.jpg",
@@ -16,7 +17,7 @@
     "matureHeight": "30–60cm",
     "matureSpread": "30–45cm",
     "hardiness": "Fully hardy",
-    "lifespan": "Perennial (5–15 years)",
+    "lifespan": "Perennial (comes back every year) (5–15 years)",
     "sunRequirement": "Full sun (6+ hours)",
     "waterNeeds": "Low — drought-tolerant once established",
     "soilType": "Well-drained, gritty compost (add perlite or grit)",
@@ -80,7 +81,7 @@
   },
   "deadheading": {
     "required": true,
-    "notes": "After flowering, trim off spent flower stalks and lightly shape the plant. In late August, give it a light haircut — but never cut into old wood (the brown stems), as lavender won't regrow from them."
+    "info": "After flowering, trim off spent flower stalks and lightly shape the plant. In late August, give it a light haircut — but never cut into old wood (the brown stems), as lavender won't regrow from them."
   },
   "seedSaving": {
     "canSaveSeeds": true,
@@ -96,5 +97,11 @@
     "Woody/leggy growth — prune annually after flowering. Never cut into old wood.",
     "Frost damage on wet roots — raise pots off the ground in winter to prevent waterlogging."
   ],
-  "funFact": "The name lavender comes from the Latin 'lavare' meaning 'to wash' — the Romans used it to scent their baths. It's been used for over 2,500 years for its calming fragrance."
+  "funFact": "The name lavender comes from the Latin 'lavare' meaning 'to wash' — the Romans used it to scent their baths. It's been used for over 2,500 years for its calming fragrance.",
+  "milestones": {
+    "2026": {
+      "firstFlowerDate": "",
+      "firstFruitDate": ""
+    }
+  }
 }

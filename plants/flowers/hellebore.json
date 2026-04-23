@@ -5,6 +5,7 @@
   "family": "Ranunculaceae",
   "category": "flower",
   "variety": "Orientalis Hybrids (Lenten Rose)",
+  "edible": false,
   "description": "Hellebores are the stars of the winter garden. These incredibly hardy perennials provide elegant, nodding flowers from mid-winter through early spring. They are perfect for shaded balcony corners where few other plants thrive. Their leathery, evergreen foliage provides year-round structure.",
   "images": {
     "plant": "images/hellebore/plant.jpg",
@@ -16,7 +17,7 @@
     "matureHeight": "30-45cm",
     "matureSpread": "30-45cm",
     "hardiness": "Fully hardy (thrives in UK winters)",
-    "lifespan": "Perennial",
+    "lifespan": "Perennial (comes back every year)",
     "sunRequirement": "Dappled shade to partial shade",
     "waterNeeds": "Moderate — prefers consistently moist but well-drained soil",
     "soilType": "Rich, moisture-retentive but well-drained alkaline soil",
@@ -79,7 +80,7 @@
   },
   "deadheading": {
     "required": true,
-    "notes": "Remove faded flower stems to the base unless you want them to self-seed. This helps the plant focus energy on root and leaf growth."
+    "info": "Remove faded flower stems to the base unless you want them to self-seed. This helps the plant focus energy on root and leaf growth."
   },
   "seedSaving": {
     "canSaveSeeds": true,
@@ -97,5 +98,11 @@
     "Aphids in spring — wash off with water",
     "Slugs on young growth — use grit or copper tape"
   ],
-  "funFact": "The 'Hellebore Haircut' is a traditional gardening task where all old foliage is cut back in late winter to let the new flowers shine without being hidden by tattered leaves."
+  "funFact": "The 'Hellebore Haircut' is a traditional gardening task where all old foliage is cut back in late winter to let the new flowers shine without being hidden by tattered leaves.",
+  "milestones": {
+    "2026": {
+      "firstFlowerDate": "",
+      "firstFruitDate": ""
+    }
+  }
 }

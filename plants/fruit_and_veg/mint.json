@@ -5,6 +5,7 @@
   "family": "Lamiaceae",
   "category": "herb",
   "variety": "Garden Mint",
+  "edible": true,
   "description": "Almost impossible to kill! Mint is incredibly vigorous and perfect for beginners. Keep it in its own pot — it spreads aggressively and will take over anything it's planted with. Great for tea, cocktails, and cooking.",
   "images": {
     "plant": "images/mint/plant.jpg",
@@ -16,7 +17,7 @@
     "matureHeight": "30–60cm",
     "matureSpread": "Indefinite (spreads by runners)",
     "hardiness": "Fully hardy",
-    "lifespan": "Perennial",
+    "lifespan": "Perennial (comes back every year)",
     "sunRequirement": "Partial shade to full sun (3+ hours)",
     "waterNeeds": "Moderate — likes moist soil",
     "soilType": "Any potting compost",
@@ -80,7 +81,7 @@
   },
   "deadheading": {
     "required": false,
-    "notes": "Not essential. Cutting back before or during flowering encourages fresh leafy growth. The flowers attract bees, so leaving some is beneficial."
+    "info": "Not essential. Cutting back before or during flowering encourages fresh leafy growth. The flowers attract bees, so leaving some is beneficial."
   },
   "seedSaving": {
     "canSaveSeeds": false,
@@ -96,5 +97,11 @@
     "Spreading too aggressively — ALWAYS keep in its own pot. Never plant with other herbs.",
     "Leggy growth — cut back hard in midsummer for a flush of fresh leaves."
   ],
-  "funFact": "In Greek mythology, mint was originally a nymph called Minthe who was transformed into a plant by the jealous goddess Persephone. But she retained her wonderful fragrance."
+  "funFact": "In Greek mythology, mint was originally a nymph called Minthe who was transformed into a plant by the jealous goddess Persephone. But she retained her wonderful fragrance.",
+  "milestones": {
+    "2026": {
+      "firstFlowerDate": "",
+      "firstFruitDate": ""
+    }
+  }
 }

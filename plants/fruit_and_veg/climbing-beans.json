@@ -5,6 +5,7 @@
   "family": "Fabaceae",
   "category": "vegetable",
   "variety": "Borlotti",
+  "edible": true,
   "description": "Climbing beans are versatile and productive. The 'Borlotti' variety is prized for its beautiful speckled pods and seeds, which can be eaten fresh or dried. They are excellent climbers that provide both a visual screen and a heavy crop of beans.",
   "images": {
     "plant": "images/climbing-beans/plant.jpg",
@@ -17,7 +18,7 @@
     "matureHeight": "45cm (Dwarf) / 2m+ (Climbing)",
     "matureSpread": "30cm",
     "hardiness": "Tender (not frost tolerant)",
-    "lifespan": "Annual (grown as)",
+    "lifespan": "Annual (collect seeds)",
     "sunRequirement": "Full sun (6+ hours)",
     "waterNeeds": "High — containers must stay moist",
     "soilType": "Rich, moisture-retentive compost",
@@ -80,7 +81,7 @@
   },
   "deadheading": {
     "required": false,
-    "notes": "Not needed, but regular harvesting of pods acts in the same way to keep the plant productive."
+    "info": "Not needed, but regular harvesting of pods acts in the same way to keep the plant productive."
   },
   "seedSaving": {
     "canSaveSeeds": true,
@@ -104,5 +105,11 @@
     "Blackfly — aphids love new growth. Spray with water or soapy mix.",
     "Slugs — protect young seedlings with copper tape or grit."
   ],
-  "funFact": "Climbing beans are actually perennials in their native Central America, where they grow from tuberous roots. In the UK, we grow them as annuals because they can't survive our winters."
+  "funFact": "Climbing beans are actually perennials in their native Central America, where they grow from tuberous roots. In the UK, we grow them as annuals because they can't survive our winters.",
+  "milestones": {
+    "2026": {
+      "firstFlowerDate": "",
+      "firstFruitDate": ""
+    }
+  }
 }

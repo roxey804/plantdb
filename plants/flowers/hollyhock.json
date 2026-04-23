@@ -5,6 +5,7 @@
   "family": "Malvaceae",
   "category": "flower",
   "variety": "Spring Celebrities",
+  "edible": false,
   "description": "A wonderful dwarf series of hollyhocks that grow to a manageable 60-80cm, making them perfect for large pots on a balcony. Unlike traditional biennials, 'Spring Celebrities' often flowers in its first year if sown early. They produce beautiful, large, double blooms in a range of colours.",
   "images": {
     "plant": "images/hollyhock/plant.jpg",
@@ -16,7 +17,7 @@
     "matureHeight": "60–80cm",
     "matureSpread": "30–45cm",
     "hardiness": "Fully hardy",
-    "lifespan": "Short-lived perennial (often grown as biennial)",
+    "lifespan": "Biennial (flowers in second year)",
     "sunRequirement": "Full sun (6+ hours)",
     "waterNeeds": "Moderate — pots dry out fast in summer",
     "soilType": "Rich, well-drained potting compost",
@@ -83,7 +84,7 @@
   },
   "deadheading": {
     "required": true,
-    "notes": "Removing spent flowers can extend the blooming period. However, if you want the plant to self-seed or if you want to save seeds, leave the last spikes of the season."
+    "info": "Removing spent flowers can extend the blooming period. However, if you want the plant to self-seed or if you want to save seeds, leave the last spikes of the season."
   },
   "seedSaving": {
     "canSaveSeeds": true,
@@ -107,5 +108,11 @@
     "Slugs and Snails — love young seedlings. Use beer traps or copper tape.",
     "Caterpillars — can shred leaves. Pick off by hand."
   ],
-  "funFact": "In the Victorian language of flowers, hollyhocks symbolise ambition and fecundity. They were often planted near outhouses in the past to hide them from view!"
+  "funFact": "In the Victorian language of flowers, hollyhocks symbolise ambition and fecundity. They were often planted near outhouses in the past to hide them from view!",
+  "milestones": {
+    "2026": {
+      "firstFlowerDate": "",
+      "firstFruitDate": ""
+    }
+  }
 }

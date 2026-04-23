@@ -5,6 +5,7 @@
   "family": "Cucurbitaceae",
   "category": "vegetable",
   "variety": "Defender",
+  "edible": true,
   "description": "Courgettes are incredibly productive and satisfying to grow. A single plant can produce dozens of fruits throughout the summer. They love the warmth and will thrive in a large pot on a sunny balcony.",
   "images": {
     "plant": "images/courgette/plant.jpg",
@@ -17,7 +18,7 @@
     "matureHeight": "45–90cm",
     "matureSpread": "90–120cm",
     "hardiness": "Half-hardy (not frost tolerant)",
-    "lifespan": "Annual",
+    "lifespan": "Annual (collect seeds)",
     "sunRequirement": "Full sun (6+ hours)",
     "waterNeeds": "High — requires daily watering in summer",
     "soilType": "Rich, well-drained potting compost with added manure",
@@ -82,7 +83,7 @@
   },
   "deadheading": {
     "required": false,
-    "notes": "Harvesting the fruit effectively 'deadheads' the plant. You can also harvest the male flowers for cooking."
+    "info": "Harvesting the fruit effectively 'deadheads' the plant. You can also harvest the male flowers for cooking."
   },
   "seedSaving": {
     "canSaveSeeds": true,
@@ -101,5 +102,11 @@
     "Poor Pollination — if fruits shrivel, try hand-pollination.",
     "Tiny courgettes begin to form but then drop or shrivel are due to poor pollination. Plenty of flowers but no fruit forming. To help nature along and ensure successful fruit production, you can hand pollinate female flowers when natural methods fail: Pick a fresh male flower. Gently remove the petals to expose the stamen. Lightly brush it onto the stigma of a female flower. You can also use a small paintbrush or cotton bud if you don’t want to remove flowers. Do this early in the morning, when flowers are open and pollen is fresh."
   ],
-  "funFact": "If you don't harvest courgettes, they can grow into giant marrows over a metre long in just a few weeks! Courgette flowers are edible, stuffed or deep-fried in batter, or added to pasta and stir-fry dishes."
+  "funFact": "If you don't harvest courgettes, they can grow into giant marrows over a metre long in just a few weeks! Courgette flowers are edible, stuffed or deep-fried in batter, or added to pasta and stir-fry dishes.",
+  "milestones": {
+    "2026": {
+      "firstFlowerDate": "",
+      "firstFruitDate": ""
+    }
+  }
 }

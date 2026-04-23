@@ -16,10 +16,13 @@ This skill guides the process of adding a new plant to the UK Plant diary. It in
     *   UK-specific schedule (weeks for sowing indoors/outdoors, hardening off, planting out, harvesting).
     -->
     *   Care instructions (sowing, watering, feeding, etc.).
-    *   Characteristics (height, spread, sun/water needs, container size).
+    *   Characteristics (height, sun/water needs, lifespan).
     *   Propagation, deadheading, and seed saving details.
     *   Companion plants and common problems.
     *   A fun fact.
+    *   **Edibility**:
+        *   All 'fruit', 'vegetable', and 'herb' plants must have `"edible": true` by default.
+        *   All other categories (flower, houseplant, weed) must have `"edible": false` by default, unless researched otherwise (e.g. Nasturtium).
     *   *Note*: Calibrate all dates for London/South England (Last frost: Week 15, First frost: Week 44).
     *   **Growth Tracking**: For `flower`, `fruit` and `vegetable` categories, the app now supports tracking the **First Flower Date** (DDMMYY). If adding a plant that is already growing, you can initialize this field.
 

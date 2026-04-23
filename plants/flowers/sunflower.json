@@ -5,6 +5,10 @@
   "family": "Asteraceae",
   "category": "flower",
   "variety": "Russian Giant",
+  "edible": {
+    "isEdible": true,
+    "info": "Once seeds have dried they make an edible snack raw or roasted."
+  },
   "description": "The quintessential summer flower, Russian Giant sunflowers are famous for their incredible height and massive, golden-yellow heads. They are excellent for pollinators and provide a wonderful spectacle in any garden or large container. Children love growing them to see how high they can go!",
   "images": {
     "plant": "images/sunflower/plant.jpg",
@@ -16,7 +20,7 @@
     "matureHeight": "2–3m+",
     "matureSpread": "60–90cm",
     "hardiness": "Half-hardy",
-    "lifespan": "Annual",
+    "lifespan": "Annual (collect seeds)",
     "sunRequirement": "Full sun (6-8+ hours)",
     "waterNeeds": "High — 'water hogs' during peak growth",
     "soilType": "Rich, fertile, well-drained soil (heavy feeders)",
@@ -72,7 +76,7 @@
   },
   "deadheading": {
     "required": false,
-    "notes": "Deadheading the main bloom won't usually produce more flowers on giant single-stem varieties, but it can encourage side shoots on multi-branching types."
+    "info": "Deadheading the main bloom won't usually produce more flowers on giant single-stem varieties, but it can encourage side shoots on multi-branching types."
   },
   "seedSaving": {
     "canSaveSeeds": true,
@@ -92,5 +96,11 @@
     "Birds (eating seeds)",
     "Wind damage (needs staking)"
   ],
-  "funFact": "Sunflowers are 'phytoremediators'—they were planted at Chernobyl to help extract radioactive toxins from the soil!"
+  "funFact": "Sunflowers are 'phytoremediators'—they were planted at Chernobyl to help extract radioactive toxins from the soil!",
+  "milestones": {
+    "2026": {
+      "firstFlowerDate": "",
+      "firstFruitDate": ""
+    }
+  }
 }

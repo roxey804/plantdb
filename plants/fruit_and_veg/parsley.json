@@ -1,0 +1,132 @@
+{
+  "id": "parsley",
+  "commonName": "Parsley",
+  "latinName": "Petroselinum crispum",
+  "family": "Apiaceae",
+  "category": "herb",
+  "variety": "French / Giant of Italy",
+  "edible": true,
+  "description": "A versatile and hardy biennial herb, usually grown as an annual. Essential in many cuisines, it comes in curly and flat-leaved varieties. Parsley is rich in vitamins and adds a fresh, clean flavor to dishes.",
+  "images": {
+    "plant": "images/parsley/plant.jpg",
+    "flower": null,
+    "seedling": null,
+    "seed": null
+  },
+  "characteristics": {
+    "matureHeight": "30-45cm",
+    "matureSpread": "20-30cm",
+    "hardiness": "Hardy",
+    "lifespan": "Biennial (usually grown as an annual)",
+    "sunRequirement": "Full sun or partial shade",
+    "waterNeeds": "Regular — keep soil moist",
+    "soilType": "Fertile, moist, well-drained soil",
+    "containerSize": "2-5L pot",
+    "pinchOutTops": {
+      "required": false,
+      "info": "Not typically pinched out, but removing flower stalks in the first year is recommended."
+    }
+  },
+  "schedule": {
+    "january": [
+      "🌱 Sow seeds indoors"
+    ],
+    "february": [
+      "🌱 Sow seeds indoors"
+    ],
+    "march": [
+      "🌱 Sow seeds indoors",
+      "🌿 Sow seeds outdoors"
+    ],
+    "april": [
+      "🌱 Sow seeds indoors",
+      "🌿 Sow seeds outdoors",
+      "🌤️ Harden off seedlings"
+    ],
+    "may": [
+      "🌿 Sow seeds outdoors",
+      "🌤️ Harden off seedlings",
+      "🪴 Plant out into final containers",
+      "✂️ Harvest regularly"
+    ],
+    "june": [
+      "🌿 Sow seeds outdoors",
+      "🪴 Plant out into final containers",
+      "✂️ Harvest regularly"
+    ],
+    "july": [
+      "🌿 Sow seeds outdoors",
+      "✂️ Harvest regularly"
+    ],
+    "august": [
+      "🌿 Sow seeds outdoors",
+      "✂️ Harvest regularly"
+    ],
+    "september": [
+      "✂️ Harvest regularly"
+    ],
+    "october": [
+      "✂️ Harvest regularly"
+    ],
+    "november": [
+      "🧣 Protect with cloche for late harvests"
+    ],
+    "december": [
+      "🧣 Protect with cloche for late harvests"
+    ],
+    "frostSensitive": false
+  },
+  "care": {
+    "sowIndoors": "Sow seeds 1cm deep in pots on a warm windowsill (18-21°C). Germination is slow, often taking 3-4 weeks. Soaking seeds in warm water overnight can help.",
+    "sowOutdoors": "Sow in drills 1cm deep directly into pots or prepared ground. Thin seedlings to 15-20cm apart.",
+    "hardenOff": "Gradually acclimatise young plants to outdoor conditions for 7-10 days before planting out.",
+    "plantOut": "Space plants 15-30cm apart in moist, fertile soil. They prefer a spot that doesn't dry out completely.",
+    "watering": "Keep well-watered, especially during dry spells. Parsley likes consistent moisture.",
+    "feeding": "Feed with a general-purpose liquid fertiliser every few weeks during the growing season.",
+    "harvest": "Pick leaves from the outside of the plant to encourage new growth from the centre. Harvest regularly to keep the plant productive.",
+    "overwintering": "Hardy enough to survive winter. Use a cloche or cold frame to keep leaves in good condition for winter picking."
+  },
+  "propagation": {
+    "fromSeed": true,
+    "seedDescription": "Small, ribbed, brownish seeds. Known for slow and sometimes erratic germination.",
+    "germinationDays": "14-28 days at 18-21°C",
+    "fromCuttings": false,
+    "cuttingsMethod": null,
+    "fromDivision": false,
+    "divisionMethod": null
+  },
+  "deadheading": {
+    "required": true,
+    "info": "Remove any flower stalks as they appear in the first year to prevent the leaves from turning bitter and to keep the plant focused on foliage."
+  },
+  "seedSaving": {
+    "canSaveSeeds": true,
+    "method": "Allow the plant to flower in its second year. Harvest seed heads once they turn brown and dry. Shake into a paper bag.",
+    "seedPodDescription": "Seeds are produced in umbels (umbrella-like clusters)."
+  },
+  "varieties": [
+    "French (Giant of Italy)",
+    "Moss Curled",
+    "Bravour",
+    "Titan"
+  ],
+  "companionPlants": [
+    "tomato",
+    "asparagus",
+    "carrot",
+    "rose"
+  ],
+  "troubleshooting": [
+    "Slow germination — be patient, it can take up to a month.",
+    "Carrot fly — can occasionally attack the roots; consider using fine mesh.",
+    "Slugs and snails — especially fond of young seedlings.",
+    "Bolting — usually happens in its second year, but can happen early if stressed by drought."
+  ],
+  "funFact": "In ancient Greece, parsley was so highly regarded it was used to make wreaths for winners of athletic competitions and even to decorate tombs.",
+  "milestones": {
+    "2026": {
+      "firstFlowerDate": "",
+      "firstFruitDate": ""
+    }
+  }
+}

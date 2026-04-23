@@ -19,6 +19,7 @@ Used to research and add new plants to the project.
   1. Research plant details (Latin name, UK schedule, care, etc.).
   2. Download images to `images/<plant-id>/`.
   3. Create `plants/<plant-id>.json`.
+     - **Edibility**: All 'fruit', 'vegetable', and 'herb' plants must have `"edible": true` by default. All other categories (flower, houseplant, weed) must have `"edible": false` by default, unless researched otherwise (e.g. Nasturtium).
   4. Run `.gemini/skills/plant/scripts/update_plant_data.cjs` to sync all data.
 
 ## Development Workflow

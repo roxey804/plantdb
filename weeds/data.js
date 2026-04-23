@@ -85,9 +85,11 @@ window.WEED_DATA = [
     "latinName": "Urtica dioica",
     "category": "weed",
     "edible": true,
-    "description": "A common perennial weed known for its stinging hairs. It is also an important plant for wildlife.",
+    "description": "A common perennial weed known for its stinging hairs. It is also an important plant for wildlife and a nutritional powerhouse when cooked or dried.",
     "images": {
-      "plant": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Urtica_dioica_003.JPG"
-    }
+      "plant": "images/stinging-nettle/plant.jpg",
+      "didYouKnow": "images/stinging-nettle/chemistry.png"
+    },
+    "funFact": "The 'sting' of a nettle comes from tiny hollow silica hairs called trichomes. When touched, their tips break off, transforming the hair into a needle that injects a cocktail of chemicals including formic acid, histamine, and acetylcholine. Interestingly, the same plant is high in protein, iron, and vitamins A and C once the sting is neutralized by heat or drying!"
   }
 ];

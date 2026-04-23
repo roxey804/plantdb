@@ -42,13 +42,11 @@ Each plant is stored as an individual JSON file in `plants/` and rendered both i
 
   "characteristics": {
     "matureHeight": "30-60cm",
-    "matureSpread": "30-45cm",
     "hardiness": "Half-hardy (not frost tolerant)",
     "lifespan": "Annual",
     "sunRequirement": "Full sun (6+ hours)",
     "waterNeeds": "Regular — containers dry out fast",
-    "soilType": "Rich, well-drained potting compost",
-    "containerSize": "10L+ pot"
+    "soilType": "Rich, well-drained potting compost"
   },
 
   "schedule": {
@@ -137,7 +135,7 @@ Sow Indoors (amber), Sow Outdoors (green), Harden Off (blue), Plant Out (emerald
 A rich, scroll-friendly profile for each plant with sections:
 - **Hero:** Large plant image, common name, Latin name (italic), family
 - **Image gallery:** Thumbnails for plant, seed, flower, fruit/pod, seedling (tappable to enlarge)
-- **At a Glance:** Icon grid showing height, spread, sun, water, container size, lifespan
+- **At a Glance:** Icon grid showing height, sun, water, lifespan
 - **Growing Calendar:** Mini Gantt bar for this plant only (sow → harvest)
 - **How to Grow:** Step-by-step care instructions (sow, harden off, plant out, water, feed, harvest)
 - **Propagation:** Seeds, cuttings, division — what works and how

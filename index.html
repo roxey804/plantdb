@@ -1124,9 +1124,8 @@ function showProfile(id) {
 
   const imgs = Object.entries(im).filter(([_, v]) => v);
   if (imgs.length > 1) {
-    const labels = { plant:'Plant', seed:'Seeds', flower:'Flower', fruit:'Fruit', seedling:'Seedling' };
-    let sortOrder = ['plant', 'flower', 'fruit', 'seedling', 'seed'];
-    if (p.category === 'flower') sortOrder = ['plant', 'flower', 'seedling', 'seed'];
+    const labels = { plant:'Plant', flower:'Flower', seedPod:'Seed Pod', seed:'Seeds', seedling:'Seedling', fruit:'Fruit' };
+    let sortOrder = ['plant', 'flower', 'seedPod', 'seed', 'fruit', 'seedling'];
     imgs.sort((a, b) => sortOrder.indexOf(a[0]) - sortOrder.indexOf(b[0]));
 
     h += `<div class="bg-white rounded-xl p-5 shadow-sm mb-4">
@@ -1139,10 +1138,10 @@ function showProfile(id) {
 
   const glance = [
     ch.matureHeight && ['📏 Height', ch.matureHeight],
-    ch.matureSpread && ['↔️ Spread', ch.matureSpread],
+    // ch.matureSpread && ['↔️ Spread', ch.matureSpread],
     ch.sunRequirement && ['☀️ Sun', ch.sunRequirement],
     ch.waterNeeds && ['💧 Water', ch.waterNeeds],
-    ch.containerSize && ['🪴 Pot', ch.containerSize],
+    // ch.containerSize && ['🪴 Pot', ch.containerSize],
     ch.lifespan && ['⏳ Lifespan', ch.lifespan],
     ch.hardiness && ['❄️ Hardiness', ch.hardiness],
     ch.habit && ['🌳 Habit', ch.habit],
@@ -1278,8 +1277,13 @@ function showProfile(id) {
   }
 
   if (ss.method) {
+    const seedImg = im.seed;
     h += `<div class="bg-white rounded-xl p-5 shadow-sm mb-4">
-      <h2 class="font-bold text-forest mb-3">🫘 Seed Saving</h2>
+      <h2 class="font-bold text-forest mb-3 ${seedImg ? 'cursor-pointer hover:text-leaf transition-colors flex items-center gap-2' : ''}" 
+          ${seedImg ? `onclick="openZoom('${seedImg}')" title="Click to view seed image"` : ''}>
+        <span>🫘 Seed Saving</span>
+        ${seedImg ? '<svg class="w-4 h-4 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>' : ''}
+      </h2>
       <div class="text-sm text-gray-600 space-y-1">
         <p>${ss.method}</p>
         ${ss.seedPodDescription ? `<p class="text-xs text-gray-500">${ss.seedPodDescription}</p>` : ''}
@@ -1322,6 +1326,7 @@ function showProfile(id) {
     h += `<div class="bg-leafPale/50 rounded-xl p-5 mb-4 border border-leafLight/30">
       <h2 class="font-bold text-forest mb-2">💡 Did You Know?</h2>
       <p class="text-sm text-gray-700">${p.funFact}</p>
+      ${im.didYouKnow ? `<img src="${im.didYouKnow}" alt="Did you know?" class="mt-3 rounded-xl w-full cursor-zoom-in hover:opacity-95 transition-opacity" onclick="openZoom('${im.didYouKnow}')">` : ''}
     </div>`;
   }
 

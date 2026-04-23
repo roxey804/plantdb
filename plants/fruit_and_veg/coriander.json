@@ -5,6 +5,7 @@
   "family": "Apiaceae",
   "category": "herb",
   "variety": "Calypso",
+  "edible": true,
   "description": "A dual-purpose herb grown for its fresh citrusy leaves (cilantro) and aromatic seeds (coriander). It grows fast but is prone to bolting in hot weather. Sow little and often for a constant supply.",
   "images": {
     "plant": "images/coriander/plant.jpg",
@@ -16,7 +17,7 @@
     "matureHeight": "30–60cm",
     "matureSpread": "20–30cm",
     "hardiness": "Half-hardy (survives light frosts)",
-    "lifespan": "Annual",
+    "lifespan": "Annual (collect seeds)",
     "sunRequirement": "Partial shade (summer) to full sun (spring/autumn)",
     "waterNeeds": "Moderate — keep soil moist to delay bolting",
     "soilType": "Light, well-drained potting compost",
@@ -95,7 +96,7 @@
   },
   "deadheading": {
     "required": false,
-    "notes": "Bolting is natural. If you want leaves, harvest the whole plant when it bolts. If you want seeds (coriander spice), let it flower and set seed."
+    "info": "Bolting is natural. If you want leaves, harvest the whole plant when it bolts. If you want seeds (coriander spice), let it flower and set seed."
   },
   "seedSaving": {
     "canSaveSeeds": true,
@@ -112,5 +113,11 @@
     "Aphids — can attack soft shoot tips.",
     "Root rot — if overwatered in winter."
   ],
-  "funFact": "Coriander is one of the world's oldest spices, found in seeds in the tomb of Tutankhamun!"
+  "funFact": "Coriander is one of the world's oldest spices, found in seeds in the tomb of Tutankhamun!",
+  "milestones": {
+    "2026": {
+      "firstFlowerDate": "",
+      "firstFruitDate": ""
+    }
+  }
 }

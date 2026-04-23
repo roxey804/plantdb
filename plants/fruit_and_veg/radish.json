@@ -5,6 +5,7 @@
   "family": "Brassicaceae",
   "category": "vegetable",
   "variety": "French Breakfast",
+  "edible": true,
   "description": "An annual bunching radish featuring elongated red roots with a distinct white tip. It is prized for its crisp texture and mild flavor. Extremely fast-growing, making it perfect for filling small gaps in the garden.",
   "images": {
     "plant": "images/radish/plant.jpg",
@@ -16,7 +17,7 @@
     "matureHeight": "Up to 10cm",
     "matureSpread": "10–50cm",
     "hardiness": "H2 (Tolerant of low temperatures but will not survive being frozen)",
-    "lifespan": "Annual",
+    "lifespan": "Annual (collect seeds)",
     "sunRequirement": "Full sun",
     "waterNeeds": "Moderate — keep soil moist to delay bolting",
     "soilType": "Moist but well-drained; Chalk, Clay, Loam, or Sand",
@@ -89,7 +90,7 @@
   },
   "deadheading": {
     "required": false,
-    "notes": "Not applicable — harvest before flowering. If radishes bolt and flower, the roots become inedible, but the flowers are edible and tasty in salads."
+    "info": "Not applicable — harvest before flowering. If radishes bolt and flower, the roots become inedible, but the flowers are edible and tasty in salads."
   },
   "seedSaving": {
     "canSaveSeeds": true,
@@ -106,5 +107,11 @@
     "Flea beetles (which leave small holes in the leaves)",
     "Woody/pithy roots — left in the ground too long. Harvest promptly when ready."
   ],
-  "funFact": "Extremely versatile in the kitchen—great for eating raw, pickling, or even cooking with butter and garlic!"
+  "funFact": "Extremely versatile in the kitchen—great for eating raw, pickling, or even cooking with butter and garlic!",
+  "milestones": {
+    "2026": {
+      "firstFlowerDate": "",
+      "firstFruitDate": ""
+    }
+  }
 }

@@ -5,6 +5,7 @@
   "family": "Rosaceae",
   "category": "fruit",
   "variety": "General",
+  "edible": true,
   "description": "A delicious and popular soft fruit, raspberries are hardy and relatively easy to grow. They are categorized into summer-fruiting and autumn-fruiting varieties, providing a long harvest season from June to October. They are members of the rose family and thrive in the UK's climate.",
   "images": {
     "plant": "images/raspberries/plant.jpg",
@@ -15,7 +16,7 @@
     "matureHeight": "1.2–1.8m",
     "matureSpread": "0.5–1m",
     "hardiness": "Fully hardy (perennial)",
-    "lifespan": "Perennial (productive for 10-15 years)",
+    "lifespan": "Perennial (comes back every year) (productive for 10-15 years)",
     "sunRequirement": "Full sun or partial shade",
     "waterNeeds": "Moderate — keep well-watered, especially during fruit swelling",
     "soilType": "Slightly acidic, moisture-retentive, well-drained soil",
@@ -89,7 +90,7 @@
   },
   "deadheading": {
     "required": true,
-    "notes": "Remove 'suckers' that appear outside the designated growing area to prevent spreading."
+    "info": "Remove 'suckers' that appear outside the designated growing area to prevent spreading."
   },
   "seedSaving": {
     "canSaveSeeds": false,
@@ -108,5 +109,11 @@
     "Grey mould (Botrytis)",
     "Root rot"
   ],
-  "funFact": "The word 'raspberry' is derived from the Old English 'rasp', which meant 'to scrape', referring to its thorny stems."
+  "funFact": "The word 'raspberry' is derived from the Old English 'rasp', which meant 'to scrape', referring to its thorny stems.",
+  "milestones": {
+    "2026": {
+      "firstFlowerDate": "",
+      "firstFruitDate": ""
+    }
+  }
 }

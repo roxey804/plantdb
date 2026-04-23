@@ -1,7 +1,7 @@
 {
   "id": "pansy",
   "commonName": "Pansy",
-  "latinName": "Viola × wittrockiana",
+  "latinName": "Viola \u00d7 wittrockiana",
   "family": "Violaceae",
   "category": "flower",
   "edible": true,
@@ -14,71 +14,71 @@
     "seed": "images/pansy/seed.jpg"
   },
   "characteristics": {
-    "matureHeight": "15–25cm",
-    "matureSpread": "15–20cm",
-    "hardiness": "Fully hardy",
-    "lifespan": "Short-lived perennial (usually grown as annual)",
-    "sunRequirement": "Full sun or partial shade",
-    "waterNeeds": "Moderate — keep soil moist but not waterlogged",
+    "matureHeight": "15\u201325cm",
+    "matureSpread": "15\u201320cm",
+    "hardiness": "Fully hardy (to -15\u00b0C)",
+    "lifespan": "Annual (collect seeds)",
+    "sunRequirement": "Full sun to partial shade",
+    "waterNeeds": "Moderate \u2014 keep soil moist but not waterlogged",
     "soilType": "Well-drained, fertile multi-purpose compost",
-    "containerSize": "1–2L pot or window box"
+    "containerSize": "1\u20132L pot or window box"
   },
   "schedule": {
     "january": [
-      "✂️ Deadhead any winter blooms"
+      "\u2702\ufe0f Deadhead any winter blooms"
     ],
     "february": [
-      "🌱 Sow seeds indoors (for spring/summer display)",
-      "✂️ Deadhead regularly"
+      "\ud83c\udf31 Sow seeds indoors (for spring/summer display)",
+      "\u2702\ufe0f Deadhead regularly"
     ],
     "march": [
-      "🌱 Sow seeds indoors",
-      "🌤️ Harden off autumn-sown seedlings",
-      "🪴 Plant out autumn-sown plants"
+      "\ud83c\udf31 Sow seeds indoors",
+      "\ud83c\udf24\ufe0f Harden off autumn-sown seedlings",
+      "\ud83e\udeb4 Plant out autumn-sown plants"
     ],
     "april": [
-      "🌱 Sow seeds indoors",
-      "🌤️ Harden off spring seedlings",
-      "🪴 Plant out into containers"
+      "\ud83c\udf31 Sow seeds indoors",
+      "\ud83c\udf24\ufe0f Harden off spring seedlings",
+      "\ud83e\udeb4 Plant out into containers"
     ],
     "may": [
-      "🌱 Sow seeds indoors (for autumn display)",
-      "🪴 Plant out into final containers",
-      "✂️ Deadhead to extend flowering"
+      "\ud83c\udf31 Sow seeds indoors (for autumn display)",
+      "\ud83e\udeb4 Plant out into final containers",
+      "\u2702\ufe0f Deadhead to extend flowering"
     ],
     "june": [
-      "🌱 Sow seeds indoors",
-      "✂️ Deadhead faded blooms"
+      "\ud83c\udf31 Sow seeds indoors",
+      "\u2702\ufe0f Deadhead faded blooms"
     ],
     "july": [
-      "🌿 Sow seeds outdoors",
-      "✂️ Deadhead regularly"
+      "\ud83c\udf3f Sow seeds outdoors",
+      "\u2702\ufe0f Deadhead regularly"
     ],
     "august": [
-      "🪴 Plant out for autumn display",
-      "✂️ Deadhead spring-sown plants"
+      "\ud83e\udeb4 Plant out for autumn display",
+      "\u2702\ufe0f Deadhead spring-sown plants"
     ],
     "september": [
-      "🪴 Plant out for winter/spring display",
-      "✂️ Deadhead regularly"
+      "\ud83e\udeb4 Plant out for winter/spring display",
+      "\u2702\ufe0f Deadhead regularly"
     ],
     "october": [
-      "🪴 Plant out winter-hardy varieties",
-      "✂️ Deadhead to keep plant tidy"
+      "\ud83e\udeb4 Plant out winter-hardy varieties",
+      "\u2702\ufe0f Deadhead to keep plant tidy"
     ],
     "november": [
-      "🧣 Protect pots from freezing solid in severe cold"
+      "\ud83e\udde3 Protect pots from freezing solid in severe cold"
     ],
     "december": [
-      "🧣 Ensure pots are in a sheltered spot"
+      "\ud83e\udde3 Ensure pots are in a sheltered spot"
     ],
     "frostSensitive": false
   },
   "care": {
-    "sowIndoors": "Sow thinly in seed trays. Cover seeds with a thin layer of compost as they need darkness to germinate. Keep at 18–24°C.",
+    "sowIndoors": "Sow thinly in seed trays. Cover seeds with a thin layer of compost as they need darkness to germinate. Keep at 18\u201324\u00b0C.",
     "sowOutdoors": "Sow directly in pots in July for autumn colour, ensuring the soil stays cool and moist.",
-    "hardenOff": "Acclimatize indoor seedlings to the outdoors over 7–10 days before final planting.",
-    "plantOut": "Space plants 15–20cm apart in pots or window boxes. Ensure they are planted at the same depth they were in their trays.",
+    "hardenOff": "Acclimatize indoor seedlings to the outdoors over 7\u201310 days before final planting.",
+    "plantOut": "Space plants 15\u201320cm apart in pots or window boxes. Ensure they are planted at the same depth they were in their trays.",
     "watering": "Water regularly, especially in dry weather. In winter, only water when the soil surface is dry to avoid root rot.",
     "feeding": "Apply a balanced liquid fertilizer every 2 weeks during the main flowering periods (spring and autumn).",
     "harvest": null,
@@ -87,13 +87,13 @@
   "propagation": {
     "fromSeed": true,
     "seedDescription": "Small, round, brownish-black seeds. Require darkness for germination.",
-    "germinationDays": "10–21 days at 18–24°C",
+    "germinationDays": "10\u201321 days at 18\u201324\u00b0C",
     "fromCuttings": false,
     "fromDivision": false
   },
   "deadheading": {
     "required": true,
-    "notes": "Pinch off faded flowers including the green seed pod at the base. This prevents the plant from putting energy into seeds and encourages more flowers."
+    "info": "Pinch off faded flowers including the green seed pod at the base. This prevents the plant from putting energy into seeds and encourages more flowers."
   },
   "seedSaving": {
     "canSaveSeeds": true,
@@ -107,9 +107,15 @@
     "viola"
   ],
   "troubleshooting": [
-    "Slugs and Snails — particularly problematic in damp autumn weather.",
-    "Aphids — common in spring; rinse off with water.",
-    "Powdery Mildew — greyish-white coating on leaves; improve airflow."
+    "Slugs and Snails \u2014 particularly problematic in damp autumn weather.",
+    "Aphids \u2014 common in spring; rinse off with water.",
+    "Powdery Mildew \u2014 greyish-white coating on leaves; improve airflow."
   ],
-  "funFact": "The name 'pansy' comes from the French word 'pensée', meaning 'thought' or 'remembrance'."
+  "funFact": "The name 'pansy' comes from the French word 'pens\u00e9e', meaning 'thought' or 'remembrance'.",
+  "milestones": {
+    "2026": {
+      "firstFlowerDate": "",
+      "firstFruitDate": ""
+    }
+  }
 }
